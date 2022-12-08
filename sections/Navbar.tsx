@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 shadow-xl z-[100] color-bg">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="ml-5"
@@ -68,8 +68,7 @@ const Navbar = () => {
               h-screen 
               bg-black/50 
               dark:bg-white/50 
-              text-[var(--color-text-secondary-light)] 
-              dark:text-[var(--color-text-secondary-dark)]`
+              color-text-secondary`
             : ``
         }
       >
@@ -101,12 +100,17 @@ const Navbar = () => {
                 width={50}
                 height={50}
               />
-              <div onClick={handleNav} className="rounded-icon">
+              <div
+                onClick={handleNav}
+                className="rounded-icon color-text-primary"
+              >
                 <AiOutlineClose size={20} />
               </div>
             </div>
             <div className="flex align-center justify-around border-b border-gray-300 my-4 py-4">
-              <p className="w-[85%] md:w-[90%] text-[var(--color-text-primary-light)] dark:text-[var(--color-text-primary-dark)]">Some placeholder text here </p>
+              <p className="w-[85%] md:w-[90%] color-text-primary">
+                Some placeholder text here
+              </p>
               <ThemeToggle />
             </div>
           </div>
@@ -130,11 +134,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="py-40">
-            <p
-              className="uppercase tacking-widest 
-            text-[var(--color-text-primary-light)] 
-            dark:text-[var(--color-text-primary-dark)] "
-            >
+            <p className="uppercase tracking-widest color-text-primary">
               Let&lsquo;s connect
             </p>
             {/* Connect icons */}

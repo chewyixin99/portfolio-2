@@ -94,13 +94,13 @@
     dark:text-[var(--color-text-primary-dark)]
   }
 
-  .color-accent {
+  .color-text-accent {
     @apply
     text-[var(--color-text-accent-light)]
     dark:text-[var(--color-text-accent-dark)]
   }
 
-  .color-secondary {
+  .color-text-secondary {
     @apply
     text-[var(--color-text-secondary-light)]
     dark:text-[var(--color-text-secondary-dark)]
