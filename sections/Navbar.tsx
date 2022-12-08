@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../components/ThemeToggle";
 
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
 const Navbar = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleNav = () => {
+    setNavOpen(!navOpen);
+  };
+
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -15,32 +25,131 @@ const Navbar = () => {
           height="50"
         />
 
+        {/* Browser Nav */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="navbarLink">Home</li>
+              <li className="navbar-link">Home</li>
             </Link>
             <Link href="/">
-              <li className="navbarLink">About</li>
+              <li className="navbar-link">About</li>
             </Link>
             <Link href="/">
-              <li className="navbarLink">Skills</li>
+              <li className="navbar-link">Skills</li>
             </Link>
             <Link href="/">
-              <li className="navbarLink">
-                Project
-              </li>
+              <li className="navbar-link">Project</li>
             </Link>
             <Link href="/">
-              <li className="navbarLink">
-                Contact
-              </li>
+              <li className="navbar-link">Contact</li>
             </Link>
-            <li className="mr-5 navbarLink">
-              {/* <ThemeToggle width={20} height={20}/> */}
-              <ThemeToggle />
+            <li className="mr-5 ml-10">
+              <ThemeToggle width={20} height={20} />
             </li>
           </ul>
+
+          {/* Mobile menu icon */}
+          <div onClick={handleNav} className="md:hidden mr-5">
+            <AiOutlineMenu size={20} />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {/* Overlay */}
+      <div
+        className={
+          navOpen
+            ? `md:hidden
+              fixed 
+              left-0 
+              top-0 
+              w-full 
+              h-screen 
+              bg-black/50 
+              dark:bg-white/50 
+              text-[var(--color-text-secondary-light)] 
+              dark:text-[var(--color-text-secondary-dark)]`
+            : ``
+        }
+      >
+        {/* Side drawer menu */}
+        <div
+          className={
+            navOpen
+              ? `fixed 
+                left-0 
+                top-0 
+                w-[75%] 
+                sm:w-[60%] 
+                md:w-[45%] 
+                h-screen 
+                p-10 ease-in duration-200
+                bg-[var(--color-bg-light)] 
+                dark:bg-[var(--color-bg-dark)]`
+              : `fixed 
+                left-[-100%] 
+                top-0 
+                p-10 ease-in duration-200`
+          }
+        >
+          <div>
+            <div className="flex w-full items-center justify-between">
+              <Image
+                src="/../public/favicon.ico"
+                alt="/"
+                width={50}
+                height={50}
+              />
+              <div onClick={handleNav} className="rounded-icon">
+                <AiOutlineClose size={20} />
+              </div>
+            </div>
+            <div className="flex align-center justify-around border-b border-gray-300 my-4 py-4">
+              <p className="w-[85%] md:w-[90%] text-[var(--color-text-primary-light)] dark:text-[var(--color-text-primary-dark)]">Some placeholder text here </p>
+              <ThemeToggle />
+            </div>
+          </div>
+          <div className="py-4 flex flex-column">
+            <ul>
+              <Link href="/">
+                <li className="py-4 text-sm">Home</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">About</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Skills</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Project</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Contact</li>
+              </Link>
+            </ul>
+          </div>
+          <div className="py-40">
+            <p
+              className="uppercase tacking-widest 
+            text-[var(--color-text-primary-light)] 
+            dark:text-[var(--color-text-primary-dark)] "
+            >
+              Let&lsquo;s connect
+            </p>
+            {/* Connect icons */}
+            <div className="flex items-center justify-between my-4 w-full sm:w-[70%]">
+              <div className="rounded-icon">
+                <FaLinkedinIn />
+              </div>
+              <div className="rounded-icon">
+                <FaGithub />
+              </div>
+              <div className="rounded-icon">
+                <HiOutlineMail />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

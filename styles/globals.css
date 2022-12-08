@@ -5,21 +5,28 @@
 /* global styling */
 @layer base {
   :root {
-    --color-text-primary-light: #282828;
+    --color-text-primary-light: #5D3FD3;
     --color-text-secondary-light: #36454F;
     --color-bg-light: #fcfbf7;
+    --color-shadow-light: #9ca3af;
 
     --color-text-primary-dark: #ffd700;
     --color-text-secondary-dark: #ffffff;
     --color-bg-dark: #191970;
+    --color-shadow-dark: #111827;
+
+    --toggle-width: 60px;
+    --toggle-height: 20px;
+    --toggle-padding: 4px;
   }
 
   body {
     @apply 
-    tracking-wide 
+    tracking-wide
+    transition
     
     bg-[var(--color-bg-light)] 
-    text-[var(--color-text-primary-light)] 
+    text-[var(--color-text-secondary-light)] 
 
     dark:bg-[var(--color-bg-dark)] 
     dark:text-[var(--color-text-secondary-dark)]
@@ -58,21 +65,23 @@
     /* custom gradient below */
     /* bg-gradient-to-r from-red-200 to-green-200 */
       
-    shadow-gray-400 
+    shadow-[var(--color-shadow-light)] 
     
-    dark:shadow-gray-900
+    dark:shadow-[var(--color-shadow-dark)]
     }
 
 }
 
 @layer components {
 
-  .navbarLink {
+  .navbar-link {
     @apply
     ml-10
     text-sm
     uppercase
     hover:border-b
+    text-[var(--color-text-primary-light)]
+    dark:text-[var(--color-text-primary-dark)]
   }
 
   .title {
@@ -89,6 +98,20 @@
     text-[var(--color-text-secondary-light)] 
     
     dark:text-[var(--color-text-secondary-dark)]
+  }
+
+  .rounded-icon {
+    @apply
+    rounded-full 
+    shadow-lg 
+    p-3 
+    cursor-pointer 
+    hover:scale-110 
+    ease-in 
+    duration-75
+
+    shadow-[var(--color-shadow-light)] 
+    dark:shadow-[var(--color-shadow-dark)]
   }
 
 }

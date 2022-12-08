@@ -41,7 +41,11 @@ const ThemeToggle = ({ width = 20, height = 20 }: ThemeToggleProps) => {
       );
     }
   };
-  return <div>{renderThemeChanger()}</div>;
+  return (
+    <div>
+      <span>{renderThemeChanger()}</span>
+    </div>
+  );
 };
 
 export default ThemeToggle;
