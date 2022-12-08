@@ -21,7 +21,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow">
+    <motion.div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }} className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="ml-5"
@@ -44,7 +48,7 @@ const Navbar = () => {
               <li className="navbar-link">Skills</li>
             </Link>
             <Link href="/">
-              <li className="navbar-link">Project</li>
+              <li className="navbar-link">Projects</li>
             </Link>
             <Link href="/">
               <li className="navbar-link">Contact</li>
@@ -161,7 +165,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

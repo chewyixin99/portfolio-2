@@ -28,7 +28,7 @@
   body {
     @apply 
     tracking-wide
-    transition
+    transition duration-500
     font-secondary
     
     bg-[var(--color-bg-light)] 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -6,9 +7,29 @@ const About = () => {
     <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] md:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2">
-          <h3 className="title uppercase tracking-widest">About</h3>
-          <h1 className="subtitle py-3">Who I am</h1>
-          <div className="body-text pb-5">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="title uppercase tracking-widest">About</h3>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h1 className="subtitle py-3">Who I am</h1>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="body-text pb-5"
+          >
             <p className="pb-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the{" "}
@@ -30,9 +51,15 @@ const About = () => {
               <span className="highlight-text">like Aldus PageMaker</span>{" "}
               including versions of Lorem Ipsum.
             </p>
-          </div>
+          </motion.div>
         </div>
-        <div className="col-span-1 image-hover">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="col-span-1 image-hover"
+        >
           <Image
             src="/../public/favicon.ico"
             alt="/"
@@ -40,7 +67,7 @@ const About = () => {
             height={300}
             className="rounded-xl"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
