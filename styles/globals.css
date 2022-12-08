@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,25 +8,28 @@
 /* global styling */
 @layer base {
   :root {
-    --color-text-primary-light: #5D3FD3;
-    --color-text-secondary-light: #36454F;
-    --color-bg-light: #fcfbf7;
+    --color-text-primary-light: #5D3FD3; /* purple */
+    --color-text-secondary-light: #36454F; /* charcoal */
+    --color-text-accent-light: #667e2c; /* dirty/moss green */
+    --color-bg-light: #fcfbf7; /* eggshell whitish */
     --color-shadow-light: #9ca3af;
 
-    --color-text-primary-dark: #ffd700;
-    --color-text-secondary-dark: #ffffff;
-    --color-bg-dark: #191970;
+    --color-text-primary-dark: #d4af37; /* metallic gold */
+    --color-text-secondary-dark: #fcfbf7; /* beige */
+    --color-text-accent-dark: #E98980; /* coral */
+    --color-bg-dark: #191970; /* midnight blue */
+    --color-bg-darker: #001155; /* interstellar blue */
     --color-shadow-dark: #111827;
 
-    --toggle-width: 60px;
-    --toggle-height: 20px;
-    --toggle-padding: 4px;
+    --max-width-outer: 1240px;
+    --max-width-inner: 70%;
   }
 
   body {
     @apply 
     tracking-wide
     transition
+    font-secondary
     
     bg-[var(--color-bg-light)] 
     text-[var(--color-text-secondary-light)] 
@@ -51,6 +57,13 @@
     md:text-5xl
   }
 
+  h3 {
+    @apply 
+    text-2xl 
+    sm:text-3xl 
+    md:text-4xl
+  }
+
   li {
     @apply 
     cursor-pointer
@@ -74,6 +87,32 @@
 
 @layer components {
 
+  /* Color schemes */
+  .color-text-primary {
+    @apply
+    text-[var(--color-text-primary-light)]
+    dark:text-[var(--color-text-primary-dark)]
+  }
+
+  .color-accent {
+    @apply
+    text-[var(--color-text-accent-light)]
+    dark:text-[var(--color-text-accent-dark)]
+  }
+
+  .color-secondary {
+    @apply
+    text-[var(--color-text-secondary-light)]
+    dark:text-[var(--color-text-secondary-dark)]
+  }
+
+  .color-bg {
+    @apply
+    bg-[var(--color-bg-light)]
+    dark:bg-[var(--color-bg-darker)]
+  }
+
+  /* Navbar */
   .navbar-link {
     @apply
     ml-10
@@ -84,22 +123,39 @@
     dark:text-[var(--color-text-primary-dark)]
   }
 
+  /* Text formatting for information */
   .title {
     @apply 
-    
+    font-primary
+
     text-[var(--color-text-primary-light)] 
-    
     dark:text-[var(--color-text-primary-dark)]
   }
 
   .subtitle {
     @apply 
-    
+    font-secondary
+
+    text-[var(--color-text-accent-light)] 
+    dark:text-[var(--color-text-accent-dark)]
+  }
+
+  .body-text {
+    @apply
+
     text-[var(--color-text-secondary-light)] 
-    
     dark:text-[var(--color-text-secondary-dark)]
   }
 
+  .highlight-text {
+    @apply
+    underline
+    
+    text-[var(--color-text-accent-light)] 
+    dark:text-[var(--color-text-accent-dark)]
+  }
+
+  /* Icon styling */
   .rounded-icon {
     @apply
     rounded-full 
@@ -110,8 +166,33 @@
     ease-in 
     duration-75
 
+    bg-[var(--color-bg-light)]
     shadow-[var(--color-shadow-light)] 
+    text-[var(--color-text-secondary-light)]
+    
+    dark:bg-[var(--color-bg-darker)]
     dark:shadow-[var(--color-shadow-dark)]
+    dark:text-[var(--color-text-secondary-dark)]
+  }
+
+  /* Image styling */
+  .image-hover {
+    @apply
+    w-full
+    h-auto
+    m-auto
+    rounded-xl
+    flex
+    items-center
+    justify-center
+    p-4
+    hover:scale-110
+    ease-in
+    duration-150
+    shadow-xl
+    
+    shadow-[var(--color-shadow-light)] 
+    dark:shadow-[var(--color-shadow-dark)] 
   }
 
 }

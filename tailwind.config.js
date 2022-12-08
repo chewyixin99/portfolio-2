@@ -7,7 +7,12 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ["Quicksand"],
+        secondary: ["Montserrat"],
+      },
+    },
   },
   plugins: [],
 };
