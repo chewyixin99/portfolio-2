@@ -14,9 +14,9 @@ const About = () => {
               industry. Lorem Ipsum has been the{" "}
               <span className="highlight-text">
                 industry&lsquo;s standard dummy text
-              </span> &nbsp;
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              </span>{" "}
+              &nbsp; ever since the 1500s, when an unknown printer took a galley
+              of type and scrambled it to make a type specimen book.
             </p>{" "}
             <p className="pb-3">
               It has survived not only five centuries, but also the leap into

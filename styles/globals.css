@@ -17,9 +17,9 @@
     --color-text-primary-dark: #d4af37; /* metallic gold */
     --color-text-secondary-dark: #fcfbf7; /* beige */
     --color-text-accent-dark: #E98980; /* coral */
-    --color-bg-dark: #191970; /* midnight blue */
+    --color-bg-dark: #040348; /* night blue */
     --color-bg-darker: #001155; /* interstellar blue */
-    --color-shadow-dark: #111827;
+    --color-shadow-dark: #0f0f0f; /* onyx */
 
     --max-width-outer: 1240px;
     --max-width-inner: 70%;
@@ -110,6 +110,12 @@
     @apply
     bg-[var(--color-bg-light)]
     dark:bg-[var(--color-bg-darker)]
+  }
+
+  .color-shadow {
+    @apply
+    shadow-[var(--color-shadow-light)] 
+    dark:shadow-[var(--color-shadow-dark)]
   }
 
   /* Navbar */

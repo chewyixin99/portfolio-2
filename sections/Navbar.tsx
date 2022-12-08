@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../components/ThemeToggle";
+import { motion } from "framer-motion";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+
+const variants = {
+  open: { opacity: 0, x: "200%" },
+  closed: { opacity: 1, x: 0 },
+};
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] color-bg">
+    <div className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="ml-5"
@@ -49,9 +55,12 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile menu icon */}
-          <div onClick={handleNav} className="md:hidden mr-5">
-            <AiOutlineMenu size={20} />
-          </div>
+          {/* Animated hamburger */}
+          <motion.nav animate={navOpen ? "open" : "closed"} variants={variants}>
+            <div onClick={handleNav} className="md:hidden mr-5">
+              <AiOutlineMenu size={20} />
+            </div>
+          </motion.nav>
         </div>
       </div>
 
