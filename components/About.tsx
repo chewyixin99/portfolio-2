@@ -7,6 +7,7 @@ const About = () => {
     <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] md:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2">
+          {/* Title */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -15,6 +16,7 @@ const About = () => {
           >
             <h3 className="title uppercase tracking-widest">About</h3>
           </motion.div>
+          {/* Subtitle */}
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -23,6 +25,7 @@ const About = () => {
           >
             <h1 className="subtitle py-3">Who I am</h1>
           </motion.div>
+          {/* Body text */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

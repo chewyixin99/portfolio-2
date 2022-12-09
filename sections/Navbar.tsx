@@ -22,10 +22,12 @@ const Navbar = () => {
 
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 0.5 }}
-    viewport={{ once: true }} className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow">
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow"
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           className="ml-5"
@@ -80,7 +82,7 @@ const Navbar = () => {
               w-full 
               h-screen 
               bg-black/50 
-              dark:bg-white/50 
+              dark:bg-white/30
               color-text-secondary`
             : ``
         }

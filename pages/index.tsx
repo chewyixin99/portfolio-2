@@ -2,6 +2,7 @@ import Head from "next/head";
 import About from "../components/About";
 import Main from "../components/Main";
 import Navbar from "../sections/Navbar";
+import Skills from "../components/Skills";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar />
       <Main />
       <About />
+      <Skills />
     </div>
   );
 };

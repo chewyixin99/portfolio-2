@@ -4,6 +4,7 @@ https://www.reddit.com/r/reactjs/comments/lfqe5o/3d_sphere_tag_cloud/
 https://github.com/jjsanmartino03/react-tag-sphere/blob/main/src/index.tsx 
 */
 
+import Image from "next/image";
 import {
   createRef,
   CSSProperties,
@@ -142,34 +143,49 @@ const createItem = (
   };
 };
 
+const sphereTexts = [
+  <Image className="bg-[var(--color-text-secondary-dark)] px-2 py-1" width={75} height={75} src={"/../public/assets/tagsphere/next.png"} alt={"next"} key={""} />,
+  // "NextJS",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/react.png"} alt={"react"} key={""} />,
+  // "ReactJS",
+  <Image className="bg-[var(--color-text-secondary-dark)] p-1" width={100} height={100} src={"/../public/assets/tagsphere/express.png"} alt={"express"} key={""} />,
+  // "ExpressJS",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/vue.png"} alt={"vue"} key={""} />,
+  // "VueJS",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/typescript.png"} alt={"typescript"} key={""} />,
+  // "Typescript",
+  <Image width={75} height={75} src={"/../public/assets/tagsphere/htmlcss.png"} alt={"htmlcss"} key={""} />,
+  // "HTML",
+  // "CSS",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/bootstrap.png"} alt={"bootstrap"} key={""} />,
+  // "Bootstrap",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/tailwind.png"} alt={"tailwind"} key={""} />,
+  // "Tailwind",
+  <Image width={100} height={100} src={"/../public/assets/tagsphere/springboot.png"} alt={"springboot"} key={""} />,
+  // "SpringBoot",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/java.png"} alt={"java"} key={""} />,
+  // "Java",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/python.png"} alt={"python"} key={""} />,
+  // "Python",
+  <Image className="bg-[var(--color-text-secondary-dark)] p-1" width={50} height={50} src={"/../public/assets/tagsphere/flask.png"} alt={"flask"} key={""} />,
+  // "Flask",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/dart.png"} alt={"dart"} key={""} />,
+  // "Dart",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/flutter.png"} alt={"flutter"} key={""} />,
+  // "Flutter",
+  <Image width={100} height={100} src={"/../public/assets/tagsphere/mysql.png"} alt={"mysql"} key={""} />,
+  // "MySQL",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/firebase.png"} alt={"firebase"} key={""} />,
+  // "Firebase",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/postgresql.png"} alt={"postgresql"} key={""} />,
+  // "PostgreSQL",
+  <Image width={50} height={50} src={"/../public/assets/tagsphere/jest.png"} alt={"jest"} key={""} />,
+  // "Jest",
+  
+];
+
 const defaultState: tagSphereProps = {
-  texts: [
-    "NextJS",
-    "ReactJS",
-    "ExpressJS",
-    "VueJS",
-    "Typescript",
-    "HTML",
-    "CSS",
-    "Bootstrap",
-    "Tailwind",
-    <img
-      width={50}
-      src={"https://cdn.svgporn.com/logos/react.svg"}
-      alt={"Random image"}
-    />,
-    "SpringBoot",
-    "Java",
-    "Python",
-    "Flask",
-    "Dart",
-    "Flutter",
-    "MySQL",
-    "Firebase",
-    "PostgreSQL",
-    "Dart",
-    "Jest",
-  ],
+  texts: sphereTexts,
   maxSpeed: 7,
   initialSpeed: 32,
   initialDirection: 135,
