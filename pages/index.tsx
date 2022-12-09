@@ -3,6 +3,7 @@ import About from "../components/About";
 import Main from "../components/Main";
 import Navbar from "../sections/Navbar";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Main />
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 };

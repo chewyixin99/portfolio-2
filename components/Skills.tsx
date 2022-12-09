@@ -9,7 +9,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: true }}
           className="col-span-2"
         >
@@ -20,7 +20,7 @@ const Skills = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0 }}
+            transition={{ duration: 0.5, delay: 0 }}
             viewport={{ once: true }}
           >
             <h3 className="title uppercase tracking-widest">Skills</h3>
@@ -29,7 +29,7 @@ const Skills = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <h2 className="subtitle py-3">What I can do</h2>
@@ -38,7 +38,7 @@ const Skills = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
             <p className="py-3">
@@ -49,7 +49,7 @@ const Skills = () => {
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <p className="">
