@@ -26,7 +26,7 @@ const Navbar = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="fixed w-full h-20 shadow-lg z-[100] color-bg color-shadow"
+      className="fixed w-full h-20 shadow-lg z-[2000] color-bg color-shadow"
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
@@ -48,6 +48,9 @@ const Navbar = () => {
             </Link>
             <Link href="/">
               <li className="navbar-link">Skills</li>
+            </Link>
+            <Link href="/">
+              <li className="navbar-link">Experience</li>
             </Link>
             <Link href="/">
               <li className="navbar-link">Projects</li>
@@ -141,7 +144,10 @@ const Navbar = () => {
                 <li className="py-4 text-sm">Skills</li>
               </Link>
               <Link href="/">
-                <li className="py-4 text-sm">Project</li>
+                <li className="py-4 text-sm">Experience</li>
+              </Link>
+              <Link href="/">
+                <li className="py-4 text-sm">Projects</li>
               </Link>
               <Link href="/">
                 <li className="py-4 text-sm">Contact</li>

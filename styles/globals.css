@@ -121,7 +121,7 @@
   /* Navbar */
   .navbar-link {
     @apply
-    ml-10
+    ml-8
     text-sm
     uppercase
     hover:border-b
