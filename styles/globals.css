@@ -181,24 +181,33 @@
     dark:text-[var(--color-text-secondary-dark)]
   }
 
-  /* Image styling */
-  .image-hover {
+  /* TimelineCard styles */
+  .timeline-title {
     @apply
-    w-full
-    h-auto
-    m-auto
-    rounded-xl
-    flex
-    items-center
-    justify-center
-    p-4
-    hover:scale-110
-    ease-in
-    duration-150
-    shadow-xl
+    text-base
+    md:text-lg
+    lg:text-xl
     
-    shadow-[var(--color-shadow-light)] 
-    dark:shadow-[var(--color-shadow-dark)] 
+    text-[var(--color-text-primary-light)]
+    dark:text-[var(--color-text-primary-dark)]
+  }
+
+  .timeline-subtitle {
+    @apply
+    text-sm
+    md:text-base
+    lg:text-lg
+    py-1
+    
+    text-[var(--color-text-accent-light)]
+    dark:text-[var(--color-text-accent-dark)]
+  }
+
+  .timeline-body-text {
+    @apply
+    text-xs
+    md:text-sm
+    pt-2
   }
 
 }

@@ -23,7 +23,7 @@ const CustomTimeline = () => {
         knowledge in tech."
       />
       <TimelineCardLeft
-      className="py-5"
+        className="py-5"
         dateString="Jan 21 - May 21"
         imgProps={{
           alt: "smu",
@@ -52,7 +52,7 @@ const CustomTimeline = () => {
         knowledge in tech."
       />
       <TimelineCardLeft
-      className="py-5"
+        className="py-5"
         dateString="Aug 21 - Dec 21"
         imgProps={{
           alt: "smu",
@@ -82,7 +82,7 @@ const CustomTimeline = () => {
         knowledge in tech."
       />
       <TimelineCardLeft
-      className="py-5"
+        className="py-5"
         dateString="May 22 - Aug 22"
         imgProps={{
           alt: "smu",

@@ -61,7 +61,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="col-span-1 image-hover"
+          className="col-span-1"
         >
           <Image
             src="/../public/favicon.ico"

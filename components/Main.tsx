@@ -22,7 +22,7 @@ const Main = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="uppercase text-md tracking-widest title"
+            className="uppercase text-base tracking-widest title"
           >
             <TypewriterComponent options={typewriterOptions} />
           </motion.div>

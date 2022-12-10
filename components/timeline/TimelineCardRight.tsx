@@ -75,17 +75,17 @@ const TimelineCardRight = ({
             />
           </div>
           <div className="text-right lg:text-left">
-            <p className="text-md md:text-lg lg:text-xl color-text-primary">
+            <p className="timeline-title">
               {title}
             </p>
-            <p className="text-sm md:text-md lg:text-lg py-1 color-text-accent">
+            <p className="timeline-subtitle">
               {subtitle}
             </p>
             <p className="lg:hidden pb-2 text-xs">{dateString}</p>
           </div>
         </div>
         <hr />
-        <p className="text-xs md:text-sm pt-2">{bodyText}</p>
+        <p className="timeline-body-text">{bodyText}</p>
       </motion.div>
     </div>
   );
