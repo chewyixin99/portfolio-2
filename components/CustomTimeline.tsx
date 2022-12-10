@@ -7,7 +7,7 @@ const CustomTimeline = () => {
   // mobile responsiveness add here
   return (
     <div>
-      <TimelineCardRight
+      <TimelineCardLeft
         className="py-5"
         dateString="2020 - Present"
         imgProps={{
@@ -19,37 +19,25 @@ const CustomTimeline = () => {
         }}
         title="Singapore Management University"
         subtitle="Student"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
-      />
-      <TimelineCardLeft
-        className="py-5"
-        dateString="Jan 21 - May 21"
-        imgProps={{
-          alt: "smu",
-          src: "/../public/assets/timeline/smu.png",
-          width: 150,
-          height: 150,
-          classNameImg: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
-        }}
-        title="Singapore Management University"
-        subtitle="Teaching Assistant"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="Start point of my coding journey. Prior to this, I have zero
+        knowledge and experience in tech."
       />
       <TimelineCardRight
         className="py-5"
         dateString="Aug 21 - Dec 21"
         imgProps={{
-          alt: "smu",
+          alt: "quest",
           src: "/../public/assets/timeline/quest.png",
           width: 125,
           height: 125,
         }}
         title="Quest-Inc"
         subtitle="Software Engineer Intern"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="
+          First tech-related and part-time internship! Dabbled in 
+          mobile-development with Flutter and Dart, and it's also my first exposure
+          to the software development process and lifecycle!
+        "
       />
       <TimelineCardLeft
         className="py-5"
@@ -63,8 +51,7 @@ const CustomTimeline = () => {
         }}
         title="Singapore Management University"
         subtitle="Teaching Assistant"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="Teaching assistant for COR-IS1702 (Computational Thinking)."
       />
       <TimelineCardRight
         className="py-5"
@@ -78,28 +65,30 @@ const CustomTimeline = () => {
         }}
         title="Singapore Management University"
         subtitle="Teaching Assistant"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="Teaching assistant for IS113 (Web Application Development I)."
       />
       <TimelineCardLeft
         className="py-5"
         dateString="May 22 - Aug 22"
         imgProps={{
-          alt: "smu",
+          alt: "govtech",
           src: "/../public/assets/timeline/govtech.png",
           width: 100,
           height: 100,
         }}
         title="GOVTECH Singapore"
         subtitle="Software Engineer Intern"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="
+          First exposure to a mid-sized firm with mature software development
+          process. Fullstack web development with a full javascript tech-stack.
+          Definitely learnt a lot, exciting times!
+        "
       />
       <TimelineCardRight
         className="py-5"
         dateString="May 23 - Aug 23"
         imgProps={{
-          alt: "smu",
+          alt: "jpmc",
           src: "/../public/assets/timeline/jpmc.png",
           width: 150,
           height: 150,
@@ -107,8 +96,7 @@ const CustomTimeline = () => {
         }}
         title="JPMorgan Chase & Co"
         subtitle="Software Engineer Intern"
-        bodyText="Start of my coding journey in SMU. Prior to this, I had zero
-        knowledge in tech."
+        bodyText="Have yet to start."
       />
     </div>
   );

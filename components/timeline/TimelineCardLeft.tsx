@@ -40,13 +40,9 @@ const TimelineCardLeft = ({
         className="col-span-6 shadow-xl p-6 color-shadow color-bg"
       >
         <div className="pb-3 flex justify-between items-center">
-          <div className="text-left lg:text-right">
-            <p className="timeline-title">
-              {title}
-            </p>
-            <p className="timeline-subtitle">
-              {subtitle}
-            </p>
+          <div className="lg:ml-auto text-left lg:text-right">
+            <p className="timeline-title">{title}</p>
+            <p className="timeline-subtitle">{subtitle}</p>
             <p className="lg:hidden pb-2 text-xs">{dateString}</p>
           </div>
           <div className="ml-4 lg:hidden image-hover">
