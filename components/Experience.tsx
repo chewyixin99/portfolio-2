@@ -4,7 +4,7 @@ import CustomTimeline from "./CustomTimeline";
 const Experience = () => {
   return (
     <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto p-2 flex py-16">
-      <div className="max-w-[var(--max-width-inner)] md:grid grid-cols-3 gap-8 items-center">
+      <div className="max-w-[var(--max-width-inner)]  gap-8 items-center">
         {/* Title and subtitle */}
         <div className="col-span-3 text-center">
           <div>
@@ -15,7 +15,7 @@ const Experience = () => {
           </div>
         </div>
         {/* Timeline */}
-        <div className="col-span-3">
+        <div className="">
           <div className="py-5">
             <CustomTimeline />
           </div>

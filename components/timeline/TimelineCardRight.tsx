@@ -8,6 +8,7 @@ type TimelineCardRightProps = {
   title: string;
   subtitle: string;
   bodyText: string;
+  className?: string;
 };
 
 type ImageProps = {
@@ -15,7 +16,7 @@ type ImageProps = {
   src: string;
   width: number;
   height: number;
-  className?: string;
+  classNameImg?: string;
 };
 
 const TimelineCardRight = ({
@@ -24,25 +25,25 @@ const TimelineCardRight = ({
   title,
   subtitle,
   bodyText,
+  className = "",
 }: TimelineCardRightProps) => {
-  const { alt, src, width, height, className } = imgProps;
-
+  const { alt, src, width, height, classNameImg } = imgProps;
   return (
-    <div className="md:grid grid-cols-12 gap-8 items-center">
+    <div className={`lg:grid grid-cols-12 gap-8 items-center ${className}`}>
       {/* image / logo */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0.6 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: true }}
-        className="col-span-3 m-auto text-center"
+        className="col-span-3 m-auto text-center hidden lg:block"
       >
         <Image
           alt={alt}
           src={src}
           width={width}
           height={height}
-          className={className}
+          className={classNameImg}
         />
       </motion.div>
       {/* year */}
@@ -51,7 +52,7 @@ const TimelineCardRight = ({
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.3 }}
         viewport={{ once: true }}
-        className="col-span-3 m-auto text-center"
+        className="col-span-3 m-auto text-center hidden lg:block "
       >
         {dateString}
       </motion.div>
@@ -61,12 +62,30 @@ const TimelineCardRight = ({
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.0 }}
         viewport={{ once: true }}
-        className="col-span-6 text-left shadow-xl p-6 color-shadow color-bg"
+        className="col-span-6 shadow-xl p-6 color-shadow color-bg"
       >
-        <p className="text-xl color-text-primary">{title}</p>
-        <p className="text-lg py-1 color-text-accent">{subtitle}</p>
+        <div className="pb-3 flex justify-between items-center ">
+          <div className="mr-4 lg:hidden">
+            <Image
+              alt={alt}
+              src={src}
+              width={width}
+              height={height}
+              className={classNameImg}
+            />
+          </div>
+          <div className="text-right lg:text-left">
+            <p className="text-md md:text-lg lg:text-xl color-text-primary">
+              {title}
+            </p>
+            <p className="text-sm md:text-md lg:text-lg py-1 color-text-accent">
+              {subtitle}
+            </p>
+            <p className="lg:hidden pb-2 text-xs">{dateString}</p>
+          </div>
+        </div>
         <hr />
-        <p className="text-sm pt-2">{bodyText}</p>
+        <p className="text-xs md:text-sm pt-2">{bodyText}</p>
       </motion.div>
     </div>
   );
