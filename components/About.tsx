@@ -23,7 +23,7 @@ const About = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h1 className="subtitle py-3">Who I am</h1>
+            <h2 className="subtitle py-3">Who I am</h2>
           </motion.div>
           {/* Body text */}
           <motion.div
@@ -33,26 +33,40 @@ const About = () => {
             viewport={{ once: true }}
             className="body-text pb-5"
           >
-            <p className="pb-3">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the{" "}
-              <span className="color-text-accent underline">
-                industry&lsquo;s standard dummy text
-              </span>{" "}
-              &nbsp; ever since the 1500s, when an unknown printer took a galley
-              of type and scrambled it to make a type specimen book.
-            </p>{" "}
-            <p className="pb-3">
-              It has survived not only five centuries, but also the leap into
-              electronic typesetting,{" "}
-              <span className="color-text-accent underline">
-                remaining essentially unchanged
+            <p className="py-3">
+              I have a keen interest in all things technology, but more so in
+              software development where I can{" "}
+              <span className="underline color-text-accent">
+                witness my code come to life
               </span>
-              . It was popularised in the 1960s with the release of Letraset
-              sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software{" "}
-              <span className="color-text-accent underline">like Aldus PageMaker</span>{" "}
-              including versions of Lorem Ipsum.
+              .
+            </p>
+            <p className="pb-3">
+              <em className="color-text-primary">
+                &quot;To improve is to change; to be perfect is to change
+                often.&quot;
+              </em>{" "}
+              <em>- Winston Churchill</em>
+            </p>
+            <p className="pb-3">
+              I have always been a big fan of{" "}
+              <span className="underline color-text-accent">
+                experiential learning
+              </span>
+              , believing that one can learn best by doing and practicing. As
+              such, I find myself gravitating towards the tech industry, where
+              learning never stops.
+            </p>
+            <p className="pb-3">
+              In my free time, I enjoy{" "}
+              <span className="underline color-text-accent">
+                spending time with my loved ones
+              </span>
+              , going to the{" "}
+              <span className="underline color-text-accent">gym</span>, as well
+              as practicing{" "}
+              <span className="underline color-text-accent">Judo</span> in order
+              to maintain my fitness.
             </p>
           </motion.div>
         </div>
@@ -61,13 +75,13 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="col-span-1"
+          className="col-span-1 flex justify-center"
         >
           <Image
-            src="/../public/favicon.ico"
-            alt="/"
-            width={300}
-            height={300}
+            src="/../public/assets/about.jpg"
+            alt="individualPhoto"
+            width={225}
+            height={225}
             className="rounded-xl image-hover"
           />
         </motion.div>
