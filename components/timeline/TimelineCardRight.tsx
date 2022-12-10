@@ -36,7 +36,7 @@ const TimelineCardRight = ({
         whileInView={{ opacity: 1, x: 0.6 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: true }}
-        className="col-span-3 m-auto text-center hidden lg:block"
+        className="col-span-3 m-auto text-center hidden lg:block image-hover"
       >
         <Image
           alt={alt}
@@ -65,7 +65,7 @@ const TimelineCardRight = ({
         className="col-span-6 shadow-xl p-6 color-shadow color-bg"
       >
         <div className="pb-3 flex justify-between items-center ">
-          <div className="mr-4 lg:hidden">
+          <div className="mr-4 lg:hidden image-hover">
             <Image
               alt={alt}
               src={src}

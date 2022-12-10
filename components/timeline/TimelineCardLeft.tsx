@@ -49,7 +49,7 @@ const TimelineCardLeft = ({
             </p>
             <p className="lg:hidden pb-2 text-xs">{dateString}</p>
           </div>
-          <div className="ml-4 lg:hidden">
+          <div className="ml-4 lg:hidden image-hover">
             <Image
               alt={alt}
               src={src}
@@ -78,7 +78,7 @@ const TimelineCardLeft = ({
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         viewport={{ once: true }}
-        className="col-span-3 m-auto text-center hidden lg:block"
+        className="col-span-3 m-auto text-center hidden lg:block image-hover"
       >
         <Image
           alt={alt}
