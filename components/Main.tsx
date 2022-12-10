@@ -57,7 +57,7 @@ const Main = () => {
             <p className="body-text m-auto">
               I&lsquo;m an aspiring software engineer, currently enrolled
               in&nbsp;
-              <span className="highlight-text">
+              <span className="color-text-accent underline">
                 Singapore Management University (SMU)
               </span>
               &nbsp; under the Bachelor&lsquo;s of Science (BSc), Information

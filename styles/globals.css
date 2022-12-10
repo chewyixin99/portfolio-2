@@ -153,14 +153,6 @@
     dark:text-[var(--color-text-secondary-dark)]
   }
 
-  .highlight-text {
-    @apply
-    underline
-    
-    text-[var(--color-text-accent-light)] 
-    dark:text-[var(--color-text-accent-dark)]
-  }
-
   /* Icon styling */
   .rounded-icon {
     @apply

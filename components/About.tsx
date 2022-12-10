@@ -36,7 +36,7 @@ const About = () => {
             <p className="pb-3">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the{" "}
-              <span className="highlight-text">
+              <span className="color-text-accent underline">
                 industry&lsquo;s standard dummy text
               </span>{" "}
               &nbsp; ever since the 1500s, when an unknown printer took a galley
@@ -45,13 +45,13 @@ const About = () => {
             <p className="pb-3">
               It has survived not only five centuries, but also the leap into
               electronic typesetting,{" "}
-              <span className="highlight-text">
+              <span className="color-text-accent underline">
                 remaining essentially unchanged
               </span>
               . It was popularised in the 1960s with the release of Letraset
               sheets containing Lorem Ipsum passages, and more recently with
               desktop publishing software{" "}
-              <span className="highlight-text">like Aldus PageMaker</span>{" "}
+              <span className="color-text-accent underline">like Aldus PageMaker</span>{" "}
               including versions of Lorem Ipsum.
             </p>
           </motion.div>

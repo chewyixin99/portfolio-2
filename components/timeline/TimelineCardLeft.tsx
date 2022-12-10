@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { AiFillLinkedin, AiOutlineArrowRight } from "react-icons/ai";
 
 type TimelineCardLeftProps = {
   dateString: string;
@@ -9,6 +11,10 @@ type TimelineCardLeftProps = {
   subtitle: string;
   bodyText: string;
   className?: string;
+  skills?: string[];
+  companyLinkedIn?: string;
+  companyWebsite?: string;
+  projectUrl?: string;
 };
 
 type ImageProps = {
@@ -19,6 +25,57 @@ type ImageProps = {
   classNameImg?: string;
 };
 
+const renderSkills = (skills: string[], showSkills: boolean) => {
+  if (!showSkills) {
+    return "";
+  }
+  const skillsString = skills.join(" • ");
+  return (
+    <div className="py-4">
+      <span className="color-text-primary">Stack:&nbsp;&nbsp;</span>{" "}
+      {skillsString}
+    </div>
+  );
+};
+
+const renderWebsite = (siteUrl: string, showSite: boolean) => {
+  if (!showSite) {
+    return "";
+  }
+  return (
+    <Link className="color-text-primary hover:underline" href={siteUrl}>
+      Website
+    </Link>
+  );
+};
+
+const renderLinkedIn = (linkedInUrl: string, showLinkedIn: boolean) => {
+  if (!showLinkedIn) {
+    return "";
+  }
+  return (
+    <Link href={linkedInUrl} className="color-text-primary">
+      <AiFillLinkedin />
+    </Link>
+  );
+};
+
+const renderProjectUrl = (projectUrl: string, showProjectUrl: boolean) => {
+  if (!showProjectUrl) {
+    return "";
+  }
+  return (
+    <Link href={projectUrl} className="color-text-primary hover:underline">
+      <div className="flex items-center">
+        <span>Read more&nbsp;</span>
+        <span>
+          <AiOutlineArrowRight />
+        </span>
+      </div>
+    </Link>
+  );
+};
+
 const TimelineCardLeft = ({
   dateString,
   imgProps,
@@ -26,6 +83,10 @@ const TimelineCardLeft = ({
   subtitle,
   bodyText,
   className = "",
+  skills = [],
+  companyLinkedIn = "",
+  companyWebsite = "",
+  projectUrl = "",
 }: TimelineCardLeftProps) => {
   const { alt, src, width, height, classNameImg } = imgProps;
 
@@ -57,6 +118,28 @@ const TimelineCardLeft = ({
         </div>
         <hr />
         <p className="timeline-body-text">{bodyText}</p>
+        {/* Skills */}
+        <div className="text-xs md:sm">
+          {renderSkills(skills, skills.length !== 0)}
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            {/* Website */}
+            <div className="pr-2 text-xs md:sm">
+              {renderWebsite(companyWebsite, companyWebsite.length !== 0)}
+            </div>
+            {companyWebsite.length !== 0 && companyLinkedIn.length !== 0
+              ? "|"
+              : ""}
+            {/* LinkedIn */}
+            <div className="pl-2 text-2xl lg:text-3xl">
+              {renderLinkedIn(companyLinkedIn, companyLinkedIn.length !== 0)}
+            </div>
+          </div>
+          <div className="text-xs md:sm">
+            {renderProjectUrl(projectUrl, projectUrl.length !== 0)}
+          </div>
+        </div>
       </motion.div>
       {/* year */}
       <motion.div
