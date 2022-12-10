@@ -31,7 +31,7 @@ const renderSkills = (skills: string[], showSkills: boolean) => {
   }
   const skillsString = skills.join(" • ");
   return (
-    <div className="py-4">
+    <div className="pt-4">
       <span className="color-text-primary">Stack:&nbsp;&nbsp;</span>{" "}
       {skillsString}
     </div>
@@ -43,7 +43,7 @@ const renderWebsite = (siteUrl: string, showSite: boolean) => {
     return "";
   }
   return (
-    <Link className="color-text-primary hover:underline" href={siteUrl}>
+    <Link className="timeline-link" href={siteUrl}>
       Website
     </Link>
   );
@@ -65,7 +65,7 @@ const renderProjectUrl = (projectUrl: string, showProjectUrl: boolean) => {
     return "";
   }
   return (
-    <Link href={projectUrl} className="color-text-primary hover:underline">
+    <Link href={projectUrl} className="timeline-link">
       <div className="flex items-center">
         <span>Read more&nbsp;</span>
         <span>
@@ -147,7 +147,15 @@ const TimelineCardRight = ({
         <div className="text-xs md:sm">
           {renderSkills(skills, skills.length !== 0)}
         </div>
-        <div className="flex items-center justify-between">
+        <div
+          className={`${
+            projectUrl.length !== 0 ||
+            companyWebsite.length !== 0 ||
+            companyLinkedIn.length !== 0
+              ? "pt-4"
+              : ""
+          } flex items-center justify-between`}
+        >
           <div className="flex items-center">
             {/* Website */}
             <div className="pr-2 text-xs md:sm">

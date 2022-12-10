@@ -8,17 +8,6 @@ const CustomTimeline = () => {
   return (
     <div>
       <TimelineCardLeft
-        skills={[
-          "ReactJs",
-          "VueJs",
-          "ExpressJs",
-          "Jest",
-          "TypeScript",
-          "Docker",
-        ]}
-        companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
-        companyWebsite="https://docs.developer.tech.gov.sg/"
-        projectUrl="/"
         className="py-5"
         dateString="2020 - Present"
         imgProps={{
@@ -34,16 +23,9 @@ const CustomTimeline = () => {
         knowledge and experience in tech."
       />
       <TimelineCardRight
-        skills={[
-          "ReactJs",
-          "VueJs",
-          "ExpressJs",
-          "Jest",
-          "TypeScript",
-          "Docker",
-        ]}
-        companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
-        companyWebsite="https://docs.developer.tech.gov.sg/"
+        skills={["Flutter", "Dart", "Firebase", "Telegraf.js"]}
+        companyLinkedIn="https://www.linkedin.com/company/questhireahero/"
+        companyWebsite="https://quest-inc.co/"
         projectUrl="/"
         className="py-5"
         dateString="Aug 21 - Dec 21"
@@ -62,17 +44,7 @@ const CustomTimeline = () => {
         "
       />
       <TimelineCardLeft
-        skills={[
-          "ReactJs",
-          "VueJs",
-          "ExpressJs",
-          "Jest",
-          "TypeScript",
-          "Docker",
-        ]}
-        companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
-        companyWebsite="https://docs.developer.tech.gov.sg/"
-        projectUrl="/"
+        skills={["Python", "Data Structures & Algorithms"]}
         className="py-5"
         dateString="Aug 21 - Dec 21"
         imgProps={{
@@ -87,17 +59,7 @@ const CustomTimeline = () => {
         bodyText="Teaching assistant for COR-IS1702 (Computational Thinking)."
       />
       <TimelineCardRight
-        skills={[
-          "ReactJs",
-          "VueJs",
-          "ExpressJs",
-          "Jest",
-          "TypeScript",
-          "Docker",
-        ]}
-        companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
-        companyWebsite="https://docs.developer.tech.gov.sg/"
-        projectUrl="/"
+        skills={["HTML", "PHP", "MySQL"]}
         className="py-5"
         dateString="Jan 22 - May 22"
         imgProps={{
@@ -140,17 +102,11 @@ const CustomTimeline = () => {
         "
       />
       <TimelineCardRight
-        skills={[
-          "ReactJs",
-          "VueJs",
-          "ExpressJs",
-          "Jest",
-          "TypeScript",
-          "Docker",
-        ]}
-        companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
-        companyWebsite="https://docs.developer.tech.gov.sg/"
-        projectUrl="/"
+        // skills={[
+        // ]}
+        // companyLinkedIn="https://www.linkedin.com/company/jpmorganchase/"
+        // companyWebsite="https://www.jpmorganchase.com/"
+        // projectUrl="/"
         className="py-5"
         dateString="May 23 - Aug 23"
         imgProps={{
