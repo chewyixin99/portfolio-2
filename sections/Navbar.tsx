@@ -99,7 +99,7 @@ const Navbar = () => {
               left-0 
               top-0 
               w-full 
-              h-screen 
+              h-full 
               bg-black/50 
               dark:bg-white/30
               color-text-secondary`
@@ -116,7 +116,7 @@ const Navbar = () => {
                 w-[75%] 
                 sm:w-[60%] 
                 md:w-[45%] 
-                h-screen 
+                h-full 
                 p-10 ease-in duration-200
                 bg-[var(--color-bg-light)] 
                 dark:bg-[var(--color-bg-dark)]`
@@ -126,7 +126,12 @@ const Navbar = () => {
                 p-10 ease-in duration-200`
           }
         >
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <div className="flex w-full items-center justify-between">
               <Image
                 src="/../public/favicon.ico"
@@ -143,50 +148,141 @@ const Navbar = () => {
             </div>
             <div className="flex align-center justify-around border-b border-gray-300 my-4 py-4">
               <p className="w-[85%] md:w-[90%] color-text-primary">
-                Some placeholder text here
+                Navigation
               </p>
               <ThemeToggle />
             </div>
-          </div>
+          </motion.div>
           <div className="py-4 flex flex-column">
             <ul>
-              <Link href="/">
-                <li className="py-4 text-sm">Home</li>
-              </Link>
-              <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
-              </Link>
-              <Link href="/#skills">
-                <li className="py-4 text-sm">Skills</li>
-              </Link>
-              <Link href="/#experience">
-                <li className="py-4 text-sm">Experience</li>
-              </Link>
-              <Link href="/#projects">
-                <li className="py-4 text-sm">Projects</li>
-              </Link>
-              <Link href="/#contact">
-                <li className="py-4 text-sm">Contact</li>
-              </Link>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    Home
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/#about">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    About
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/#skills">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    Skills
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/#experience">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    Experience
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/#projects">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    Projects
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <Link href="/#contact">
+                  <li onClick={handleNav} className="py-4 text-sm">
+                    Contact
+                  </li>
+                </Link>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+                viewport={{ once: true }}
+              >
+                <li onClick={handleNav} className="py-4 text-sm">
+                  <a
+                    rel="noopener noreferrer"
+                    target={"_blank"}
+                    href="/assets/resume.pdf"
+                  >
+                    Download resume
+                  </a>
+                </li>
+              </motion.div>
             </ul>
           </div>
-          <div className="py-40">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="py-40"
+          >
             <p className="uppercase tracking-widest color-text-primary">
               Let&lsquo;s connect
             </p>
             {/* Connect icons */}
             <div className="flex items-center justify-between my-4 w-full sm:w-[70%]">
-              <div className="rounded-icon">
+              <Link
+                className="rounded-icon"
+                href={"https://www.linkedin.com/in/chewyixin/"}
+                target={"blank"}
+                rel={"noopener noreferrer"}
+              >
                 <FaLinkedinIn />
-              </div>
-              <div className="rounded-icon">
+              </Link>
+              <Link
+                className="rounded-icon"
+                href={"https://github.com/chewyixin99"}
+                target={"blank"}
+                rel={"noopener noreferrer"}
+              >
                 <FaGithub />
-              </div>
-              <div className="rounded-icon">
+              </Link>
+              <Link
+                className="rounded-icon"
+                href={"mailto:chewyixin1999@gmail.com"}
+                target={"blank"}
+                rel={"noopener noreferrer"}
+              >
                 <HiOutlineMail />
-              </div>
+              </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>

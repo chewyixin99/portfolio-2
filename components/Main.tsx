@@ -4,6 +4,8 @@ import { HiOutlineMail, HiChevronDoubleUp } from "react-icons/hi";
 import TypewriterComponent from "typewriter-effect";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import BackToTop from "./BackToTop";
+import DownloadResume from "./DownloadResume";
 
 const typewriterOptions = {
   strings: ["Welcome", "Nice to meet you", "Let's build something together"],
@@ -14,53 +16,13 @@ const typewriterOptions = {
 };
 
 const Main = () => {
-  const [backToTopButton, setBackToTopButton] = useState(false);
-
-  useEffect(() => {
-    const handleBackToTopButton = () => {
-      if (window.scrollY >= 300) {
-        setBackToTopButton(true);
-      } else {
-        setBackToTopButton(false);
-      }
-    };
-    window.addEventListener("scroll", handleBackToTopButton);
-  }, []);
-
-  const renderBackToTopButton = () => {
-    if (backToTopButton) {
-      return (
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="flex justify-end py-12 px-12 fixed right-0 bottom-0"
-        >
-          <Link href={"/"}>
-            <div className="rounded-icon-bg-primary">
-              <HiChevronDoubleUp className="" />
-            </div>
-          </Link>
-        </motion.div>
-      );
-    }
-    return <div></div>;
-
-    return (
-      <div className="flex justify-end py-12 px-12 fixed right-0 bottom-0">
-        <Link href={"/"}>
-          <div className="rounded-icon-bg-primary">
-            <HiChevronDoubleUp className="" />
-          </div>
-        </Link>
-      </div>
-    );
-  };
-
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[var(--max-width-outer)] w-full h-full mx-auto p-2 flex justify-center items-center">
+        {/* Back to top button */}
+        <BackToTop href="/" />
+        {/* Download resume button */}
+        <DownloadResume />
         <div className="max-w-[var(--max-width-inner)]">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -117,26 +79,33 @@ const Main = () => {
             viewport={{ once: true }}
             className="flex items-center justify-around my-6 m-auto w-full max-w-[360px]"
           >
-            <div className="rounded-icon">
+            <Link
+              className="rounded-icon"
+              href={"https://www.linkedin.com/in/chewyixin/"}
+              target={"blank"}
+              rel={"noopener noreferrer"}
+            >
               <FaLinkedinIn />
-            </div>
-            <div className="rounded-icon">
+            </Link>
+            <Link
+              className="rounded-icon"
+              href={"https://github.com/chewyixin99"}
+              target={"blank"}
+              rel={"noopener noreferrer"}
+            >
               <FaGithub />
-            </div>
-            <div className="rounded-icon">
+            </Link>
+            <Link
+              className="rounded-icon"
+              href={"mailto:chewyixin1999@gmail.com"}
+              target={"blank"}
+              rel={"noopener noreferrer"}
+            >
               <HiOutlineMail />
-            </div>
+            </Link>
           </motion.div>
         </div>
       </div>
-      {/* <div className="flex justify-end py-12 px-12 fixed right-0 bottom-0">
-        <Link href={"/"}>
-          <div className="rounded-icon-bg-primary">
-            <HiChevronDoubleUp className="" />
-          </div>
-        </Link>
-      </div> */}
-      {renderBackToTopButton()}
     </div>
   );
 };
