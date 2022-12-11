@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+}
+
 /* global styling */
 @layer base {
   :root {
@@ -112,6 +117,12 @@
     dark:bg-[var(--color-bg-darker)]
   }
 
+  .color-bg-inverse {
+    @apply
+    bg-[var(--color-bg-dark)]
+    dark:bg-[var(--color-bg-light)]
+  }
+
   .color-shadow {
     @apply
     shadow-[var(--color-shadow-light)] 
@@ -140,7 +151,7 @@
 
   .subtitle {
     @apply 
-    font-secondary
+    font-primary
 
     text-[var(--color-text-accent-light)] 
     dark:text-[var(--color-text-accent-dark)]
@@ -171,6 +182,25 @@
     dark:bg-[var(--color-bg-darker)]
     dark:shadow-[var(--color-shadow-dark)]
     dark:text-[var(--color-text-secondary-dark)]
+  }
+
+  .rounded-icon-bg-primary {
+    @apply
+    rounded-full 
+    shadow-lg 
+    p-3 
+    cursor-pointer 
+    hover:scale-110 
+    ease-in 
+    duration-75
+
+    bg-[var(--color-text-primary-light)]
+    shadow-[var(--color-shadow-light)] 
+    text-[var(--color-bg-light)]
+    
+    dark:bg-[var(--color-text-primary-dark)]
+    dark:shadow-[var(--color-shadow-dark)]
+    dark:text-[var(--color-bg-dark)]
   }
 
   /* Image hover */

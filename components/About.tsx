@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
+    <div id="about" className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] md:grid grid-cols-3 gap-8 items-center">
         <div className="col-span-2">
           {/* Title */}

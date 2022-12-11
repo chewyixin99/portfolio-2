@@ -43,7 +43,12 @@ const renderWebsite = (siteUrl: string, showSite: boolean) => {
     return "";
   }
   return (
-    <Link className="timeline-link" href={siteUrl}>
+    <Link
+      className="timeline-link"
+      rel="noopener noreferrer"
+      target={"_blank"}
+      href={siteUrl}
+    >
       Website
     </Link>
   );
@@ -54,7 +59,12 @@ const renderLinkedIn = (linkedInUrl: string, showLinkedIn: boolean) => {
     return "";
   }
   return (
-    <Link href={linkedInUrl} className="color-text-primary">
+    <Link
+      href={linkedInUrl}
+      rel="noopener noreferrer"
+      target={"_blank"}
+      className="color-text-primary"
+    >
       <AiFillLinkedin />
     </Link>
   );
@@ -65,7 +75,12 @@ const renderProjectUrl = (projectUrl: string, showProjectUrl: boolean) => {
     return "";
   }
   return (
-    <Link href={projectUrl} className="timeline-link">
+    <Link
+      href={projectUrl}
+      rel="noopener noreferrer"
+      target={"_blank"}
+      className="timeline-link"
+    >
       <div className="flex items-center">
         <span>Read more&nbsp;</span>
         <span>

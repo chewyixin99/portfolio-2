@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggle from "../components/ThemeToggle";
@@ -15,10 +15,22 @@ const variants = {
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNavOpen(!navOpen);
   };
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
     <motion.div
@@ -26,7 +38,11 @@ const Navbar = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="fixed w-full h-20 shadow-lg z-[2000] color-bg color-shadow"
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-lg z-[2000] color-bg color-shadow"
+          : "fixed w-full h-20 z-[2000]  bg-[var(--color-bg-light)] dark:bg-[var(--color-bg-dark)] "
+      }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
@@ -43,19 +59,19 @@ const Navbar = () => {
             <Link href="/">
               <li className="navbar-link">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="navbar-link">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="navbar-link">Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#experience">
               <li className="navbar-link">Experience</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="navbar-link">Projects</li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="navbar-link">Contact</li>
             </Link>
             <li className="mr-5 ml-10">
@@ -137,19 +153,19 @@ const Navbar = () => {
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#experience">
                 <li className="py-4 text-sm">Experience</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
