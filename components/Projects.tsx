@@ -23,44 +23,116 @@ const Projects = () => {
           <h2 className="subtitle py-3">What I have built</h2>
         </motion.div>
         {/* Start of project display */}
-        <div>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-        </div>
+        <div className="grid md:grid-cols-2 gap-8 py-5">
+          {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x">  */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/oop/login.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
 
-        {/* <div className="grid md:grid-cols-2 gap-8 py-5">
-          <ProjectCard
-            projectUrl="/"
-            imgProps={{
-              src: "/../public/assets/projects/oop/login.jpg",
-              alt: "",
-              imageClassName: "",
-              width: 500,
-              height: 500,
-            }}
-          />
-          <ProjectCard
-            projectUrl="/"
-            imgProps={{
-              src: "/../public/assets/projects/oop/login.jpg",
-              alt: "",
-              imageClassName: "",
-              width: 500,
-              height: 500,
-            }}
-          />
-          <ProjectCard
-            projectUrl="/"
-            imgProps={{
-              src: "/../public/assets/projects/oop/login.jpg",
-              alt: "",
-              imageClassName: "",
-              width: 500,
-              height: 500,
-            }}
-          />
-        </div> */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/spm/home.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/oop/login.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/spm/home.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/oop/login.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/spm/home.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+        </div>
       </div>
     </div>
   );
