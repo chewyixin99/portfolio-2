@@ -292,4 +292,49 @@ html{
     hover:underline
   }
 
+  /* Contact styling */
+  .contact-input {
+    @apply
+    outline-none
+    rounded-md
+    border-b
+    border-r
+    p-3
+    w-full
+    my-2
+
+    duration-500
+    
+    text-[var(--color-text-secondary-light)]
+    border-[var(--color-text-secondary-light)]
+    focus:border-[var(--color-text-primary-light)]
+    bg-[var(--color-bg-light)]
+
+    dark:text-[var(--color-text-secondary-dark)]
+    dark:border-[var(--color-text-secondary-dark)]
+    focus:dark:border-[var(--color-text-primary-dark)]
+    dark:bg-[var(--color-bg-darker)]
+  }
+
+  .submit-button {
+    @apply
+    p-2
+    my-3
+    tracking-widest
+    capitalize
+    border
+
+    duration-500
+
+    text-[var(--color-text-secondary-light)]
+    hover:text-[var(--color-text-primary-light)]
+    border-[var(--color-text-secondary-light)]
+    hover:border-[var(--color-text-primary-light)]
+
+    dark:text-[var(--color-text-secondary-dark)]
+    hover:dark:text-[var(--color-text-primary-dark)]
+    dark:border-[var(--color-text-secondary-dark)]
+    hover:dark:border-[var(--color-text-primary-dark)]
+  }
+
 }
