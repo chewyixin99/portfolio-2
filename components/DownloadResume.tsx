@@ -11,7 +11,7 @@ const DownloadResume = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="z-[1500]  flex justify-start py-12 px-12 fixed left-0 bottom-0"
+        className="z-[1500] flex justify-start fixed left-10 bottom-10"
       >
         <Link
           href={"/assets/resume.pdf"}

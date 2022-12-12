@@ -25,7 +25,7 @@ const ProjectCard = ({ projectUrl, imgProps }: ProjectCardProps) => {
         height={height}
         src={src}
         alt={alt}
-        className={`ease-in-out duration-200 group-hover:opacity-20 rounded-xl ${imageClassName}`}
+        className={`w-full ease-in-out duration-200 group-hover:opacity-20 rounded-xl ${imageClassName}`}
       />
       <div className="hidden group-hover:block absolute p-3 ">
         <p className="project-title font-bold">Project title</p>

@@ -29,7 +29,7 @@ const BackToTop = ({ href }: BackToTopProps) => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="z-[1500] flex justify-end py-12 px-12 fixed right-0 bottom-0"
+          className="z-[1500] flex justify-end fixed right-10 bottom-10"
         >
           <Link href={href}>
             <div className="back-to-top-button">
