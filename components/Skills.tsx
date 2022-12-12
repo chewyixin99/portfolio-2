@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div id="skills" className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
+    <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] md:grid grid-cols-5 gap-8 items-center">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

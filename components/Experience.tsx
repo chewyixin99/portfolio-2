@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div id="experience" className="max-w-[var(--max-width-outer)] justify-around items-center m-auto p-2 flex py-16">
+    <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)]  gap-8 items-center">
         {/* Title and subtitle */}
         <div className="col-span-3 text-center">
