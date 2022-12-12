@@ -29,10 +29,10 @@ const BackToTop = ({ href }: BackToTopProps) => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="flex justify-end py-12 px-12 fixed right-0 bottom-0"
+          className="z-[1500] flex justify-end py-12 px-12 fixed right-0 bottom-0"
         >
           <Link href={href}>
-            <div className="rounded-icon-bg-primary">
+            <div className="back-to-top-button">
               <HiChevronDoubleUp className="" />
             </div>
           </Link>

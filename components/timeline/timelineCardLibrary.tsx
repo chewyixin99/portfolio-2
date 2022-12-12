@@ -46,7 +46,11 @@ export const renderLinkedIn = (linkedInUrl: string, showLinkedIn: boolean) => {
   );
 };
 
-export const renderProjectUrl = (projectUrl: string, showProjectUrl: boolean) => {
+export const renderProjectUrl = (
+  projectUrl: string,
+  showProjectUrl: boolean,
+  target: string = "_blank"
+) => {
   if (!showProjectUrl) {
     return "";
   }
@@ -54,7 +58,7 @@ export const renderProjectUrl = (projectUrl: string, showProjectUrl: boolean) =>
     <Link
       href={projectUrl}
       rel="noopener noreferrer"
-      target={"_blank"}
+      target={target}
       className="timeline-link"
     >
       <div className="flex items-center">

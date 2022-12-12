@@ -11,7 +11,7 @@ const DownloadResume = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="flex justify-start py-12 px-12 fixed left-0 bottom-0"
+        className="z-[1500]  flex justify-start py-12 px-12 fixed left-0 bottom-0"
       >
         <Link
           href={"/assets/resume.pdf"}
@@ -19,7 +19,7 @@ const DownloadResume = () => {
           target={"_blank"}
           className="color-bg color-text-primary shadow-xl color-shadow hover:scale-110 ease-in-out duration-100 p-3 rounded-xl"
         >
-          <div className="flex justify-center items-center m-auto">
+          <div className="flex justify-center items-center">
             <div className="font-bold text-xs">Download resume&nbsp;</div>
             <div className="text-base">
               <HiDocumentDownload />
