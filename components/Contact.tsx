@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useForm, SubmitHandler } from "react-hook-form";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { IoMdSend } from "react-icons/io";
+import { useSnackbar } from "notistack";
 
 import { sendContactForm } from "../pages/lib/api";
 
@@ -15,6 +16,7 @@ type Inputs = {
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
+  const { enqueueSnackbar } = useSnackbar();
   const {
     register,
     handleSubmit,
@@ -27,16 +29,30 @@ const Contact = () => {
   });
 
   const onSubmit: SubmitHandler<Inputs> = async (formData) => {
-    console.log(formData);
     setLoading(true);
-    await sendContactForm(formData);
+    try {
+      await sendContactForm(formData);
+      // display success snackbar
+      enqueueSnackbar("Email sent successfully!", {
+        variant: "success",
+        autoHideDuration: 3000,
+      });
+      reset();
+    } catch (err: unknown) {
+      // display error snackbar
+      enqueueSnackbar("Oops, something went wrong!", {
+        variant: "error",
+        autoHideDuration: 3000,
+      });
+      console.log(err);
+    }
     setLoading(false);
-    reset();
   };
 
   return (
     <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] gap-8 items-center">
+        <div>{/* Snackbar */}</div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}

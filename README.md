@@ -49,6 +49,9 @@ Animations
 - [framer-motion](https://www.framer.com/motion/) for sliding and navbar animation
 - [typewriter-effect](/https://www.npmjs.com/package/typewriter-effect) for typewriting effect
 
+Notification
+- [notistack](https://notistack.com/getting-started)
+
 TagCloud / TagSphere (for skill cloud) credits
 - [github/cong-min](/https://github.com/cong-min/TagCloud)
 - [reddit/chul-ian13](/https://www.reddit.com/r/reactjs/comments/lfqe5o/comment/gzcyzgk/)
@@ -66,3 +69,13 @@ Styling references / guide
 
 Email sending guide
 - [youtube/OnelightWebDev](https://www.youtube.com/watch?v=t2LvPXHLrek&ab_channel=OnelightWebDev)
+
+## Env variables
+.env.local
+- EMAIL=<your_email_address>
+- EMAIL_PASS=<generated_password>
+  - gmail: to generate this, go to `manage your google account` in google chrome
+  - click on the `security` tab
+  - Under passwords, click on `app passwords`
+  - Under 'select app' dropdown, click 'other (custom name)'
+  - Fill in a name, and then generate. Copy the generated password into the .env file
