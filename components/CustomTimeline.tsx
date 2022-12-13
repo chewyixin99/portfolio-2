@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import TimelineCardRight from "./timeline/TimelineCardRight";
 import TimelineCardLeft from "./timeline/TimelineCardLeft";
 

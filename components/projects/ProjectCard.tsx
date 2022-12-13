@@ -11,6 +11,9 @@ type ProjectCardProps = {
   githubUrl?: string;
   skills?: string[];
   imgProps: ImageProps;
+  title: string;
+  subtitle: string;
+  bodyText: string;
 };
 
 type ImageProps = {
@@ -26,6 +29,9 @@ const ProjectCard = ({
   skills = [],
   projectUrl = "",
   imgProps,
+  title,
+  subtitle,
+  bodyText,
 }: ProjectCardProps) => {
   const { src, imageClassName, alt, width, height } = imgProps;
 
@@ -39,13 +45,10 @@ const ProjectCard = ({
         className={`w-full ease-in-out duration-200 group-hover:opacity-20 rounded-xl ${imageClassName}`}
       />
       <div className="hidden group-hover:block absolute p-3 ">
-        <p className="project-title font-bold">Project title</p>
-        <p className="project-subtitle">Subtitle</p>
+        <p className="project-title font-bold">{title}</p>
+        <p className="project-subtitle">{subtitle}</p>
         <hr />
-        <p className="project-body-text">
-          this is some short description this is some short description this is
-          some short description this is some short description
-        </p>
+        <p className="project-body-text">{bodyText}</p>
         {/* Skills section */}
         <div className="project-body-text">
           {renderSkills(skills, skills.length !== 0)}

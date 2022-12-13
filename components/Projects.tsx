@@ -32,6 +32,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               githubUrl="https://www.github.com/"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
@@ -52,6 +57,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
@@ -71,6 +81,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               imgProps={{
                 src: "/../public/assets/projects/oop/login.jpg",
@@ -89,6 +104,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               githubUrl="https://www.github.com/"
               projectUrl="/"
               imgProps={{
@@ -108,6 +128,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               githubUrl="https://www.github.com/"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
@@ -128,6 +153,11 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
               githubUrl="https://www.github.com/"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
