@@ -37,6 +37,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Libraries used
 
+Styling
+- [tailwind-css](https://tailwindcss.com/)
+- [material-ui](https://mui.com/)
+
+Icons
+- [hero-icons](https://heroicons.com/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+
 Animations
 - [framer-motion](https://www.framer.com/motion/) for sliding and navbar animation
 - [typewriter-effect](/https://www.npmjs.com/package/typewriter-effect) for typewriting effect
@@ -46,5 +54,15 @@ TagCloud / TagSphere (for skill cloud) credits
 - [reddit/chul-ian13](/https://www.reddit.com/r/reactjs/comments/lfqe5o/comment/gzcyzgk/)
 - [github/jjsanmartino03](https://github.com/jjsanmartino03/react-tag-sphere/blob/main/src/index.tsx)
 
-Video / Styling reference
+Form validation
+- [react-hook-form](https://react-hook-form.com/)
+
+Email
+- [nodemailer](https://nodemailer.com/about/)
+
+Styling references / guide
 - [youtube/CodeCommerce](https://www.youtube.com/watch?v=CMx51wpd7g4&ab_channel=CodeCommerce)
+- [youtube/SonnySangha](https://www.youtube.com/watch?v=urgi2iz9P6U&t=274s&ab_channel=SonnySangha)
+
+Email sending guide
+- [youtube/OnelightWebDev](https://www.youtube.com/watch?v=t2LvPXHLrek&ab_channel=OnelightWebDev)

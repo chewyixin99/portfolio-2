@@ -326,7 +326,7 @@ html{
     border
 
     duration-300
-    hover:font-bold
+    font-bold
     focus:font-bold
 
     text-[var(--color-text-secondary-light)]
@@ -335,7 +335,6 @@ html{
     focus:border-[var(--color-bg-light)]
     focus:bg-[var(--color-text-primary-light)]
     hover:text-[var(--color-bg-light)]
-    hover:border-[var(--color-bg-light)]
     hover:bg-[var(--color-text-primary-light)]
 
     dark:text-[var(--color-text-secondary-dark)]
@@ -344,8 +343,17 @@ html{
     focus:dark:border-[var(--color-bg-dark)]
     focus:dark:bg-[var(--color-text-primary-dark)]
     hover:dark:text-[var(--color-bg-dark)]
-    hover:dark:border-[var(--color-bg-dark)]
     hover:dark:bg-[var(--color-text-primary-dark)]
+  }
+
+  .error-msg {
+    @apply
+    ml-3
+    text-red-600
+    text-xs
+    uppercase
+    w-full
+    font-bold
   }
 
 }
