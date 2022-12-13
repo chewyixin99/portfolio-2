@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { AiFillLinkedin, AiOutlineArrowRight } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineArrowRight,
+} from "react-icons/ai";
 
 export const renderSkills = (skills: string[], showSkills: boolean) => {
   if (!showSkills) {
@@ -7,7 +11,7 @@ export const renderSkills = (skills: string[], showSkills: boolean) => {
   }
   const skillsString = skills.join(" • ");
   return (
-    <div className="pt-4">
+    <div>
       <span className="color-text-primary">Stack:&nbsp;&nbsp;</span>{" "}
       {skillsString}
     </div>
@@ -46,6 +50,27 @@ export const renderLinkedIn = (linkedInUrl: string, showLinkedIn: boolean) => {
   );
 };
 
+export const renderGithub = (gitHubUrl: string, showGitHub: boolean) => {
+  if (!showGitHub) {
+    return "";
+  }
+  return (
+    <Link
+      href={gitHubUrl}
+      rel="noopener noreferrer"
+      target={"_blank"}
+      className="color-text-primary"
+    >
+      <div className="flex justify-between items-center">
+        <div className="pr-2">Source code</div>
+        <div className="text-lg">
+          <AiFillGithub />
+        </div>
+      </div>
+    </Link>
+  );
+};
+
 export const renderProjectUrl = (
   projectUrl: string,
   showProjectUrl: boolean,
@@ -62,7 +87,7 @@ export const renderProjectUrl = (
       className="timeline-link"
     >
       <div className="flex items-center">
-        <span>Read more&nbsp;</span>
+        <span className="pr-2">Read more</span>
         <span>
           <AiOutlineArrowRight />
         </span>

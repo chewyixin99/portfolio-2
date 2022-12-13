@@ -1,9 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import { renderProjectUrl } from "../timeline/timelineCardLibrary";
+import {
+  renderGithub,
+  renderSkills,
+  renderProjectUrl,
+} from "../cardComponentsLibrary";
 
 type ProjectCardProps = {
-  projectUrl: string;
+  projectUrl?: string;
+  githubUrl?: string;
+  skills?: string[];
   imgProps: ImageProps;
 };
 
@@ -15,7 +21,12 @@ type ImageProps = {
   height: number;
 };
 
-const ProjectCard = ({ projectUrl, imgProps }: ProjectCardProps) => {
+const ProjectCard = ({
+  githubUrl = "",
+  skills = [],
+  projectUrl = "",
+  imgProps,
+}: ProjectCardProps) => {
   const { src, imageClassName, alt, width, height } = imgProps;
 
   return (
@@ -32,11 +43,23 @@ const ProjectCard = ({ projectUrl, imgProps }: ProjectCardProps) => {
         <p className="project-subtitle">Subtitle</p>
         <hr />
         <p className="project-body-text">
-          this is some short description this is some short description
+          this is some short description this is some short description this is
+          some short description this is some short description
         </p>
-        <div className="project-link flex justify-end text-xs pt-3">
+        {/* Skills section */}
+        <div className="project-body-text">
+          {renderSkills(skills, skills.length !== 0)}
+        </div>
+        <div className="flex justify-between text-xs items-center">
           {/* add option for target to not be _blank */}
-          {renderProjectUrl(projectUrl, projectUrl.length !== 0)}
+          {/* Github */}
+          <div className="project-link project-body-text">
+            {renderGithub(githubUrl, githubUrl.length !== 0)}
+          </div>
+          {/* Project url */}
+          <div className="project-link project-body-text">
+            {renderProjectUrl(projectUrl, projectUrl.length !== 0)}
+          </div>
         </div>
       </div>
     </div>

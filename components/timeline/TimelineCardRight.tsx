@@ -6,7 +6,7 @@ import {
   renderWebsite,
   renderLinkedIn,
   renderProjectUrl,
-} from "./timelineCardLibrary";
+} from "../cardComponentsLibrary";
 
 type TimelineCardRightProps = {
   dateString: string;
@@ -97,7 +97,7 @@ const TimelineCardRight = ({
         <hr />
         <p className="timeline-body-text">{bodyText}</p>
         {/* Skills */}
-        <div className="text-xs md:sm">
+        <div className="text-xs md:sm pt-4">
           {renderSkills(skills, skills.length !== 0)}
         </div>
         <div

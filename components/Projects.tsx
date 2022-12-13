@@ -4,7 +4,7 @@ import ProjectCard from "./projects/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto md:h-screen p-2 flex py-16">
+    <div className="max-w-[var(--max-width-outer)] justify-around items-center m-auto lg:h-full p-2 flex py-16">
       <div className="max-w-[var(--max-width-inner)] gap-8 items-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -23,7 +23,7 @@ const Projects = () => {
           <h2 className="subtitle py-3">What I have built</h2>
         </motion.div>
         {/* Start of project display */}
-        <div className="grid md:grid-cols-2 gap-8 py-5">
+        <div className="grid lg:grid-cols-2 gap-8 py-5">
           {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x">  */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -32,6 +32,8 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              githubUrl="https://www.github.com/"
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
                 src: "/../public/assets/projects/oop/login.jpg",
@@ -50,6 +52,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
                 src: "/../public/assets/projects/spm/home.jpg",
@@ -68,7 +71,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
-              projectUrl="/"
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               imgProps={{
                 src: "/../public/assets/projects/oop/login.jpg",
                 alt: "",
@@ -86,6 +89,7 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              githubUrl="https://www.github.com/"
               projectUrl="/"
               imgProps={{
                 src: "/../public/assets/projects/spm/home.jpg",
@@ -104,6 +108,8 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              githubUrl="https://www.github.com/"
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
                 src: "/../public/assets/projects/oop/login.jpg",
@@ -122,6 +128,8 @@ const Projects = () => {
             viewport={{ once: true }}
           >
             <ProjectCard
+              githubUrl="https://www.github.com/"
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
                 src: "/../public/assets/projects/spm/home.jpg",
