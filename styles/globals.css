@@ -301,8 +301,8 @@ html{
     w-full
     my-2
 
-    border-b-2
-    border-r-2
+    border-b
+    border-r
     transition-all
     duration-300
     
@@ -331,6 +331,7 @@ html{
 
     text-[var(--color-text-secondary-light)]
     border-[var(--color-text-secondary-light)]
+    bg-[var(--color-bg-light)]
     focus:text-[var(--color-bg-light)]
     focus:border-[var(--color-bg-light)]
     focus:bg-[var(--color-text-primary-light)]
@@ -339,6 +340,7 @@ html{
 
     dark:text-[var(--color-text-secondary-dark)]
     dark:border-[var(--color-text-secondary-dark)]
+    dark:bg-[var(--color-bg-darker)]
     focus:dark:text-[var(--color-bg-dark)]
     focus:dark:border-[var(--color-bg-dark)]
     focus:dark:bg-[var(--color-text-primary-dark)]

@@ -187,22 +187,6 @@ export const projects = [
       height: 0,
     },
   },
-  // DBTT
-  {
-    title: "",
-    subtitle: "",
-    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
-    githubUrl: "",
-    skills: [],
-    projectUrl: "/",
-    imgProps: {
-      src: "",
-      imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
-    },
-  },
   // WAD II
   {
     title: "NEXT Team - Basketball Court Traffic App",
@@ -265,6 +249,38 @@ export const projects = [
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "",
     skills: ["Python", "Selenium", "Webscraping"],
+    projectUrl: "/",
+    imgProps: {
+      src: "",
+      imageClassName: "",
+      alt: "",
+      width: 0,
+      height: 0,
+    },
+  },
+  // DBTT
+  {
+    title: "",
+    subtitle: "",
+    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
+    githubUrl: "",
+    skills: [],
+    projectUrl: "/",
+    imgProps: {
+      src: "",
+      imageClassName: "",
+      alt: "",
+      width: 0,
+      height: 0,
+    },
+  },
+  // IDP
+  {
+    title: "",
+    subtitle: "",
+    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
+    githubUrl: "",
+    skills: [],
     projectUrl: "/",
     imgProps: {
       src: "",

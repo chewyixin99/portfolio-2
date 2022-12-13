@@ -23,7 +23,7 @@ const Projects = () => {
           <h2 className="subtitle py-3">What I have built</h2>
         </motion.div>
         {/* Start of project display */}
-        <div className="grid lg:grid-cols-2 gap-8 py-5">
+        <div className="grid lg:grid-cols-2 gap-8 py-5 items-center">
           {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x">  */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ const Projects = () => {
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
-                src: "/../public/assets/projects/spm/home.jpg",
+                src: "/../public/assets/projects/wad2/home.jpg",
                 alt: "",
                 imageClassName: "",
                 width: 500,
@@ -88,7 +88,7 @@ const Projects = () => {
                 some short description this is some short description"
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               imgProps={{
-                src: "/../public/assets/projects/oop/login.jpg",
+                src: "/../public/assets/projects/esd/home.jpg",
                 alt: "",
                 imageClassName: "",
                 width: 500,
@@ -112,32 +112,7 @@ const Projects = () => {
               githubUrl="https://www.github.com/"
               projectUrl="/"
               imgProps={{
-                src: "/../public/assets/projects/spm/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              githubUrl="https://www.github.com/"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/oop/login.jpg",
+                src: "/../public/assets/projects/portfolio2/home.jpg",
                 alt: "",
                 imageClassName: "",
                 width: 500,
@@ -162,7 +137,32 @@ const Projects = () => {
               skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
               projectUrl="/"
               imgProps={{
-                src: "/../public/assets/projects/spm/home.jpg",
+                src: "/../public/assets/projects/ml/home.jpg",
+                alt: "",
+                imageClassName: "",
+                width: 500,
+                height: 500,
+              }}
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <ProjectCard
+              title="Project title"
+              subtitle="Some subtitle"
+              bodyText="
+                this is some short description this is some short description this is
+                some short description this is some short description"
+              githubUrl="https://www.github.com/"
+              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
+              projectUrl="/"
+              imgProps={{
+                src: "/../public/assets/projects/portfolio1/home.jpg",
                 alt: "",
                 imageClassName: "",
                 width: 500,

@@ -25,7 +25,7 @@ const CustomTimeline = () => {
         skills={["Flutter", "Dart", "Firebase", "Telegraf.js"]}
         companyLinkedIn="https://www.linkedin.com/company/questhireahero/"
         companyWebsite="https://quest-inc.co/"
-        projectUrl="/"
+        projectUrl="/quest"
         className="py-5"
         dateString="Aug 21 - Dec 21"
         imgProps={{
@@ -83,7 +83,7 @@ const CustomTimeline = () => {
         ]}
         companyLinkedIn="https://www.linkedin.com/company/govtech-singapore/"
         companyWebsite="https://docs.developer.tech.gov.sg/"
-        projectUrl="/"
+        projectUrl="/govtech"
         className="py-5"
         dateString="May 22 - Aug 22"
         imgProps={{
