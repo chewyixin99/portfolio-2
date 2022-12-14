@@ -13,7 +13,15 @@ const Projects = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h3 className="title uppercase tracking-widest">Projects</h3>
+          <h3 className="title uppercase tracking-widest">
+            <span className="font-tags font-normal color-text-secondary lowercase">
+              {"< "}
+            </span>{" "}
+            Projects
+            <span className="font-tags font-normal color-text-secondary lowercase">
+              {" />"}
+            </span>{" "}
+          </h3>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -25,8 +33,16 @@ const Projects = () => {
         </motion.div>
         {/* Start of project display */}
         <div className="grid lg:grid-cols-2 gap-8 py-5 items-center">
-          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-wide">
-            Personal Projects
+          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest">
+            <p className="title">
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {"{/*  "}
+              </span>{" "}
+              Personal Projects
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {" */}"}
+              </span>{" "}
+            </p>
           </div>
           {projects.map((proj, index) => {
             const {
@@ -64,8 +80,16 @@ const Projects = () => {
               ""
             );
           })}
-          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-wide">
-            Coursework
+          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest">
+            <p className="title">
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {"{/*  "}
+              </span>{" "}
+              Coursework
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {" */}"}
+              </span>{" "}
+            </p>
           </div>
           {projects.map((proj, index) => {
             const {

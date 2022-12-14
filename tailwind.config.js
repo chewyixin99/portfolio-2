@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         primary: ["Quicksand"],
         secondary: ["Montserrat"],
+        tags: ["La Belle Aurore"],
       },
     },
   },

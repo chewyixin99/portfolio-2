@@ -59,7 +59,15 @@ const Contact = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h3 className="title uppercase tracking-widest">Contact me</h3>
+          <h3 className="title uppercase tracking-widest">
+            <span className="font-tags font-normal color-text-secondary lowercase">
+              {"< "}
+            </span>{" "}
+            Contact Me
+            <span className="font-tags font-normal color-text-secondary lowercase">
+              {" />"}
+            </span>{" "}
+          </h3>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}

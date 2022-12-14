@@ -23,7 +23,15 @@ const Skills = () => {
             transition={{ duration: 0.5, delay: 0 }}
             viewport={{ once: true }}
           >
-            <h3 className="title uppercase tracking-widest">Skills</h3>
+            <h3 className="title uppercase tracking-widest">
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {"< "}
+              </span>{" "}
+              Skills
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {" />"}
+              </span>{" "}
+            </h3>
           </motion.div>
           {/* Subtitle */}
           <motion.div

@@ -14,7 +14,15 @@ const About = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="title uppercase tracking-widest">About</h3>
+            <h3 className="title uppercase tracking-widest">
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {"< "}
+              </span>{" "}
+              About
+              <span className="font-tags font-normal color-text-secondary lowercase">
+                {" />"}
+              </span>{" "}
+            </h3>
           </motion.div>
           {/* Subtitle */}
           <motion.div
