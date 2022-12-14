@@ -45,13 +45,15 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          className="ml-5"
-          src="/../public/favicon.ico"
-          alt="/"
-          width="50"
-          height="50"
-        />
+        <Link href={"/"}>
+          <Image
+            className="ml-5"
+            src="/../public/favicon.ico"
+            alt="/"
+            width="50"
+            height="50"
+          />
+        </Link>
 
         {/* Browser Nav */}
         <div>

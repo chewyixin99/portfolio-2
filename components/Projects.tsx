@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./projects/ProjectCard";
+import { projects } from "../data/constants";
 
 const Projects = () => {
   return (
@@ -12,7 +13,7 @@ const Projects = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h3 className="title uppercase tracing-widest">Projects</h3>
+          <h3 className="title uppercase tracking-widest">Projects</h3>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,152 +25,84 @@ const Projects = () => {
         </motion.div>
         {/* Start of project display */}
         <div className="grid lg:grid-cols-2 gap-8 py-5 items-center">
-          {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x">  */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              githubUrl="https://www.github.com/"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/oop/login.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/wad2/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              imgProps={{
-                src: "/../public/assets/projects/esd/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              githubUrl="https://www.github.com/"
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/portfolio2/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              githubUrl="https://www.github.com/"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/ml/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            viewport={{ once: true }}
-          >
-            <ProjectCard
-              title="Project title"
-              subtitle="Some subtitle"
-              bodyText="
-                this is some short description this is some short description this is
-                some short description this is some short description"
-              githubUrl="https://www.github.com/"
-              skills={["ReactJS, VueJS, Typescript, ExpressJS, AWS"]}
-              projectUrl="/"
-              imgProps={{
-                src: "/../public/assets/projects/portfolio1/home.jpg",
-                alt: "",
-                imageClassName: "",
-                width: 500,
-                height: 500,
-              }}
-            />
-          </motion.div>
+          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-wide">
+            Personal Projects
+          </div>
+          {projects.map((proj, index) => {
+            const {
+              id,
+              type,
+              title,
+              subtitle,
+              bodyText,
+              githubUrl,
+              skills,
+              projectUrl,
+              imgProps,
+            } = proj;
+            // const xOffset = index % 2 === 0 ? -100 : 100;
+            return type === "personal" ? (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
+                <ProjectCard
+                  key={id}
+                  title={title}
+                  subtitle={subtitle}
+                  bodyText={bodyText}
+                  githubUrl={githubUrl}
+                  skills={skills}
+                  projectUrl={projectUrl}
+                  imgProps={imgProps}
+                />
+              </motion.div>
+            ) : (
+              ""
+            );
+          })}
+          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-wide">
+            Coursework
+          </div>
+          {projects.map((proj, index) => {
+            const {
+              id,
+              type,
+              title,
+              subtitle,
+              bodyText,
+              githubUrl,
+              skills,
+              projectUrl,
+              imgProps,
+            } = proj;
+            // const xOffset = index % 2 === 0 ? -100 : 100;
+            return type === "coursework" ? (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+              >
+                <ProjectCard
+                  key={id}
+                  title={title}
+                  subtitle={subtitle}
+                  bodyText={bodyText}
+                  githubUrl={githubUrl}
+                  skills={skills}
+                  projectUrl={projectUrl}
+                  imgProps={imgProps}
+                />
+              </motion.div>
+            ) : (
+              ""
+            );
+          })}
         </div>
       </div>
     </div>

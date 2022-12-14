@@ -1,6 +1,7 @@
 export const experiences = [
   // SMU Start
   {
+    id: 1,
     title: "Singapore Management University",
     subtitle: "Student",
     bodyText: `Start point of my coding journey. Prior to this, I have zero knowledge and experience in tech.`,
@@ -20,6 +21,7 @@ export const experiences = [
   },
   // Quest
   {
+    id: 2,
     title: "Quest-Inc",
     subtitle: "Software Engineer Intern",
     bodyText: `First tech-related and part-time internship! Dabbled in 
@@ -37,10 +39,11 @@ export const experiences = [
     className: "py-5",
     companyLinkedIn: "https://www.linkedin.com/company/questhireahero/",
     companyWebsite: "https://quest-inc.co/",
-    projectUrl: "/",
+    projectUrl: "/quest",
   },
   // SMU TA CT
   {
+    id: 3,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText: `Teaching assistant for COR-IS1702 (Computational Thinking).`,
@@ -60,6 +63,7 @@ export const experiences = [
   },
   // SMU TA WAD I
   {
+    id: 4,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText: "Teaching assistant for IS113 (Web Application Development I).",
@@ -79,6 +83,7 @@ export const experiences = [
   },
   // Govtech
   {
+    id: 5,
     title: "GOVTECH Singapore",
     subtitle: "Software Engineer Intern",
     bodyText: `First exposure to a mid-sized firm with mature software development
@@ -96,10 +101,11 @@ export const experiences = [
     className: "py-5",
     companyLinkedIn: "https://www.linkedin.com/company/govtech-singapore/",
     companyWebsite: "https://docs.developer.tech.gov.sg/",
-    projectUrl: "/",
+    projectUrl: "/govtech",
   },
   // SMU TA DBTT
   {
+    id: 6,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText:
@@ -119,6 +125,7 @@ export const experiences = [
     projectUrl: "",
   },
   {
+    id: 7,
     title: "JP Morgan Chase & Co.",
     subtitle: "Software Engineer Intern",
     bodyText: "Have yet to start",
@@ -130,17 +137,19 @@ export const experiences = [
       alt: "jpmc",
       classNameImg: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
-    skills: ["Digital Transformation"],
+    skills: [],
     className: "py-5",
-    companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
-    companyWebsite: "https://www.jpmorganchase.com/",
-    projectUrl: "",
+    // companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
+    // companyWebsite: "https://www.jpmorganchase.com/",
+    // projectUrl: "",
   },
 ];
 
 export const projects = [
   // NextJS Portfolio
   {
+    id: 1,
+    type: "personal",
     title: "NextJS Portfolio",
     subtitle: "Learning tech by applying",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -148,15 +157,17 @@ export const projects = [
     skills: ["NextJS", "ReactJS", "Tailwind CSS", "TypeScript"],
     projectUrl: "/",
     imgProps: {
-      src: "",
-      imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      src: "/../public/assets/projects/portfolio2/home.jpg",
+      imageClassName: "portfolio2",
+      alt: "oop",
+      width: 500,
+      height: 500,
     },
   },
   // OOP
   {
+    id: 2,
+    type: "coursework",
     title: "Singapore Sports School Booking Application",
     subtitle: "Coursework for IS442 OOP",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -164,15 +175,17 @@ export const projects = [
     skills: ["Java", "Springboot", "VueJS"],
     projectUrl: "/",
     imgProps: {
-      src: "",
+      src: "/../public/assets/projects/oop/login.jpg",
       imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      alt: "oop",
+      width: 500,
+      height: 500,
     },
   },
   // SPM
   {
+    id: 3,
+    type: "coursework",
     title: "Learning Journey Planning System",
     subtitle: "Coursework for IS212 SPM",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -180,15 +193,17 @@ export const projects = [
     skills: ["ReactJS", "Python", "Flask"],
     projectUrl: "/",
     imgProps: {
-      src: "",
-      imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      src: "/../public/assets/projects/spm/home.jpg",
+      imageClassName: "spm",
+      alt: "spm",
+      width: 500,
+      height: 500,
     },
   },
   // WAD II
   {
+    id: 4,
+    type: "coursework",
     title: "NEXT Team - Basketball Court Traffic App",
     subtitle: "Coursework for IS216 WAD II",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -196,15 +211,17 @@ export const projects = [
     skills: ["VueJS", "Tailwind CSS", "Firebase"],
     projectUrl: "/",
     imgProps: {
-      src: "",
+      src: "/../public/assets/projects/wad2/home.jpg",
       imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      alt: "wad2",
+      width: 500,
+      height: 500,
     },
   },
   // ESD
   {
+    id: 5,
+    type: "coursework",
     title: "Hawker Dummy Payment System",
     subtitle: "Coursework for IS213 ESD",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -219,15 +236,17 @@ export const projects = [
     ],
     projectUrl: "/",
     imgProps: {
-      src: "",
+      src: "/../public/assets/projects/esd/home.jpg",
       imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      alt: "esd",
+      width: 500,
+      height: 500,
     },
   },
   // HTML/PHP Portfolio
   {
+    id: 6,
+    type: "personal",
     title: "First Portfolio",
     subtitle: "Attempt at coding a website from scratch",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -235,15 +254,53 @@ export const projects = [
     skills: ["HTML", "CSS", "Javascript", "PHP"],
     projectUrl: "/",
     imgProps: {
-      src: "",
+      src: "/../public/assets/projects/portfolio1/home.jpg",
       imageClassName: "",
+      alt: "portfolio1",
+      width: 500,
+      height: 500,
+    },
+  },
+  // DBTT
+  {
+    id: 7,
+    type: "coursework",
+    title: "Snip Avenue Digital Transformation Plan",
+    subtitle: "Coursework for IS215 DBTT",
+    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
+    githubUrl: "",
+    skills: ["Python", "Analytics", "Streamlit API"],
+    projectUrl: "/",
+    imgProps: {
+      src: "/../public/assets/projects/dbtt/home.jpg",
+      imageClassName: "dbtt",
       alt: "",
-      width: 0,
-      height: 0,
+      width: 500,
+      height: 500,
+    },
+  },
+  // IDP
+  {
+    id: 8,
+    type: "coursework",
+    title: "Group Project Enrollment Prototype",
+    subtitle: "Coursework for IS211 IDP",
+    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
+    githubUrl: "",
+    skills: ["Figma", "UI Design", "Usability Testing", "Prototyping"],
+    projectUrl: "/",
+    imgProps: {
+      src: "/../public/assets/projects/idp/home.jpg",
+      imageClassName: "idp",
+      alt: "idp",
+      width: 500,
+      height: 500,
     },
   },
   // Selenium booking bot
   {
+    id: 9,
+    type: "personal",
     title: "SMU Facility Booking System",
     subtitle: "Telegram bot for SMU FBS",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -251,43 +308,11 @@ export const projects = [
     skills: ["Python", "Selenium", "Webscraping"],
     projectUrl: "/",
     imgProps: {
-      src: "",
+      src: "/../public/assets/projects/fbsbot/home.jpg",
       imageClassName: "",
       alt: "",
-      width: 0,
-      height: 0,
-    },
-  },
-  // DBTT
-  {
-    title: "",
-    subtitle: "",
-    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
-    githubUrl: "",
-    skills: [],
-    projectUrl: "/",
-    imgProps: {
-      src: "",
-      imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
-    },
-  },
-  // IDP
-  {
-    title: "",
-    subtitle: "",
-    bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
-    githubUrl: "",
-    skills: [],
-    projectUrl: "/",
-    imgProps: {
-      src: "",
-      imageClassName: "",
-      alt: "",
-      width: 0,
-      height: 0,
+      width: 500,
+      height: 500,
     },
   },
 ];
