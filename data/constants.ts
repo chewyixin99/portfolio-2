@@ -7,7 +7,7 @@ export const experiences = [
     bodyText: `Start point of my coding journey. Prior to this, I have zero knowledge and experience in tech.`,
     dateString: "2020 - Present",
     imgProps: {
-      src: "/../public/assets/timeline/smu.png",
+      src: "/assets/timeline/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -29,7 +29,7 @@ export const experiences = [
       to the software development process and lifecycle!`,
     dateString: "Aug 21 - Dec 21",
     imgProps: {
-      src: "/../public/assets/timeline/quest.png",
+      src: "/assets/timeline/quest.png",
       width: 125,
       height: 125,
       alt: "quest",
@@ -49,7 +49,7 @@ export const experiences = [
     bodyText: `Teaching assistant for COR-IS1702 (Computational Thinking).`,
     dateString: "Aug 21 - Dec 21",
     imgProps: {
-      src: "/../public/assets/timeline/smu.png",
+      src: "/assets/timeline/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -69,7 +69,7 @@ export const experiences = [
     bodyText: "Teaching assistant for IS113 (Web Application Development I).",
     dateString: "Jan 22 - May 22",
     imgProps: {
-      src: "/../public/assets/timeline/smu.png",
+      src: "/assets/timeline/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -91,7 +91,7 @@ export const experiences = [
       Definitely learnt a lot, exciting times!`,
     dateString: "May 22 - Aug 22",
     imgProps: {
-      src: "/../public/assets/timeline/govtech.png",
+      src: "/assets/timeline/govtech.png",
       width: 100,
       height: 100,
       alt: "govtech",
@@ -112,7 +112,7 @@ export const experiences = [
       "Teaching assistant for IS215 (Digital Business Technology & Transformation).",
     dateString: "Jan 23 - May 23",
     imgProps: {
-      src: "/../public/assets/timeline/smu.png",
+      src: "/assets/timeline/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -131,7 +131,7 @@ export const experiences = [
     bodyText: "Have yet to start",
     dateString: "May 23 - Aug 23",
     imgProps: {
-      src: "/../public/assets/timeline/jpmc.png",
+      src: "/assets/timeline/jpmc.png",
       width: 150,
       height: 150,
       alt: "jpmc",
@@ -157,7 +157,7 @@ export const projects = [
     skills: ["NextJS", "ReactJS", "Tailwind CSS", "TypeScript"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/portfolio2/home.jpg",
+      src: "/assets/projects/portfolio2/home.jpg",
       imageClassName: "portfolio2",
       alt: "oop",
       width: 500,
@@ -175,7 +175,7 @@ export const projects = [
     skills: ["Java", "Springboot", "VueJS"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/oop/login.jpg",
+      src: "/assets/projects/oop/login.jpg",
       imageClassName: "",
       alt: "oop",
       width: 500,
@@ -193,7 +193,7 @@ export const projects = [
     skills: ["ReactJS", "Python", "Flask"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/spm/home.jpg",
+      src: "/assets/projects/spm/home.jpg",
       imageClassName: "spm",
       alt: "spm",
       width: 500,
@@ -211,7 +211,7 @@ export const projects = [
     skills: ["VueJS", "Tailwind CSS", "Firebase"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/wad2/home.jpg",
+      src: "/assets/projects/wad2/home.jpg",
       imageClassName: "",
       alt: "wad2",
       width: 500,
@@ -236,7 +236,7 @@ export const projects = [
     ],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/esd/home.jpg",
+      src: "/assets/projects/esd/home.jpg",
       imageClassName: "",
       alt: "esd",
       width: 500,
@@ -254,7 +254,7 @@ export const projects = [
     skills: ["HTML", "CSS", "Javascript", "PHP"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/portfolio1/home.jpg",
+      src: "/assets/projects/portfolio1/home.jpg",
       imageClassName: "",
       alt: "portfolio1",
       width: 500,
@@ -272,7 +272,7 @@ export const projects = [
     skills: ["Python", "Analytics", "Streamlit API"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/dbtt/home.jpg",
+      src: "/assets/projects/dbtt/home.jpg",
       imageClassName: "dbtt",
       alt: "",
       width: 500,
@@ -290,7 +290,7 @@ export const projects = [
     skills: ["Figma", "UI Design", "Usability Testing", "Prototyping"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/idp/home.jpg",
+      src: "/assets/projects/idp/home.jpg",
       imageClassName: "idp",
       alt: "idp",
       width: 500,
@@ -308,7 +308,7 @@ export const projects = [
     skills: ["Python", "Selenium", "Webscraping"],
     projectUrl: "/",
     imgProps: {
-      src: "/../public/assets/projects/fbsbot/home.jpg",
+      src: "/assets/projects/fbsbot/home.jpg",
       imageClassName: "",
       alt: "",
       width: 500,

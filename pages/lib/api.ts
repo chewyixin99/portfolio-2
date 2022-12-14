@@ -3,7 +3,7 @@ type ContactFormData = {
   subject: string;
   email: string;
   message: string;
-}
+};
 
 export const sendContactForm = async (data: ContactFormData) =>
   fetch("/api/contact", {
@@ -15,7 +15,7 @@ export const sendContactForm = async (data: ContactFormData) =>
     },
   }).then((res) => {
     if (!res.ok) {
-      throw new Error("Failed to send message.")
+      throw new Error("Failed to send message.");
     }
-    return res.json()
+    return res.json();
   });

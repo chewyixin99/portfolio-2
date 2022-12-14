@@ -29,9 +29,15 @@ const Main = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="uppercase text-base tracking-widest title"
+            className="uppercase text-base tracking-widest title flex justify-center"
           >
+            <span className="mr-2 font-tags font-normal color-text-secondary lowercase">
+              {"<p>"}
+            </span>{" "}
             <TypewriterComponent options={typewriterOptions} />
+            <span className="ml-2 font-tags font-normal color-text-secondary lowercase">
+              {" </p>"}
+            </span>{" "}
           </motion.div>
           {/* Title */}
           <motion.div

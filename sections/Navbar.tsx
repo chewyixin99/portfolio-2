@@ -46,13 +46,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
-          <Image
-            className="ml-5"
-            src="/../public/favicon.ico"
-            alt="/"
-            width="50"
-            height="50"
-          />
+          <p className="font-tags ml-5 text-2xl">{"< yixin />"}</p>
         </Link>
 
         {/* Browser Nav */}
@@ -135,12 +129,7 @@ const Navbar = () => {
             viewport={{ once: true }}
           >
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/favicon.ico"
-                alt="/"
-                width={50}
-                height={50}
-              />
+              <p className="font-tags text-2xl">{"< yixin />"}</p>
               <div
                 onClick={handleNav}
                 className="rounded-icon color-text-primary"
