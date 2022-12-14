@@ -26,7 +26,7 @@ type ImageProps = {
   src: string;
   width: number;
   height: number;
-  classNameImg?: string;
+  imageClassName?: string;
 };
 
 const TimelineCardRight = ({
@@ -41,7 +41,7 @@ const TimelineCardRight = ({
   companyWebsite = "",
   projectUrl = "",
 }: TimelineCardRightProps) => {
-  const { alt, src, width, height, classNameImg } = imgProps;
+  const { alt, src, width, height, imageClassName } = imgProps;
   return (
     <div className={`lg:grid grid-cols-12 gap-8 items-center ${className}`}>
       {/* image / logo */}
@@ -57,7 +57,7 @@ const TimelineCardRight = ({
           src={src}
           width={width}
           height={height}
-          className={classNameImg}
+          className={imageClassName}
         />
       </motion.div>
       {/* year */}
@@ -85,7 +85,7 @@ const TimelineCardRight = ({
               src={src}
               width={width}
               height={height}
-              className={classNameImg}
+              className={imageClassName}
             />
           </div>
           <div className="text-right lg:text-left">
