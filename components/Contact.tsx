@@ -81,14 +81,55 @@ const Contact = () => {
         </motion.div>
 
         {/* Start of form */}
-        <form className="my-5">
-          <div>
-            <div className="flex justify-between">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <form className="my-5">
+            <div>
+              <div className="flex justify-between">
+                <input
+                  type="text"
+                  className="contact-input mr-3"
+                  placeholder="Name"
+                  {...register("name", {
+                    required: "required",
+                    disabled: loading,
+                    pattern: {
+                      // no whitespace only
+                      value: /[^\s-]/,
+                      message: "invalid input",
+                    },
+                  })}
+                />
+                <input
+                  type="text"
+                  className="contact-input"
+                  placeholder="Email"
+                  {...register("email", {
+                    required: "required",
+                    disabled: loading,
+                    pattern: {
+                      // valid email regex checking
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "invalid email address",
+                    },
+                  })}
+                />
+              </div>
+              <div className="flex justify-start">
+                <p className="error-msg">{errors.name?.message}</p>
+                <p className="error-msg">{errors.email?.message}</p>
+              </div>
+            </div>
+            <div>
               <input
                 type="text"
-                className="contact-input mr-3"
-                placeholder="Name"
-                {...register("name", {
+                className="contact-input"
+                placeholder="Subject"
+                {...register("subject", {
                   required: "required",
                   disabled: loading,
                   pattern: {
@@ -98,76 +139,42 @@ const Contact = () => {
                   },
                 })}
               />
-              <input
-                type="text"
+              <p className="error-msg">{errors.subject?.message}</p>
+            </div>
+            <div>
+              <textarea
                 className="contact-input"
-                placeholder="Email"
-                {...register("email", {
+                placeholder="Message"
+                rows={4}
+                {...register("message", {
                   required: "required",
                   disabled: loading,
                   pattern: {
-                    // valid email regex checking
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: "invalid email address",
+                    // no whitespace only
+                    value: /[^\s-]/,
+                    message: "invalid input",
                   },
                 })}
               />
+              <p className="error-msg">{errors.message?.message}</p>
             </div>
-            <div className="flex justify-start">
-              <p className="error-msg">{errors.name?.message}</p>
-              <p className="error-msg">{errors.email?.message}</p>
-            </div>
-          </div>
-          <div>
-            <input
-              type="text"
-              className="contact-input"
-              placeholder="Subject"
-              {...register("subject", {
-                required: "required",
-                disabled: loading,
-                pattern: {
-                  // no whitespace only
-                  value: /[^\s-]/,
-                  message: "invalid input",
-                },
-              })}
-            />
-            <p className="error-msg">{errors.subject?.message}</p>
-          </div>
-          <div>
-            <textarea
-              className="contact-input"
-              placeholder="Message"
-              rows={4}
-              {...register("message", {
-                required: "required",
-                disabled: loading,
-                pattern: {
-                  // no whitespace only
-                  value: /[^\s-]/,
-                  message: "invalid input",
-                },
-              })}
-            />
-            <p className="error-msg">{errors.message?.message}</p>
-          </div>
-          <div className="flex justify-end">
-            {/* <button type="submit" className="submit-button">
+            <div className="flex justify-end">
+              {/* <button type="submit" className="submit-button">
               Send message!
             </button> */}
-            <LoadingButton
-              loading={loading}
-              loadingPosition="end"
-              onClick={handleSubmit(onSubmit)}
-              endIcon={<IoMdSend />}
-              variant="contained"
-              className="submit-button"
-            >
-              {loading ? "Sending" : "Send message"}&nbsp;
-            </LoadingButton>
-          </div>
-        </form>
+              <LoadingButton
+                loading={loading}
+                loadingPosition="end"
+                onClick={handleSubmit(onSubmit)}
+                endIcon={<IoMdSend />}
+                variant="contained"
+                className="submit-button"
+              >
+                {loading ? "Sending" : "Send message"}&nbsp;
+              </LoadingButton>
+            </div>
+          </form>
+        </motion.div>
       </div>
     </div>
   );

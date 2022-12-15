@@ -1,5 +1,6 @@
 import React from "react";
-import { experiences, ExperienceType } from "../data/constants";
+import { experiences } from "../data/constants";
+import { ExperienceType } from "../data/types";
 import { AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,7 +33,7 @@ const govtech = ({
         {/* Title, subtitle, date */}
         <div>
           <h3 className="py-3 title">{title}</h3>
-          <p className="py-3 subtitle text-xl">
+          <p className="pb-3 subtitle text-xl">
             My time at the company as an intern
           </p>
           <p className="pb-3">{dateString}</p>
