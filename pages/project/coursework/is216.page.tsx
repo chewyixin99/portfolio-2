@@ -28,8 +28,8 @@ const is216 = ({
   const showProject = projectUrl.length !== 0;
   const showDivider = showSourceCode && showProject;
   return (
-    <div className="w-full h-full min-h-screen">
-      <div className="max-w-[var(--max-width-outer)] pt-[100px] mx-auto px-5">
+    <div className="project-page-outer-container">
+      <div className="project-page-inner-container">
         {/* Title, subtitle, date */}
         <div>
           <h1 className="py-3 title">{title}</h1>

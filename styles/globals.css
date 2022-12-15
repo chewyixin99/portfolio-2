@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 html{
-  /* --scroll-behavior: smooth!important;
-  scroll-behavior: smooth!important; */
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
   scroll-padding-top: 60px;
   /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
@@ -363,6 +363,22 @@ html{
     text-[var(--color-bg-light)]
     dark:bg-black
     dark:text-[var(--color-text-secondary-dark)]
+  }
+
+  /* Project / Experience page styles */
+  .project-page-outer-container {
+    @apply
+    w-full 
+    h-full 
+    min-h-screen
+  }
+
+  .project-page-inner-container {
+    @apply
+    max-w-[var(--max-width-outer)] 
+    pt-[100px] 
+    pb-[200px]
+    mx-auto px-5
   }
 
 }
