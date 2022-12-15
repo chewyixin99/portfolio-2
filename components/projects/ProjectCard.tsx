@@ -8,8 +8,8 @@ import {
 } from "../cardComponentsLibrary";
 
 type ProjectCardProps = {
-  projectObject: ProjectType
-}
+  projectObject: ProjectType;
+};
 
 const ProjectCard = ({ projectObject }: ProjectCardProps) => {
   const {

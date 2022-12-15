@@ -75,7 +75,7 @@ export const renderGithub = (gitHubUrl: string, showGitHub: boolean) => {
 export const renderProjectPath = (
   projectUrl: string,
   showProjectUrl: boolean,
-  target: string = "_blank"
+  target: string = "_self"
 ) => {
   if (!showProjectUrl) {
     return "";

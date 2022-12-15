@@ -48,7 +48,7 @@ const Main = () => {
           >
             <h1 className="py-5">
               <span>Hi, I&lsquo;m </span>
-              <span className="color-text-primary">Yi Xin</span>
+              <span className="color-text-primary font-tags">Yi Xin</span>
             </h1>
           </motion.div>
           {/* Subtitle */}

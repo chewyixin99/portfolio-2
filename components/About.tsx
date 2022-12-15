@@ -49,7 +49,7 @@ const About = () => {
               </span>
               .
             </p>
-            <p className="pb-3">
+            <p className="pb-3 font-tags">
               <em className="color-text-primary">
                 &quot;To improve is to change; to be perfect is to change
                 often.&quot;
