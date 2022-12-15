@@ -227,6 +227,7 @@ export default function TagSphere(props: any) {
         createItem(text, index, texts.length, size, itemHooks[index])
       )
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [texts]);
 
   const containerRef = useRef(null);
@@ -327,11 +328,13 @@ export default function TagSphere(props: any) {
   useEffect(() => {
     init();
     setItems((items: any) => [...items]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     const animationFrame = requestAnimationFrame(next);
     return () => cancelAnimationFrame(animationFrame);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mouseX, mouseY, lessSpeed, active, items, props.radius]);
 
   return (
