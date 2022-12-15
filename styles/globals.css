@@ -357,4 +357,12 @@ html{
     font-bold
   }
 
+  .footer {
+    @apply
+    bg-gray-700
+    text-[var(--color-bg-light)]
+    dark:bg-black
+    dark:text-[var(--color-text-secondary-dark)]
+  }
+
 }
