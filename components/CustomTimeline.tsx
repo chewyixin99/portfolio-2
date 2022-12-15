@@ -15,42 +15,43 @@ const CustomTimeline = () => {
           dateString,
           imgProps,
           skills,
-          className,
           companyLinkedIn,
           companyWebsite,
           projectUrl,
         } = experience;
         if (index % 2 === 0) {
           return (
-            <TimelineCardLeft
-              key={id}
+            <div className="py-5" key={index}>
+              <TimelineCardLeft
+                id={id}
+                title={title}
+                subtitle={subtitle}
+                bodyText={bodyText}
+                dateString={dateString}
+                imgProps={imgProps}
+                skills={skills}
+                companyLinkedIn={companyLinkedIn}
+                companyWebsite={companyWebsite}
+                projectUrl={projectUrl}
+              />
+            </div>
+          );
+        }
+        return (
+          <div className="py-5" key={index}>
+            <TimelineCardRight
+              id={id}
               title={title}
               subtitle={subtitle}
               bodyText={bodyText}
               dateString={dateString}
               imgProps={imgProps}
               skills={skills}
-              className={className}
               companyLinkedIn={companyLinkedIn}
               companyWebsite={companyWebsite}
               projectUrl={projectUrl}
             />
-          );
-        }
-        return (
-          <TimelineCardRight
-            key={id}
-            title={title}
-            subtitle={subtitle}
-            bodyText={bodyText}
-            dateString={dateString}
-            imgProps={imgProps}
-            skills={skills}
-            className={className}
-            companyLinkedIn={companyLinkedIn}
-            companyWebsite={companyWebsite}
-            projectUrl={projectUrl}
-          />
+          </div>
         );
       })}
     </div>

@@ -1,36 +1,4 @@
-export type ImagePropsType = {
-  src: string;
-  width: number;
-  height: number;
-  alt: string;
-  imageClassName: string;
-};
-
-export type ExperienceType = {
-  id: number;
-  title: string;
-  subtitle: string;
-  bodyText: string;
-  dateString: string;
-  imgProps: ImagePropsType;
-  skills: string[];
-  className: string;
-  companyLinkedIn: string;
-  companyWebsite: string;
-  projectUrl: string;
-};
-
-export type ProjectType = {
-  id: number;
-  type: string;
-  title: string;
-  subtitle: string;
-  bodyText: string;
-  githubUrl: string;
-  skills: string[];
-  projectUrl: string;
-  imgProps: ImagePropsType;
-};
+import { ExperienceType, ProjectType } from "./types";
 
 export const experiences: ExperienceType[] = [
   // SMU Start
@@ -48,7 +16,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
     skills: [],
-    className: "py-5",
     companyLinkedIn: "",
     companyWebsite: "",
     projectUrl: "",
@@ -70,7 +37,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "",
     },
     skills: ["Flutter", "Dart", "Firebase", "Telegraf.js"],
-    className: "py-5",
     companyLinkedIn: "https://www.linkedin.com/company/questhireahero/",
     companyWebsite: "https://quest-inc.co/",
     projectUrl: "/quest",
@@ -90,7 +56,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
     skills: ["Python", "Data Structures & Algorithms"],
-    className: "py-5",
     companyLinkedIn: "",
     companyWebsite: "",
     projectUrl: "",
@@ -110,7 +75,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
     skills: ["HTML", "PHP", "MySQL"],
-    className: "py-5",
     companyLinkedIn: "",
     companyWebsite: "",
     projectUrl: "",
@@ -132,7 +96,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "",
     },
     skills: ["ReactJs", "VueJs", "ExpressJs", "Jest", "TypeScript", "Docker"],
-    className: "py-5",
     companyLinkedIn: "https://www.linkedin.com/company/govtech-singapore/",
     companyWebsite: "https://docs.developer.tech.gov.sg/",
     projectUrl: "/govtech",
@@ -153,7 +116,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
     skills: ["Digital Transformation"],
-    className: "py-5",
     companyLinkedIn: "",
     companyWebsite: "",
     projectUrl: "",
@@ -172,7 +134,6 @@ export const experiences: ExperienceType[] = [
       imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
     },
     skills: [],
-    className: "py-5",
     companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
     companyWebsite: "https://www.jpmorganchase.com/",
     projectUrl: "",

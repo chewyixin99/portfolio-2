@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ProjectType } from "../../data/constants";
+import { ProjectType } from "../../data/types";
 import {
   renderGithub,
   renderSkills,

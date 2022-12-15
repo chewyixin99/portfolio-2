@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExperienceType } from "../../data/constants";
+import { ExperienceType } from "../../data/types";
 import {
   renderSkills,
   renderWebsite,
@@ -15,7 +15,6 @@ const TimelineCardRight = ({
   title,
   subtitle,
   bodyText,
-  className = "",
   skills = [],
   companyLinkedIn = "",
   companyWebsite = "",
@@ -23,7 +22,7 @@ const TimelineCardRight = ({
 }: ExperienceType) => {
   const { alt, src, width, height, imageClassName } = imgProps;
   return (
-    <div className={`lg:grid grid-cols-12 gap-8 items-center ${className}`}>
+    <div className={`lg:grid grid-cols-12 gap-8 items-center`}>
       {/* image / logo */}
       <motion.div
         initial={{ opacity: 0, x: -100 }}
