@@ -71,7 +71,8 @@ export const renderGithub = (gitHubUrl: string, showGitHub: boolean) => {
   );
 };
 
-export const renderProjectUrl = (
+// project path is the url to deployed projects
+export const renderProjectPath = (
   projectUrl: string,
   showProjectUrl: boolean,
   target: string = "_blank"

@@ -39,7 +39,7 @@ export const experiences: ExperienceType[] = [
     skills: ["Flutter", "Dart", "Firebase", "Telegraf.js"],
     companyLinkedIn: "https://www.linkedin.com/company/questhireahero/",
     companyWebsite: "https://quest-inc.co/",
-    projectUrl: "/quest",
+    projectUrl: "/experience/quest",
   },
   // SMU TA CT
   {
@@ -98,7 +98,7 @@ export const experiences: ExperienceType[] = [
     skills: ["ReactJs", "VueJs", "ExpressJs", "Jest", "TypeScript", "Docker"],
     companyLinkedIn: "https://www.linkedin.com/company/govtech-singapore/",
     companyWebsite: "https://docs.developer.tech.gov.sg/",
-    projectUrl: "/govtech",
+    projectUrl: "/experience/govtech",
   },
   // SMU TA DBTT
   {
@@ -145,12 +145,14 @@ export const projects: ProjectType[] = [
   {
     id: 1,
     type: "personal",
+    dateString: "Dec 2022",
     title: "NextJS Portfolio",
     subtitle: "Learning tech by applying",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "https://github.com/chewyixin99/portfolio-2",
     skills: ["NextJS", "ReactJS", "Tailwind CSS", "TypeScript"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/personal/portfolio2",
     imgProps: {
       src: "/assets/projects/portfolio2/home.jpg",
       imageClassName: "",
@@ -163,14 +165,16 @@ export const projects: ProjectType[] = [
   {
     id: 2,
     type: "coursework",
+    dateString: "Aug 2022 - Dec 2022",
     title: "Singapore Sports School Booking Application",
     subtitle: "Coursework for IS442 OOP",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "https://github.com/chewyixin99/is442-oop-22",
     skills: ["Java", "Springboot", "VueJS"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is442",
     imgProps: {
-      src: "/assets/projects/oop/login.jpg",
+      src: "/assets/projects/oop/home.jpg",
       imageClassName: "",
       alt: "oop",
       width: 500,
@@ -181,12 +185,14 @@ export const projects: ProjectType[] = [
   {
     id: 3,
     type: "coursework",
+    dateString: "Aug 2022 - Dec 2022",
     title: "Learning Journey Planning System",
     subtitle: "Coursework for IS212 SPM",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "https://github.com/chewyixin99/is212-spm-22",
     skills: ["ReactJS", "Python", "Flask"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is212",
     imgProps: {
       src: "/assets/projects/spm/home.jpg",
       imageClassName: "",
@@ -199,12 +205,14 @@ export const projects: ProjectType[] = [
   {
     id: 4,
     type: "coursework",
+    dateString: "Aug 2021 - Dec 2021",
     title: "NEXT Team - Basketball Court Traffic App",
     subtitle: "Coursework for IS216 WAD II",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "https://github.com/chewyixin99/is216-wad2-21",
     skills: ["VueJS", "Tailwind CSS", "Firebase"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is216",
     imgProps: {
       src: "/assets/projects/wad2/home.jpg",
       imageClassName: "",
@@ -217,6 +225,7 @@ export const projects: ProjectType[] = [
   {
     id: 5,
     type: "coursework",
+    dateString: "Jan 2022 - May 2022",
     title: "Hawker Dummy Payment System",
     subtitle: "Coursework for IS213 ESD",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
@@ -229,7 +238,8 @@ export const projects: ProjectType[] = [
       "Kong API Gateway",
       "VueJS",
     ],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is213",
     imgProps: {
       src: "/assets/projects/esd/home.jpg",
       imageClassName: "",
@@ -242,12 +252,14 @@ export const projects: ProjectType[] = [
   {
     id: 6,
     type: "personal",
+    dateString: "Dec 2020",
     title: "First Portfolio",
     subtitle: "Attempt at coding a website from scratch",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "https://github.com/chewyixin99/portfolio-1",
     skills: ["HTML", "CSS", "Javascript", "PHP"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/personal/portfolio1",
     imgProps: {
       src: "/assets/projects/portfolio1/home.jpg",
       imageClassName: "",
@@ -260,12 +272,14 @@ export const projects: ProjectType[] = [
   {
     id: 7,
     type: "coursework",
+    dateString: "Jan 2022 - May 2022",
     title: "Snip Avenue Digital Transformation Plan",
     subtitle: "Coursework for IS215 DBTT",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "",
     skills: ["Python", "Analytics", "Streamlit API"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is215",
     imgProps: {
       src: "/assets/projects/dbtt/home.jpg",
       imageClassName: "",
@@ -278,12 +292,14 @@ export const projects: ProjectType[] = [
   {
     id: 8,
     type: "coursework",
+    dateString: "Aug 2021 - Dec 2021",
     title: "Group Project Enrollment Prototype",
     subtitle: "Coursework for IS211 IDP",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "",
     skills: ["Figma", "UI Design", "Usability Testing", "Prototyping"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/coursework/is211",
     imgProps: {
       src: "/assets/projects/idp/home.jpg",
       imageClassName: "",
@@ -296,12 +312,14 @@ export const projects: ProjectType[] = [
   {
     id: 9,
     type: "personal",
+    dateString: "Jul 2021",
     title: "SMU Facility Booking System",
     subtitle: "Telegram bot for SMU FBS",
     bodyText: `Some description for this project. Some description for this project. Some description for this project.`,
     githubUrl: "",
     skills: ["Python", "Selenium", "Webscraping"],
-    projectUrl: "/",
+    projectUrl: "",
+    projectPath: "/project/personal/smufbs",
     imgProps: {
       src: "/assets/projects/fbsbot/home.jpg",
       imageClassName: "",

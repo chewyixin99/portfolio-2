@@ -22,11 +22,13 @@ export type ExperienceType = {
 export type ProjectType = {
   id: number;
   type: string;
+  dateString: string;
   title: string;
   subtitle: string;
   bodyText: string;
   githubUrl: string;
   skills: string[];
   projectUrl: string;
+  projectPath: string;
   imgProps: ImagePropsType;
 };

@@ -4,18 +4,24 @@ import { ProjectType } from "../../data/types";
 import {
   renderGithub,
   renderSkills,
-  renderProjectUrl,
+  renderProjectPath,
 } from "../cardComponentsLibrary";
 
-const ProjectCard = ({
-  githubUrl = "",
-  skills = [],
-  projectUrl = "",
-  imgProps,
-  title,
-  subtitle,
-  bodyText,
-}: ProjectType) => {
+type ProjectCardProps = {
+  projectObject: ProjectType
+}
+
+const ProjectCard = ({ projectObject }: ProjectCardProps) => {
+  const {
+    githubUrl,
+    skills,
+    dateString,
+    projectPath,
+    imgProps,
+    title,
+    subtitle,
+    bodyText,
+  } = projectObject;
   const { src, imageClassName, alt, width, height } = imgProps;
 
   return (
@@ -30,6 +36,7 @@ const ProjectCard = ({
       <div className="hidden group-hover:block absolute p-3 ">
         <p className="project-title font-bold">{title}</p>
         <p className="project-subtitle">{subtitle}</p>
+        <p className="text-xs pb-2">{dateString}</p>
         <hr />
         <p className="project-body-text">{bodyText}</p>
         {/* Skills section */}
@@ -44,7 +51,7 @@ const ProjectCard = ({
           </div>
           {/* Project url */}
           <div className="project-link project-body-text">
-            {renderProjectUrl(projectUrl, projectUrl.length !== 0)}
+            {renderProjectPath(projectPath, projectPath.length !== 0)}
           </div>
         </div>
       </div>

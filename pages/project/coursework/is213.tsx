@@ -1,65 +1,67 @@
 import React from "react";
-import { experiences } from "../data/constants";
-import { ExperienceType } from "../data/types";
-import { AiFillLinkedin } from "react-icons/ai";
+import { projects } from "../../../data/constants";
+import { ProjectType } from "../../../data/types";
+import { AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
 
 // Only runs at build time
 export const getStaticProps = () => {
-  const exp = experiences
-    .filter((e) => {
-      return e.projectUrl === "/govtech";
+  const proj = projects
+    .filter((p) => {
+      return p.projectPath === "/project/coursework/is213";
     })
     .shift();
   return {
-    props: exp,
+    props: proj,
   };
 };
 
-const govtech = ({
+const is213 = ({
   title,
   dateString,
   skills,
-  companyLinkedIn,
-  companyWebsite,
-}: ExperienceType) => {
-  const showLinkedIn = companyLinkedIn.length !== 0;
-  const showWebsite = companyWebsite.length !== 0;
-  const showDivider = showLinkedIn && showWebsite;
+  githubUrl,
+  projectUrl,
+}: ProjectType) => {
+  const showSourceCode = githubUrl.length !== 0;
+  const showProject = projectUrl.length !== 0;
+  const showDivider = showSourceCode && showProject;
   return (
     <div className="w-full h-full min-h-screen">
       <div className="max-w-[var(--max-width-outer)] pt-[100px] mx-auto px-5">
         {/* Title, subtitle, date */}
         <div>
-          <h3 className="py-3 title">{title}</h3>
-          <p className="pb-3 subtitle text-xl">
-            My time at the company as an intern
-          </p>
+          <h1 className="py-3 title">{title}</h1>
+          <h3 className="pb-3 subtitle">My time at the company as an intern</h3>
           <p className="pb-3">{dateString}</p>
           {/* Website and LinkedIn */}
-          <p className="py-3 flex items-center">
-            {showWebsite ? (
+          <p
+            className={`${
+              showSourceCode || showProject ? "py-3" : ""
+            } flex items-center`}
+          >
+            {showSourceCode ? (
               <Link
-                className="timeline-link mr-3"
+                className="timeline-link mr-3 flex items-center"
                 rel="noopener noreferrer"
                 target={"_blank"}
-                href={companyWebsite}
+                href={githubUrl}
               >
-                Website
+                Source Code <AiFillGithub className="ml-1 text-2xl" />
               </Link>
             ) : (
               ""
             )}
             {showDivider ? "|" : ""}
-            {showLinkedIn ? (
+            {showProject ? (
               <Link
-                href={companyLinkedIn}
+                href={projectUrl}
                 rel="noopener noreferrer"
                 target={"_blank"}
-                className="color-text-primary ml-4 text-2xl"
+                className={`color-text-primary ${showSourceCode ? "ml-3" : ""}`}
               >
-                <AiFillLinkedin />
+                Project link
               </Link>
             ) : (
               ""
@@ -87,9 +89,9 @@ const govtech = ({
           </p>
           <div className="py-2 flex items-center justify-center">
             <Image
-              src={"/assets/experience/govtech/govtech.png"}
-              width={200}
-              height={200}
+              src={"/assets/projects/esd/home.jpg"}
+              width={350}
+              height={350}
               alt="govtech"
             />
           </div>
@@ -106,9 +108,9 @@ const govtech = ({
           </p>
           <div className="py-2 flex items-center justify-center">
             <Image
-              src={"/assets/experience/govtech/govtech.png"}
-              width={200}
-              height={200}
+              src={"/assets/projects/esd/home.jpg"}
+              width={350}
+              height={350}
               alt="govtech"
             />
           </div>
@@ -125,9 +127,9 @@ const govtech = ({
           </p>
           <div className="py-2 flex items-center justify-center">
             <Image
-              src={"/assets/experience/govtech/govtech.png"}
-              width={200}
-              height={200}
+              src={"/assets/projects/esd/home.jpg"}
+              width={350}
+              height={350}
               alt="govtech"
             />
           </div>
@@ -148,4 +150,4 @@ const govtech = ({
   );
 };
 
-export default govtech;
+export default is213;

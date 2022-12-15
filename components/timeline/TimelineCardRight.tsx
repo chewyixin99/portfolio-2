@@ -6,20 +6,25 @@ import {
   renderSkills,
   renderWebsite,
   renderLinkedIn,
-  renderProjectUrl,
+  renderProjectPath,
 } from "../cardComponentsLibrary";
 
-const TimelineCardRight = ({
-  dateString,
-  imgProps,
-  title,
-  subtitle,
-  bodyText,
-  skills = [],
-  companyLinkedIn = "",
-  companyWebsite = "",
-  projectUrl = "",
-}: ExperienceType) => {
+type TimelineCardProps = {
+  experienceObject: ExperienceType;
+};
+
+const TimelineCardRight = ({ experienceObject }: TimelineCardProps) => {
+  const {
+    dateString,
+    imgProps,
+    title,
+    subtitle,
+    bodyText,
+    skills,
+    companyLinkedIn,
+    companyWebsite,
+    projectUrl,
+  } = experienceObject;
   const { alt, src, width, height, imageClassName } = imgProps;
   return (
     <div className={`lg:grid grid-cols-12 gap-8 items-center`}>
@@ -102,7 +107,7 @@ const TimelineCardRight = ({
             </div>
           </div>
           <div className="text-xs md:sm">
-            {renderProjectUrl(projectUrl, projectUrl.length !== 0)}
+            {renderProjectPath(projectUrl, projectUrl.length !== 0)}
           </div>
         </div>
       </motion.div>

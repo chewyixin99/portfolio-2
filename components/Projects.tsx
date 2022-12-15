@@ -51,17 +51,7 @@ const Projects = () => {
             </p>
           </motion.div>
           {projects.map((proj, index) => {
-            const {
-              id,
-              type,
-              title,
-              subtitle,
-              bodyText,
-              githubUrl,
-              skills,
-              projectUrl,
-              imgProps,
-            } = proj;
+            const { type } = proj;
             return type === "personal" ? (
               <motion.div
                 key={index}
@@ -70,18 +60,7 @@ const Projects = () => {
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
-                <ProjectCard
-                  key={id}
-                  id={id}
-                  type={type}
-                  title={title}
-                  subtitle={subtitle}
-                  bodyText={bodyText}
-                  githubUrl={githubUrl}
-                  skills={skills}
-                  projectUrl={projectUrl}
-                  imgProps={imgProps}
-                />
+                <ProjectCard projectObject={proj} />
               </motion.div>
             ) : (
               ""
@@ -105,17 +84,7 @@ const Projects = () => {
             </p>
           </motion.div>
           {projects.map((proj, index) => {
-            const {
-              id,
-              type,
-              title,
-              subtitle,
-              bodyText,
-              githubUrl,
-              skills,
-              projectUrl,
-              imgProps,
-            } = proj;
+            const { type } = proj;
             return type === "coursework" ? (
               <motion.div
                 key={index}
@@ -124,18 +93,7 @@ const Projects = () => {
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
               >
-                <ProjectCard
-                  key={id}
-                  id={id}
-                  type={type}
-                  title={title}
-                  subtitle={subtitle}
-                  bodyText={bodyText}
-                  githubUrl={githubUrl}
-                  skills={skills}
-                  projectUrl={projectUrl}
-                  imgProps={imgProps}
-                />
+                <ProjectCard projectObject={proj} />
               </motion.div>
             ) : (
               ""

@@ -7,50 +7,16 @@ const CustomTimeline = () => {
   return (
     <div>
       {experiences.map((experience, index) => {
-        const {
-          id,
-          title,
-          subtitle,
-          bodyText,
-          dateString,
-          imgProps,
-          skills,
-          companyLinkedIn,
-          companyWebsite,
-          projectUrl,
-        } = experience;
         if (index % 2 === 0) {
           return (
             <div className="py-5" key={index}>
-              <TimelineCardLeft
-                id={id}
-                title={title}
-                subtitle={subtitle}
-                bodyText={bodyText}
-                dateString={dateString}
-                imgProps={imgProps}
-                skills={skills}
-                companyLinkedIn={companyLinkedIn}
-                companyWebsite={companyWebsite}
-                projectUrl={projectUrl}
-              />
+              <TimelineCardLeft experienceObject={experience} />
             </div>
           );
         }
         return (
           <div className="py-5" key={index}>
-            <TimelineCardRight
-              id={id}
-              title={title}
-              subtitle={subtitle}
-              bodyText={bodyText}
-              dateString={dateString}
-              imgProps={imgProps}
-              skills={skills}
-              companyLinkedIn={companyLinkedIn}
-              companyWebsite={companyWebsite}
-              projectUrl={projectUrl}
-            />
+            <TimelineCardRight experienceObject={experience} />
           </div>
         );
       })}
