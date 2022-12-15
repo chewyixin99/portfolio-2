@@ -33,7 +33,13 @@ const Projects = () => {
         </motion.div>
         {/* Start of project display */}
         <div className="grid lg:grid-cols-2 gap-8 py-5 items-center">
-          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest"
+          >
             <p className="title">
               <span className="font-tags font-normal color-text-secondary lowercase">
                 {"{/*  "}
@@ -43,7 +49,7 @@ const Projects = () => {
                 {" */}"}
               </span>{" "}
             </p>
-          </div>
+          </motion.div>
           {projects.map((proj, index) => {
             const {
               id,
@@ -56,7 +62,6 @@ const Projects = () => {
               projectUrl,
               imgProps,
             } = proj;
-            // const xOffset = index % 2 === 0 ? -100 : 100;
             return type === "personal" ? (
               <motion.div
                 key={index}
@@ -67,6 +72,8 @@ const Projects = () => {
               >
                 <ProjectCard
                   key={id}
+                  id={id}
+                  type={type}
                   title={title}
                   subtitle={subtitle}
                   bodyText={bodyText}
@@ -80,7 +87,13 @@ const Projects = () => {
               ""
             );
           })}
-          <div className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="pl-3 lg:col-span-2 text-xl color-text-secondary tracking-widest"
+          >
             <p className="title">
               <span className="font-tags font-normal color-text-secondary lowercase">
                 {"{/*  "}
@@ -90,7 +103,7 @@ const Projects = () => {
                 {" */}"}
               </span>{" "}
             </p>
-          </div>
+          </motion.div>
           {projects.map((proj, index) => {
             const {
               id,
@@ -103,7 +116,6 @@ const Projects = () => {
               projectUrl,
               imgProps,
             } = proj;
-            // const xOffset = index % 2 === 0 ? -100 : 100;
             return type === "coursework" ? (
               <motion.div
                 key={index}
@@ -114,6 +126,8 @@ const Projects = () => {
               >
                 <ProjectCard
                   key={id}
+                  id={id}
+                  type={type}
                   title={title}
                   subtitle={subtitle}
                   bodyText={bodyText}

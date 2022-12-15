@@ -1,28 +1,11 @@
 import Image from "next/image";
 import React from "react";
+import { ProjectType } from "../../data/constants";
 import {
   renderGithub,
   renderSkills,
   renderProjectUrl,
 } from "../cardComponentsLibrary";
-
-type ProjectCardProps = {
-  projectUrl?: string;
-  githubUrl?: string;
-  skills?: string[];
-  imgProps: ImageProps;
-  title: string;
-  subtitle: string;
-  bodyText: string;
-};
-
-type ImageProps = {
-  src: string;
-  imageClassName: string;
-  alt: string;
-  width: number;
-  height: number;
-};
 
 const ProjectCard = ({
   githubUrl = "",
@@ -32,7 +15,7 @@ const ProjectCard = ({
   title,
   subtitle,
   bodyText,
-}: ProjectCardProps) => {
+}: ProjectType) => {
   const { src, imageClassName, alt, width, height } = imgProps;
 
   return (

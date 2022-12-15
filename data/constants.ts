@@ -1,4 +1,38 @@
-export const experiences = [
+export type ImagePropsType = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  imageClassName: string;
+};
+
+export type ExperienceType = {
+  id: number;
+  title: string;
+  subtitle: string;
+  bodyText: string;
+  dateString: string;
+  imgProps: ImagePropsType;
+  skills: string[];
+  className: string;
+  companyLinkedIn: string;
+  companyWebsite: string;
+  projectUrl: string;
+};
+
+export type ProjectType = {
+  id: number;
+  type: string;
+  title: string;
+  subtitle: string;
+  bodyText: string;
+  githubUrl: string;
+  skills: string[];
+  projectUrl: string;
+  imgProps: ImagePropsType;
+};
+
+export const experiences: ExperienceType[] = [
   // SMU Start
   {
     id: 1,
@@ -7,7 +41,7 @@ export const experiences = [
     bodyText: `Start point of my coding journey. Prior to this, I have zero knowledge and experience in tech.`,
     dateString: "2020 - Present",
     imgProps: {
-      src: "/assets/timeline/smu.png",
+      src: "/assets/experience/smu/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -29,7 +63,7 @@ export const experiences = [
       to the software development process and lifecycle!`,
     dateString: "Aug 21 - Dec 21",
     imgProps: {
-      src: "/assets/timeline/quest.png",
+      src: "/assets/experience/quest/quest.png",
       width: 125,
       height: 125,
       alt: "quest",
@@ -49,7 +83,7 @@ export const experiences = [
     bodyText: `Teaching assistant for COR-IS1702 (Computational Thinking).`,
     dateString: "Aug 21 - Dec 21",
     imgProps: {
-      src: "/assets/timeline/smu.png",
+      src: "/assets/experience/smu/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -69,7 +103,7 @@ export const experiences = [
     bodyText: "Teaching assistant for IS113 (Web Application Development I).",
     dateString: "Jan 22 - May 22",
     imgProps: {
-      src: "/assets/timeline/smu.png",
+      src: "/assets/experience/smu/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -91,7 +125,7 @@ export const experiences = [
       Definitely learnt a lot, exciting times!`,
     dateString: "May 22 - Aug 22",
     imgProps: {
-      src: "/assets/timeline/govtech.png",
+      src: "/assets/experience/govtech/govtech.png",
       width: 100,
       height: 100,
       alt: "govtech",
@@ -112,7 +146,7 @@ export const experiences = [
       "Teaching assistant for IS215 (Digital Business Technology & Transformation).",
     dateString: "Jan 23 - May 23",
     imgProps: {
-      src: "/assets/timeline/smu.png",
+      src: "/assets/experience/smu/smu.png",
       width: 150,
       height: 150,
       alt: "smu",
@@ -131,7 +165,7 @@ export const experiences = [
     bodyText: "Have yet to start",
     dateString: "May 23 - Aug 23",
     imgProps: {
-      src: "/assets/timeline/jpmc.png",
+      src: "/assets/experience/jpmc/jpmc.png",
       width: 150,
       height: 150,
       alt: "jpmc",
@@ -139,13 +173,13 @@ export const experiences = [
     },
     skills: [],
     className: "py-5",
-    // companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
-    // companyWebsite: "https://www.jpmorganchase.com/",
-    // projectUrl: "",
+    companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
+    companyWebsite: "https://www.jpmorganchase.com/",
+    projectUrl: "",
   },
 ];
 
-export const projects = [
+export const projects: ProjectType[] = [
   // NextJS Portfolio
   {
     id: 1,

@@ -1,33 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ExperienceType } from "../../data/constants";
 import {
   renderSkills,
   renderWebsite,
   renderLinkedIn,
   renderProjectUrl,
 } from "../cardComponentsLibrary";
-
-type TimelineCardRightProps = {
-  dateString: string;
-  imgProps: ImageProps;
-  title: string;
-  subtitle: string;
-  bodyText: string;
-  className?: string;
-  skills?: string[];
-  companyLinkedIn?: string;
-  companyWebsite?: string;
-  projectUrl?: string;
-};
-
-type ImageProps = {
-  alt: string;
-  src: string;
-  width: number;
-  height: number;
-  imageClassName?: string;
-};
 
 const TimelineCardRight = ({
   dateString,
@@ -40,7 +20,7 @@ const TimelineCardRight = ({
   companyLinkedIn = "",
   companyWebsite = "",
   projectUrl = "",
-}: TimelineCardRightProps) => {
+}: ExperienceType) => {
   const { alt, src, width, height, imageClassName } = imgProps;
   return (
     <div className={`lg:grid grid-cols-12 gap-8 items-center ${className}`}>
