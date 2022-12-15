@@ -86,7 +86,7 @@ const About = () => {
           className="col-span-1 flex justify-center"
         >
           <Image
-            src="/../public/assets/about.jpg"
+            src="/assets/about.jpg"
             alt="individualPhoto"
             width={225}
             height={225}
