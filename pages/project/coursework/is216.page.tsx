@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../../../data/constants";
 import { ProjectType } from "../../../data/types";
 import Image from "next/image";
-import ProjectHead from "../../../components/pages/Projecthead";
+import ProjectHead from "../../../components/pages/ProjectHead";
 
 // Only runs at build time
 export const getStaticProps = () => {
