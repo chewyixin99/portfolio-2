@@ -32,8 +32,8 @@ const quest = ({
       <div className="project-page-inner-container">
         {/* Title, subtitle, date */}
         <div>
-          <h1 className="py-3 title">{title}</h1>
-          <h3 className="pb-3 subtitle">My time at the company as an intern</h3>
+          <h2 className="py-3 title">{title}</h2>
+          <h4 className="pb-3 subtitle">My time at the company as an intern</h4>
           <p className="pb-3">{dateString}</p>
           {/* Website and LinkedIn */}
           <p className="py-3 flex items-center">
