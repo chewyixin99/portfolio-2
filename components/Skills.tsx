@@ -76,7 +76,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: true }}
-          className="md:hidden col-span-2"
+          className="hidden sm:block md:hidden col-span-2"
         >
           <TagSphere />
         </motion.div>
