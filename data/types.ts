@@ -7,7 +7,6 @@ export type ImagePropsType = {
 };
 
 export type ExperienceType = {
-  id: number;
   title: string;
   subtitle: string;
   bodyText: string;
@@ -20,7 +19,6 @@ export type ExperienceType = {
 };
 
 export type ProjectType = {
-  id: number;
   type: string;
   dateString: string;
   title: string;

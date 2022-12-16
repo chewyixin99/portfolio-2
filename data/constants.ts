@@ -2,27 +2,25 @@ import { ExperienceType, ProjectType } from "./types";
 
 export const experiences: ExperienceType[] = [
   // SMU Start
-  {
-    id: 1,
-    title: "Singapore Management University",
-    subtitle: "Student",
-    bodyText: `Start point of my coding journey. Prior to this, I have zero knowledge and experience in tech.`,
-    dateString: "2020 - Present",
-    imgProps: {
-      src: "/assets/experience/smu/smu.png",
-      width: 150,
-      height: 150,
-      alt: "smu",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
-    },
-    skills: [],
-    companyLinkedIn: "",
-    companyWebsite: "",
-    projectUrl: "",
-  },
+  // {
+  //   title: "Singapore Management University",
+  //   subtitle: "Student",
+  //   bodyText: `Start point of my coding journey. Prior to this, I have zero knowledge and experience in tech.`,
+  //   dateString: "2020 - Present",
+  //   imgProps: {
+  //     src: "/assets/experience/smu/smu.png",
+  //     width: 150,
+  //     height: 150,
+  //     alt: "smu",
+  //     imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
+  //   },
+  //   skills: [],
+  //   companyLinkedIn: "",
+  //   companyWebsite: "",
+  //   projectUrl: "",
+  // },
   // Quest
   {
-    id: 2,
     title: "Quest-Inc",
     subtitle: "Software Engineer Intern",
     bodyText: `First tech-related and part-time internship! Dabbled in 
@@ -43,7 +41,6 @@ export const experiences: ExperienceType[] = [
   },
   // SMU TA CT
   {
-    id: 3,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText: `Teaching assistant for COR-IS1702 (Computational Thinking).`,
@@ -53,7 +50,7 @@ export const experiences: ExperienceType[] = [
       width: 150,
       height: 150,
       alt: "smu",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
     },
     skills: ["Python", "Data Structures & Algorithms"],
     companyLinkedIn: "",
@@ -62,7 +59,6 @@ export const experiences: ExperienceType[] = [
   },
   // SMU TA WAD I
   {
-    id: 4,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText: "Teaching assistant for IS113 (Web Application Development I).",
@@ -72,7 +68,7 @@ export const experiences: ExperienceType[] = [
       width: 150,
       height: 150,
       alt: "smu",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
     },
     skills: ["HTML", "PHP", "MySQL"],
     companyLinkedIn: "",
@@ -81,7 +77,6 @@ export const experiences: ExperienceType[] = [
   },
   // Govtech
   {
-    id: 5,
     title: "GOVTECH Singapore",
     subtitle: "Software Engineer Intern",
     bodyText: `First exposure to a mid-sized firm with mature software development
@@ -102,7 +97,6 @@ export const experiences: ExperienceType[] = [
   },
   // SMU TA DBTT
   {
-    id: 6,
     title: "Singapore Management University",
     subtitle: "Teaching Assistant",
     bodyText:
@@ -113,7 +107,7 @@ export const experiences: ExperienceType[] = [
       width: 150,
       height: 150,
       alt: "smu",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
     },
     skills: ["Digital Transformation"],
     companyLinkedIn: "",
@@ -121,7 +115,6 @@ export const experiences: ExperienceType[] = [
     projectUrl: "",
   },
   {
-    id: 7,
     title: "JP Morgan Chase & Co.",
     subtitle: "Software Engineer Intern",
     bodyText: "Have yet to start",
@@ -131,7 +124,7 @@ export const experiences: ExperienceType[] = [
       width: 150,
       height: 150,
       alt: "jpmc",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2 rounded-lg",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
     },
     skills: [],
     companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
@@ -143,7 +136,6 @@ export const experiences: ExperienceType[] = [
 export const projects: ProjectType[] = [
   // NextJS Portfolio
   {
-    id: 1,
     type: "personal",
     dateString: "Dec 2022",
     title: "NextJS Portfolio",
@@ -163,7 +155,6 @@ export const projects: ProjectType[] = [
   },
   // OOP
   {
-    id: 2,
     type: "coursework",
     dateString: "Aug 2022 - Dec 2022",
     title: "Singapore Sports School Booking Application",
@@ -183,7 +174,6 @@ export const projects: ProjectType[] = [
   },
   // SPM
   {
-    id: 3,
     type: "coursework",
     dateString: "Aug 2022 - Dec 2022",
     title: "Learning Journey Planning System",
@@ -203,7 +193,6 @@ export const projects: ProjectType[] = [
   },
   // WAD II
   {
-    id: 4,
     type: "coursework",
     dateString: "Aug 2021 - Dec 2021",
     title: "NEXT Team - Basketball Court Traffic App",
@@ -223,7 +212,6 @@ export const projects: ProjectType[] = [
   },
   // ESD
   {
-    id: 5,
     type: "coursework",
     dateString: "Jan 2022 - May 2022",
     title: "Hawker Dummy Payment System",
@@ -250,7 +238,6 @@ export const projects: ProjectType[] = [
   },
   // HTML/PHP Portfolio
   {
-    id: 6,
     type: "personal",
     dateString: "Dec 2020",
     title: "First Portfolio",
@@ -270,7 +257,6 @@ export const projects: ProjectType[] = [
   },
   // DBTT
   {
-    id: 7,
     type: "coursework",
     dateString: "Jan 2022 - May 2022",
     title: "Snip Avenue Digital Transformation Plan",
@@ -290,7 +276,6 @@ export const projects: ProjectType[] = [
   },
   // IDP
   {
-    id: 8,
     type: "coursework",
     dateString: "Aug 2021 - Dec 2021",
     title: "Group Project Enrollment Prototype",
@@ -310,7 +295,6 @@ export const projects: ProjectType[] = [
   },
   // Selenium booking bot
   {
-    id: 9,
     type: "personal",
     dateString: "Jul 2021",
     title: "SMU Facility Booking System",

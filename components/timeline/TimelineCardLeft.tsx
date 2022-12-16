@@ -49,7 +49,7 @@ const TimelineCardLeft = ({ experienceObject }: TimelineCardProps) => {
               src={src}
               width={width}
               height={height}
-              className={imageClassName}
+              className={`${imageClassName} rounded-lg`}
             />
           </div>
         </div>
@@ -109,7 +109,7 @@ const TimelineCardLeft = ({ experienceObject }: TimelineCardProps) => {
           src={src}
           width={width}
           height={height}
-          className={imageClassName}
+          className={`${imageClassName} rounded-lg`}
         />
       </motion.div>
     </div>

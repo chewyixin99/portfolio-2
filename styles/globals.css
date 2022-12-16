@@ -24,11 +24,16 @@ html{
     --color-text-primary-dark: #d4af37; /* metallic gold */
     --color-text-secondary-dark: #fcfbf7; /* beige */
     --color-text-accent-dark: #E98980; /* coral */
-    --color-bg-dark: #040348; /* night blue */
-    --color-bg-darker: #001155; /* interstellar blue */
+    --color-bg-dark: #333333; /* steel gray */
+    --color-bg-darker: #202020; /* charcoal */
     --color-shadow-dark: #0f0f0f; /* onyx */
 
-    --max-width-outer: 1240px;
+    /* night blue */
+    /* --color-bg-dark: #040348;  */
+    /* interstellar blue */
+    /* --color-bg-darker: #001155;  */
+
+    --max-width-outer: 1440px;
     --max-width-inner: 70%;
   }
 
@@ -228,8 +233,8 @@ html{
     @apply
     font-primary
     text-base
-    md:text-lg
-    lg:text-xl
+    md:text-xl
+    lg:text-lg
     
     text-[var(--color-text-primary-light)]
     dark:text-[var(--color-text-primary-dark)]
@@ -239,8 +244,8 @@ html{
     @apply
     font-primary
     text-sm
-    md:text-base
-    lg:text-lg
+    md:text-lg
+    lg:text-base
     py-1
     
     text-[var(--color-text-accent-light)]
@@ -250,7 +255,8 @@ html{
   .timeline-body-text {
     @apply
     text-xs
-    md:text-sm
+    md:text-base
+    lg:text-sm
     pt-2
   }
 
@@ -267,6 +273,7 @@ html{
     text-base
     md:text-xl
     lg:text-base
+    xl:text-xl
     
     text-[var(--color-text-primary-light)]
     dark:text-[var(--color-text-primary-dark)]
@@ -278,6 +285,7 @@ html{
     text-sm
     md:text-lg
     lg:text-sm
+    xl:text-lg
     py-1
     
     text-[var(--color-text-accent-light)]
@@ -289,6 +297,7 @@ html{
     text-xs
     md:text-base
     lg:text-xs
+    xl:text-base
     pt-2
   }
 

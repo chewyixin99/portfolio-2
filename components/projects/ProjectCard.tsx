@@ -26,16 +26,16 @@ const ProjectCard = ({ projectObject }: ProjectCardProps) => {
 
   return (
     <div className="shadow-xl color-shadow rounded-xl">
-      <div className="relative flex items-center justify-center h-auto w-full md:shadow-xl color-shadow rounded-xl group">
+      <div className="color-bg relative flex items-center justify-center h-auto w-full md:shadow-xl color-shadow rounded-xl group">
         <Image
           width={width}
           height={height}
           src={src}
           alt={alt}
-          className={`w-full ease-in-out duration-200 md:group-hover:opacity-20 rounded-t-xl md:rounded-xl ${imageClassName}`}
+          className={`w-full ease-in-out duration-200 md:group-hover:opacity-10 rounded-t-xl md:rounded-xl ${imageClassName}`}
         />
         {/* Hover overlay */}
-        <div className="hidden md:group-hover:block absolute p-3 ">
+        <div className="hidden md:group-hover:block absolute p-3">
           <p className="project-title font-bold">{title}</p>
           <p className="project-subtitle">{subtitle}</p>
           <p className="text-xs pb-2">{dateString}</p>
