@@ -17,15 +17,15 @@ html{
   :root {
     --color-text-primary-light: #5D3FD3; /* purple */
     --color-text-secondary-light: #36454F; /* charcoal */
-    --color-text-accent-light: #667e2c; /* dirty/moss green */
+    --color-text-accent-light: #009698; /* viridian green */
     --color-bg-light: #fcfbf7; /* eggshell whitish */
     --color-shadow-light: #9ca3af;
 
     --color-text-primary-dark: #d4af37; /* metallic gold */
     --color-text-secondary-dark: #fcfbf7; /* beige */
     --color-text-accent-dark: #E98980; /* coral */
-    --color-bg-dark: #333333; /* steel gray */
-    --color-bg-darker: #202020; /* charcoal */
+    --color-bg-dark: #202020; 
+    --color-bg-darker: #191919; 
     --color-shadow-dark: #0f0f0f; /* onyx */
 
     /* night blue */
@@ -218,7 +218,16 @@ html{
     dark:bg-[var(--color-bg-darker)]
   }
 
-  /* Image hover */
+  /* Image */
+  .image-static {
+    @apply
+    mx-auto
+    rounded-lg
+    shadow-md
+    shadow-[var(--color-shadow-light)] 
+    dark:shadow-[var(--color-shadow-dark)]
+  }
+
   .image-hover {
     @apply
     hover:shadow-xl 
@@ -272,8 +281,7 @@ html{
     font-primary
     text-base
     md:text-xl
-    lg:text-base
-    xl:text-xl
+    xl:text-lg
     
     text-[var(--color-text-primary-light)]
     dark:text-[var(--color-text-primary-dark)]
@@ -284,8 +292,7 @@ html{
     font-primary
     text-sm
     md:text-lg
-    lg:text-sm
-    xl:text-lg
+    xl:text-base
     py-1
     
     text-[var(--color-text-accent-light)]
@@ -296,8 +303,7 @@ html{
     @apply
     text-xs
     md:text-base
-    lg:text-xs
-    xl:text-base
+    xl:text-sm
     pt-2
   }
 

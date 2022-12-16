@@ -1,7 +1,7 @@
 import React from "react";
-import TimelineCardRight from "./timeline/TimelineCardRight";
-import TimelineCardLeft from "./timeline/TimelineCardLeft";
-import { experiences } from "../data/constants";
+import TimelineCardRight from "./TimelineCardRight";
+import TimelineCardLeft from "./TimelineCardLeft";
+import { experiences } from "../../data/constants";
 
 const CustomTimeline = () => {
   return (

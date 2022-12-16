@@ -59,6 +59,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
+                className="lg:col-span-2 xl:col-span-1"
               >
                 <ProjectCard projectObject={proj} />
               </motion.div>
@@ -92,6 +93,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
+                className="lg:col-span-2 xl:col-span-1"
               >
                 <ProjectCard projectObject={proj} />
               </motion.div>

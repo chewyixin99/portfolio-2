@@ -1,5 +1,5 @@
 import React from "react";
-import CustomTimeline from "./CustomTimeline";
+import CustomTimeline from "./timeline/CustomTimeline";
 import { motion } from "framer-motion";
 
 const Experience = () => {

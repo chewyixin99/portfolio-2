@@ -1,9 +1,8 @@
 import React from "react";
 import { experiences } from "../../data/constants";
 import { ExperienceType } from "../../data/types";
-import { AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
-import Link from "next/link";
+import BlogHead from "../../components/pages/BlogHead";
 
 // Only runs at build time
 export const getStaticProps = () => {
@@ -24,121 +23,136 @@ const quest = ({
   companyLinkedIn,
   companyWebsite,
 }: ExperienceType) => {
-  const showLinkedIn = companyLinkedIn.length !== 0;
-  const showWebsite = companyWebsite.length !== 0;
-  const showDivider = showLinkedIn && showWebsite;
   return (
     <div className="project-page-outer-container">
       <div className="project-page-inner-container">
-        {/* Title, subtitle, date */}
-        <div>
-          <h2 className="py-3 title">{title}</h2>
-          <h4 className="pb-3 subtitle">My time at the company as an intern</h4>
-          <p className="pb-3">{dateString}</p>
-          {/* Website and LinkedIn */}
-          <p className="py-3 flex items-center">
-            {showWebsite ? (
-              <Link
-                className="timeline-link mr-3"
-                rel="noopener noreferrer"
-                target={"_blank"}
-                href={companyWebsite}
-              >
-                Website
-              </Link>
-            ) : (
-              ""
-            )}
-            {showDivider ? "|" : ""}
-            {showLinkedIn ? (
-              <Link
-                href={companyLinkedIn}
-                rel="noopener noreferrer"
-                target={"_blank"}
-                className="color-text-primary ml-4 text-2xl"
-              >
-                <AiFillLinkedin />
-              </Link>
-            ) : (
-              ""
-            )}
-          </p>
-          {/* Techstack */}
-          <p className="py-3">
-            <span className="color-text-primary">Technologies used:</span>{" "}
-            {skills.join(" • ")}
-          </p>
-        </div>
-        <hr className="border-[var(--color-text-accent-light)] dark:border-[var(--color-text-accent-dark)]" />
+        <BlogHead
+          title={title}
+          subtitle="My experience in a startup as an intern"
+          dateString={dateString}
+          readMins={"7"}
+          skills={skills}
+          websiteUrl={companyWebsite}
+          linkedinUrl={companyLinkedIn}
+        />
         {/* Description paragraphs */}
         <div>
           <p className="py-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Quest is a marketplce for digital services{" "}
+            <span className="color-text-accent">
+              supported by SMU Institute of Innovation & Entrepreneurship (IIE),
+              and is a portfolio company under Antler
+            </span>
+            . The company focuses on connecting businesses and individuals with
+            the best freelancers, marketers, and locals within minutes,
+            redefining the ways people seek for help in the post-covid world.
           </p>
-          <div className="py-2 flex items-center justify-center">
+          <p className="py-3">
+            After applying to over 10 companies, I managed to secure a position
+            in this startup, and I am fortunate that Quest and her co-founders
+            provided me this opportunity to get my feet wet. This opportunity
+            with Quest gave me an insight with what it means to be a developer
+            in the technology industry, and it was truly a fulfilling one to say
+            the least.
+          </p>
+          <div className="py-5 flex-col items-center justify-center">
             <Image
-              src={"/assets/experience/quest/quest.png"}
-              width={200}
-              height={200}
-              alt="quest"
+              src={"/assets/experience/quest/quest-cofounders.jpg"}
+              width={550}
+              height={550}
+              alt="quest-cofounders"
+              className="image-static"
             />
+            <p className="text-xs text-center py-2 text-gray-400">
+              Co-founders of Quest-inc co. (Quest-inc.co)
+            </p>
           </div>
           <p className="py-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Being a developer in a startup meant that I was able to be involved
+            in the company more than usual, as{" "}
+            <span className="color-text-accent">weekly alignment meetings</span>{" "}
+            were held at the end of every week, where different departments
+            (business, marketing, design, technology) come together and discuss
+            about the progress and direction that the company is heading toward
+            to.
           </p>
-          <div className="py-2 flex items-center justify-center">
+          <p className="py-3">
+            I had absolutely no prior experience in mobile development, and it
+            took me about a week into the company to get comfortable with the
+            codebase. Thankfully, I was given a relatively simple starter task
+            to get my hands dirty.
+          </p>
+          <p className="py-3">
+            As this was my first time being involved in a project with a{" "}
+            <span className="color-text-accent">
+              software development team in a collaborative environment
+            </span>
+            , I have definitely made my fair share of Git and version control
+            mistakes, but thankfully the mistakes were all not too serious.
+          </p>
+          <div className="py-5 flex-col items-center justify-center">
             <Image
-              src={"/assets/experience/quest/quest.png"}
-              width={200}
-              height={200}
-              alt="quest"
+              src={"/assets/experience/quest/flutter-mvc.jpg"}
+              width={550}
+              height={550}
+              alt="flutter-mvc"
+              className="image-static"
             />
+            <p className="text-xs text-center py-2 text-gray-400">
+              MVC Architecture for Flutter (FlutterAwesome.com)
+            </p>
           </div>
           <p className="py-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Because Dart is also an object-oriented language, it was initially
+            tough for me to grasp certain coding design patterns such as{" "}
+            <span className="color-text-accent">
+              object-oriented programming
+            </span>
+            , <span className="color-text-accent">seperation of concerns</span>,
+            and the{" "}
+            <span className="color-text-accent">
+              model-view-controller (MVC) design pattern
+            </span>
+            . Fortunately, my colleagues and manager were all very helpful,
+            providing me tips and documentation to refer to whenever I run into
+            a roadblock!
           </p>
-          <div className="py-2 flex items-center justify-center">
+          <p className="py-3">
+            Towards the tail-end of my journey, daily meetings were being
+            introduced, and at that point in time, it added a lot of pressure on
+            me as I was not producing work as fast as I would like to. I later
+            learned that the company was adopting a more{" "}
+            <span className="color-text-accent">Agile development process</span>
+            , and these meetings were not there as a form of monitoring, but
+            more so to aid in resolving any blockers the team members may face
+            during development.
+          </p>
+          <div className="py-5 flex-col items-center justify-center">
             <Image
-              src={"/assets/experience/quest/quest.png"}
-              width={200}
-              height={200}
-              alt="quest"
+              src={"/assets/experience/quest/quest-feature.jpg"}
+              width={250}
+              height={250}
+              alt="quest-feature"
+              className="image-static"
             />
+            <p className="text-xs text-center py-2 text-gray-400">
+              Team member feature (Quest-inc.co)
+            </p>
           </div>
           <p className="py-3">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Overall, it was a pretty solid journey over at Quest, and I managed
+            to gain some insights on the{" "}
+            <span className="color-text-accent">
+              software development process, writing clean code as well as
+              adhering to certain coding design patterns and principles
+            </span>
+            . I am definitely thankful that a greenhorn like myself was extended
+            an opportunity to intern at a company, and one that is no less
+            helmed by 3 other students just like myself.
+          </p>
+          <p className="py-3">
+            It was, beyond any doubt, an eye-opening and inspiring experience to
+            be a part of Quest. Onwards to the next adventure!
           </p>
         </div>
       </div>

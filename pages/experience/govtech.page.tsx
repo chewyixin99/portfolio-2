@@ -1,9 +1,8 @@
 import React from "react";
 import { experiences } from "../../data/constants";
 import { ExperienceType } from "../../data/types";
-import { AiFillLinkedin } from "react-icons/ai";
 import Image from "next/image";
-import Link from "next/link";
+import BlogHead from "../../components/pages/BlogHead";
 
 // Only runs at build time
 export const getStaticProps = () => {
@@ -24,54 +23,18 @@ const govtech = ({
   companyLinkedIn,
   companyWebsite,
 }: ExperienceType) => {
-  const showLinkedIn = companyLinkedIn.length !== 0;
-  const showWebsite = companyWebsite.length !== 0;
-  const showDivider = showLinkedIn && showWebsite;
   return (
     <div className="project-page-outer-container">
       <div className="project-page-inner-container">
-        {/* Title, subtitle, date */}
-        <div>
-          <h2 className="py-3 title">{title}</h2>
-          <h4 className="pb-3 subtitle">My time at the company as an intern</h4>
-          <p className="pb-3">{dateString}</p>
-          {/* Website and LinkedIn */}
-          <p className="py-3 flex items-center">
-            {showWebsite ? (
-              <Link
-                className="timeline-link mr-3"
-                rel="noopener noreferrer"
-                target={"_blank"}
-                href={companyWebsite}
-              >
-                Website
-              </Link>
-            ) : (
-              ""
-            )}
-            {showDivider ? "|" : ""}
-            {showLinkedIn ? (
-              <Link
-                href={companyLinkedIn}
-                rel="noopener noreferrer"
-                target={"_blank"}
-                className={`color-text-primary ${
-                  showWebsite ? "ml-4" : ""
-                } text-2xl`}
-              >
-                <AiFillLinkedin />
-              </Link>
-            ) : (
-              ""
-            )}
-          </p>
-          {/* Techstack */}
-          <p className="py-3">
-            <span className="color-text-primary">Technologies used:</span>{" "}
-            {skills.join(" • ")}
-          </p>
-        </div>
-        <hr className="border-[var(--color-text-accent-light)] dark:border-[var(--color-text-accent-dark)]" />
+        <BlogHead
+          title={title}
+          subtitle="Tech for public good"
+          readMins={"7"}
+          dateString={dateString}
+          skills={skills}
+          websiteUrl={companyWebsite}
+          linkedinUrl={companyLinkedIn}
+        />
         {/* Description paragraphs */}
         <div>
           <p className="py-3">

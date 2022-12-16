@@ -1,9 +1,8 @@
 import React from "react";
 import { projects } from "../../../data/constants";
 import { ProjectType } from "../../../data/types";
-import { AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
-import Link from "next/link";
+import ProjectHead from "../../../components/pages/Projecthead";
 
 // Only runs at build time
 export const getStaticProps = () => {
@@ -24,56 +23,18 @@ const is211 = ({
   githubUrl,
   projectUrl,
 }: ProjectType) => {
-  const showSourceCode = githubUrl.length !== 0;
-  const showProject = projectUrl.length !== 0;
-  const showDivider = showSourceCode && showProject;
   return (
     <div className="project-page-outer-container">
       <div className="project-page-inner-container">
-        {/* Title, subtitle, date */}
-        <div>
-          <h2 className="py-3 title">{title}</h2>
-          <h4 className="pb-3 subtitle">My time at the company as an intern</h4>
-          <p className="pb-3">{dateString}</p>
-          {/* Website and LinkedIn */}
-          <p
-            className={`${
-              showSourceCode || showProject ? "py-3" : ""
-            } flex items-center`}
-          >
-            {showSourceCode ? (
-              <Link
-                className="timeline-link mr-3 flex items-center"
-                rel="noopener noreferrer"
-                target={"_blank"}
-                href={githubUrl}
-              >
-                Source Code <AiFillGithub className="ml-1 text-2xl" />
-              </Link>
-            ) : (
-              ""
-            )}
-            {showDivider ? "|" : ""}
-            {showProject ? (
-              <Link
-                href={projectUrl}
-                rel="noopener noreferrer"
-                target={"_blank"}
-                className={`color-text-primary ${showSourceCode ? "ml-3" : ""}`}
-              >
-                Project link
-              </Link>
-            ) : (
-              ""
-            )}
-          </p>
-          {/* Techstack */}
-          <p className="py-3">
-            <span className="color-text-primary">Technologies used:</span>{" "}
-            {skills.join(" • ")}
-          </p>
-        </div>
-        <hr className="border-[var(--color-text-accent-light)] dark:border-[var(--color-text-accent-dark)]" />
+        <ProjectHead
+          title={title}
+          subtitle="Some subtitle for project"
+          readMins="5"
+          dateString={dateString}
+          skills={skills}
+          githubUrl={githubUrl}
+          projectUrl={projectUrl}
+        />
         {/* Description paragraphs */}
         <div>
           <p className="py-3">
