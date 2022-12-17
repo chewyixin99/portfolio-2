@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=La+Belle+Aurore&family=Montserrat&family=Quicksand&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 html{
   --scroll-behavior: smooth!important;
   scroll-behavior: smooth!important;
-  scroll-padding-top: 60px;
+  scroll-padding-top: 80px;
   /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
 }
@@ -81,11 +81,6 @@ html{
     text-xl 
     sm:text-2xl 
     md:text-3xl
-  }
-
-  li {
-    @apply 
-    cursor-pointer
   }
 
   button {
@@ -404,6 +399,21 @@ html{
     pb-[100px]
     mx-auto 
     px-5
+  }
+
+  .project-page-grid {
+    @apply
+    grid md:grid-cols-4 lg:grid-cols-6
+  }
+
+  .project-page-body-col {
+    @apply
+    col-span-4 md:col-span-3 lg:col-span-5
+  }
+
+  .project-page-sidebar-col {
+    @apply
+    hidden md:block md:col-span-1 py-3
   }
 
 }

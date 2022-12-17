@@ -12,6 +12,7 @@ module.exports = {
         primary: ["Quicksand"],
         secondary: ["Montserrat"],
         tags: ["La Belle Aurore"],
+        "tags-2": ["Caveat"],
       },
     },
   },

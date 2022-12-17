@@ -19,8 +19,6 @@ const Main = () => {
   return (
     <div className="w-full h-screen text-center">
       <div className="max-w-[var(--max-width-outer)] w-full h-full mx-auto p-2 flex justify-center items-center">
-        {/* Back to top button */}
-        <BackToTop href="/" />
         {/* Download resume button */}
         <DownloadResume />
         <div className="max-w-[var(--max-width-inner)]">

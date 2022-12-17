@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import Navbar from "../sections/Navbar";
 import Footer from "../sections/Footer";
 import { SnackbarProvider } from "notistack";
+import BackToTop from "../components/BackToTop";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       >
         <Navbar />
+        <BackToTop href="" />
         <Component {...pageProps} />
         <Footer />
       </SnackbarProvider>
