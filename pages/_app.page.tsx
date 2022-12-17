@@ -1,10 +1,11 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
+import { SnackbarProvider } from "notistack";
+import { Analytics } from "@vercel/analytics/react";
+import BackToTop from "../components/BackToTop";
 import Navbar from "../sections/Navbar";
 import Footer from "../sections/Footer";
-import { SnackbarProvider } from "notistack";
-import BackToTop from "../components/BackToTop";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <BackToTop href="" />
         <Component {...pageProps} />
         <Footer />
+        <Analytics />
       </SnackbarProvider>
     </ThemeProvider>
   );

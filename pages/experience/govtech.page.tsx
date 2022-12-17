@@ -150,7 +150,7 @@ const govtech = ({
                 >
                   read here
                 </Link>
-                ). Ultimately (with the help of my manager), we had to make
+                ). Ultimately, with the help of my manager, we had to make
                 changes to the core Docsify library itself in order to support
                 the use case of the team.
               </p>
