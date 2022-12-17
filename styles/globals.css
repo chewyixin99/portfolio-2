@@ -403,17 +403,32 @@ html{
 
   .project-page-grid {
     @apply
-    grid md:grid-cols-4 lg:grid-cols-6
+    grid 
+    md:grid-cols-4 
+    lg:grid-cols-6
   }
 
   .project-page-body-col {
     @apply
-    col-span-4 md:col-span-3 lg:col-span-5
+    col-span-4 
+    md:col-span-3 
+    lg:col-span-5
   }
 
   .project-page-sidebar-col {
     @apply
-    hidden md:block md:col-span-1 py-3
+    hidden 
+    md:block 
+    md:col-span-1 
+    py-3
+  }
+
+  .project-page-section-title {
+    @apply
+    font-tags-2
+    text-gray-400
+    pt-3
+    text-3xl
   }
 
 }

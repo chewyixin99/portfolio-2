@@ -31,7 +31,7 @@ const quest = ({
           title={title}
           subtitle="My experience in a startup as an intern"
           dateString={dateString}
-          readMins={"7"}
+          readMins={"5"}
           skills={skills}
           websiteUrl={companyWebsite}
           linkedinUrl={companyLinkedIn}
@@ -39,10 +39,7 @@ const quest = ({
         <div className="project-page-grid">
           {/* Description paragraphs */}
           <div className="project-page-body-col">
-            <div
-              id="introduction"
-              className="font-tags-2 text-gray-400 pt-3 text-3xl"
-            >
+            <div id="introduction" className="project-page-section-title">
               {"{* Introduction *}"}
             </div>
             <p className="py-3">
@@ -75,10 +72,7 @@ const quest = ({
                 Co-founders of Quest-inc co. (Quest-inc.co)
               </p>
             </div>
-            <div
-              id="experience"
-              className="font-tags-2 text-gray-400 pt-3 text-3xl"
-            >
+            <div id="experience" className="project-page-section-title">
               {"{* Experience *}"}
             </div>
             <p className="py-3">
@@ -158,17 +152,17 @@ const quest = ({
                 Team member feature (Quest-inc.co)
               </p>
             </div>
-            <div
-              id="closing"
-              className="font-tags-2 text-gray-400 pt-3 text-3xl"
-            >
+            <div id="closing" className="project-page-section-title">
               {"{* Closing *}"}
             </div>
             <p className="py-3">
               Overall, it was a pretty solid journey over at Quest, and I
               managed to gain some insights on the{" "}
               <span className="color-text-accent">
-                software development process, writing clean code, as well as
+                software development process, writing clean code,
+              </span>{" "}
+              as well as{" "}
+              <span className="color-text-accent">
                 adhering to certain coding design patterns and principles
               </span>
               . I am definitely thankful that a greenhorn like myself was
