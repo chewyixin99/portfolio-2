@@ -31,16 +31,11 @@ const ProjectHead = ({
       {/* Title, subtitle, date, pageType */}
       <h2 className="py-3 title">{title}</h2>
       <h4 className="pb-3 subtitle">{subtitle}</h4>
-      <p className="pb-3">{dateString}</p>
-      <p className="pb-3 text-gray-400">{pageType}</p>
-      {/* Techstack */}
-      <p className="py-3">
-        <span className="color-text-primary">Skills:</span> {skills.join(" • ")}
-      </p>
+      <p className="pb-3 text-gray-400">{dateString}</p>
       {/* Website and LinkedIn */}
       <p
         className={`${
-          showSourceCode || showProject ? "py-3" : ""
+          showSourceCode || showProject ? "py-3" : "pb-3"
         } flex items-center justify-between`}
       >
         <span className="flex items-center">
@@ -70,9 +65,16 @@ const ProjectHead = ({
             ""
           )}
         </span>
-        {/* read minutes */}
-        <span className="text-gray-400">{readMins} min read</span>
       </p>
+      {/* Techstack */}
+      <p className="pb-3">
+        <span className="color-text-primary">Skills:</span> {skills.join(" • ")}
+      </p>
+      <div className="py-3 text-gray-400 flex items-center justify-between">
+        <p>{pageType}</p>
+        {/* read minutes */}
+        <p>{readMins} min read</p>
+      </div>
       <hr className="border-[var(--color-text-accent-light)] dark:border-[var(--color-text-accent-dark)]" />
     </div>
   );
