@@ -295,14 +295,16 @@ const govtech = ({
               </p>
             </div>
           </div>
-          <StickySidebar
-            links={{
-              "#introduction": "Intro",
-              "#experience": "Experience",
-              "#learnings": "Learnings",
-              "#closing": "Final thoughts",
-            }}
-          />
+          <div className="project-page-sidebar-col">
+            <StickySidebar
+              links={{
+                "#introduction": "Intro",
+                "#experience": "Experience",
+                "#learnings": "Learnings",
+                "#closing": "Final thoughts",
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

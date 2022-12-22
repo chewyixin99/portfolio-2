@@ -176,13 +176,15 @@ const quest = ({
             </p>
           </div>
           {/* Sticky bar */}
-          <StickySidebar
-            links={{
-              "#introduction": "Intro",
-              "#experience": "Experience",
-              "#closing": "Closing",
-            }}
-          />
+          <div className="project-page-sidebar-col">
+            <StickySidebar
+              links={{
+                "#introduction": "Intro",
+                "#experience": "Experience",
+                "#closing": "Closing",
+              }}
+            />
+          </div>
           {/* End of sticky bar */}
         </div>
       </div>
