@@ -163,11 +163,11 @@ export const projects: ProjectType[] = [
   {
     type: "coursework",
     dateString: "Aug 2022 - Dec 2022",
-    title: "Singapore Sports School (SSS) Booking Application",
+    title: "Singapore Sports School (SSP) Booking Application",
     subtitle: "Coursework for IS442 OOP",
-    bodyText: `Collaboration with SSS to implement a loan pass booking system with Agile principles`,
+    bodyText: `Collaboration with SSP to implement a loan pass booking system with Agile principles`,
     githubUrl: "https://github.com/chewyixin99/is442-oop-22",
-    skills: ["Java", "Springboot", "VueJS", "Agile"],
+    skills: ["Java", "Springboot", "VueJS", "Agile", "MySQL"],
     projectUrl: "",
     projectPath: "/project/coursework/is442",
     imgProps: {

@@ -432,4 +432,28 @@ html{
     text-3xl
   }
 
+  .project-page-image-container {
+    @apply
+    py-5
+    flex-col
+    items-center
+    justify-center
+  }
+
+  .project-page-image-caption {
+    @apply
+    text-xs
+    text-center
+    py-2
+    text-gray-400
+  }
+
+  .project-description-list-item {
+    @apply
+    list-item
+    list-disc
+    ml-[40px]
+    mt-[10px]
+  }
+
 }

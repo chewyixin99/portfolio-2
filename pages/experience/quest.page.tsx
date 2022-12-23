@@ -60,7 +60,7 @@ const quest = ({
               a developer in the technology industry, and it was truly a
               fulfilling one to say the least.
             </p>
-            <div className="py-5 flex-col items-center justify-center">
+            <div className="project-page-image-container">
               <Image
                 src={"/assets/experience/quest/quest-cofounders.jpg"}
                 width={550}
@@ -68,7 +68,7 @@ const quest = ({
                 alt="quest-cofounders"
                 className="image-static"
               />
-              <p className="text-xs text-center py-2 text-gray-400">
+              <p className="project-page-image-caption">
                 Co-founders of Quest-inc co. (Quest-inc.co)
               </p>
             </div>
@@ -100,7 +100,7 @@ const quest = ({
               , I have definitely made my fair share of Git and version control
               mistakes, but thankfully the mistakes were all not too serious.
             </p>
-            <div className="py-5 flex-col items-center justify-center">
+            <div className="project-page-image-container">
               <Image
                 src={"/assets/experience/quest/flutter-mvc.jpg"}
                 width={550}
@@ -108,7 +108,7 @@ const quest = ({
                 alt="flutter-mvc"
                 className="image-static"
               />
-              <p className="text-xs text-center py-2 text-gray-400">
+              <p className="project-page-image-caption">
                 MVC Architecture for Flutter (FlutterAwesome.com)
               </p>
             </div>
@@ -140,7 +140,7 @@ const quest = ({
               more so to aid in resolving any blockers the team members may face
               during development.
             </p>
-            <div className="py-5 flex-col items-center justify-center">
+            <div className="project-page-image-container">
               <Image
                 src={"/assets/experience/quest/quest-feature.jpg"}
                 width={250}
@@ -148,7 +148,7 @@ const quest = ({
                 alt="quest-feature"
                 className="image-static"
               />
-              <p className="text-xs text-center py-2 text-gray-400">
+              <p className="project-page-image-caption">
                 Team member feature (Quest-inc.co)
               </p>
             </div>

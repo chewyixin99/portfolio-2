@@ -81,7 +81,7 @@ const govtech = ({
                 <span className="color-text-accent">discoverability</span> of
                 government-related products.
               </p>
-              <div className="py-5 flex-col items-center justify-center">
+              <div className="project-page-image-container">
                 <Image
                   src={"/assets/experience/govtech/govtech-cohesion.jpg"}
                   width={550}
@@ -89,7 +89,7 @@ const govtech = ({
                   alt="govtech-cohesion"
                   className="image-static"
                 />
-                <p className="text-xs text-center py-2 text-gray-400">
+                <p className="project-page-image-caption">
                   Dev/Doc Portal Team
                 </p>
               </div>
@@ -161,7 +161,7 @@ const govtech = ({
                 <span className="color-text-accent">approximately 1200%</span>{" "}
                 increase in pages indexed by Google!
               </p>
-              <div className="py-5 flex-col items-center justify-center">
+              <div className="project-page-image-container">
                 <Image
                   src={"/assets/experience/govtech/govtech-cy-me.jpg"}
                   width={350}
@@ -169,7 +169,7 @@ const govtech = ({
                   alt="govtech-cy-me"
                   className="image-static"
                 />
-                <p className="text-xs text-center py-2 text-gray-400">
+                <p className="project-page-image-caption">
                   Me (left) and my internship manager (right)
                 </p>
               </div>
@@ -271,7 +271,7 @@ const govtech = ({
                 company, rather than going through a separate, non-related
                 program crafted just for interns.
               </p>
-              <div className="py-5 flex-col items-center justify-center">
+              <div className="project-page-image-container">
                 <Image
                   src={"/assets/experience/govtech/govtech-grad.jpg"}
                   width={500}
@@ -279,7 +279,7 @@ const govtech = ({
                   alt="govtech-grad"
                   className="image-static"
                 />
-                <p className="text-xs text-center py-2 text-gray-400">
+                <p className="project-page-image-caption">
                   Internship Graduation Ceremony hosted by Young Talent
                   Programme Office (YTPO)
                 </p>
