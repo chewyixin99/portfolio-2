@@ -119,6 +119,23 @@ export const experiences: ExperienceType[] = [
     companyLinkedIn: "",
     companyWebsite: "",
     projectUrl: "",
+  }, // SMU TA OOP
+  {
+    title: "Singapore Management University",
+    subtitle: "Teaching Assistant",
+    bodyText: "Teaching assistant for IS442 (Object Oriented Programming).",
+    dateString: "Jan 23 - May 23",
+    imgProps: {
+      src: "/assets/experience/smu/smu.png",
+      width: 150,
+      height: 150,
+      alt: "smu",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
+    },
+    skills: ["Java", "Object Oriented Programming"],
+    companyLinkedIn: "",
+    companyWebsite: "",
+    projectUrl: "",
   },
   {
     title: "JP Morgan Chase & Co.",

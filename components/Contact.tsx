@@ -24,7 +24,7 @@ const Contact = () => {
     reset,
   } = useForm<Inputs>({
     defaultValues: {
-      subject: "Hello from portfolio",
+      subject: "Hello from portfolio!",
     },
   });
 
