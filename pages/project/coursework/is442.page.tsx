@@ -534,8 +534,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/swagger-ui.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="swagger-ui"
                   className="image-static"
                 />
@@ -546,8 +546,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/home.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="home"
                   className="image-static"
                 />
@@ -558,8 +558,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/password-reset.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="password-reset"
                   className="image-static"
                 />
@@ -568,8 +568,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/analytics-dashboard.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="analytics-dashboard"
                   className="image-static"
                 />
@@ -580,8 +580,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/booking-tables.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="booking-tables"
                   className="image-static"
                 />
@@ -600,8 +600,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/staff-mgmt.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="staff-mgmt"
                   className="image-static"
                 />
@@ -612,8 +612,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/rich-text-editor.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="rich-text-editor"
                   className="image-static"
                 />
@@ -624,8 +624,8 @@ const is442 = ({
               <div className="project-page-image-container">
                 <Image
                   src={"/assets/projects/oop/pass-edit.jpg"}
-                  width={550}
-                  height={550}
+                  width={700}
+                  height={700}
                   alt="pass-edit"
                   className="image-static"
                 />

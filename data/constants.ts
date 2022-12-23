@@ -203,7 +203,7 @@ export const projects: ProjectType[] = [
     subtitle: "Coursework for IS212 SPM",
     bodyText: `Implemented Agile methodology and development to deliver an MVP as requirements are constantly updated.`,
     githubUrl: "https://github.com/chewyixin99/is212-spm-22",
-    skills: ["ReactJS", "Python", "Flask", "Agile", "Scrum"],
+    skills: ["ReactJS", "Python", "Flask", "Agile", "Scrum", "MySQL"],
     projectUrl: "",
     projectPath: "/project/coursework/is212",
     imgProps: {
@@ -248,6 +248,7 @@ export const projects: ProjectType[] = [
       "Docker",
       "Kong API Gateway",
       "VueJS",
+      "MySQL",
     ],
     projectUrl: "",
     projectPath: "/project/coursework/is213",
@@ -267,8 +268,8 @@ export const projects: ProjectType[] = [
     subtitle: "Figuring out the building blocks of a website",
     bodyText: `Introduction to developing a project from scratch, applying concepts learned in my first year of study.`,
     githubUrl: "https://github.com/chewyixin99/portfolio-1",
-    skills: ["HTML", "CSS", "Javascript", "PHP"],
-    projectUrl: "",
+    skills: ["HTML", "CSS", "Javascript", "PHP", "MySQL"],
+    projectUrl: "http://chew-yixin.epizy.com/",
     projectPath: "/project/personal/portfolio1",
     imgProps: {
       src: "/assets/projects/portfolio1/home.jpg",
@@ -324,7 +325,7 @@ export const projects: ProjectType[] = [
     subtitle: "Telegram bot for SMU FBS",
     bodyText: `Exploring and integrating Telegram with webscraping technologies such as Selenium to create an automated booking solution.`,
     githubUrl: "https://github.com/chewyixin99/selenium-telebot-booking-system",
-    skills: ["Python", "Selenium", "Webscraping"],
+    skills: ["Python", "Selenium", "Telegram API", "Webscraping"],
     projectUrl: "",
     projectPath: "/project/personal/smufbs",
     imgProps: {
