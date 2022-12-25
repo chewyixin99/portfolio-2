@@ -144,10 +144,10 @@ export const experiences: ExperienceType[] = [
     dateString: "May 23 - Aug 23",
     imgProps: {
       src: "/assets/experience/jpmc/jpmc.png",
-      width: 150,
-      height: 150,
+      width: 160,
+      height: 160,
       alt: "jpmc",
-      imageClassName: "bg-[var(--color-text-secondary-dark)] p-2",
+      imageClassName: "bg-[var(--color-text-secondary-dark)] px-3 py-4",
     },
     skills: [],
     companyLinkedIn: "https://www.linkedin.com/company/jpmorganchase/",
