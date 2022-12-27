@@ -49,6 +49,10 @@ Animations
 - [framer-motion](https://www.framer.com/motion/) for sliding and navbar animation
 - [typewriter-effect](/https://www.npmjs.com/package/typewriter-effect) for typewriting effect
 
+Particles
+- [react-tsparticles](https://www.npmjs.com/package/react-tsparticles)
+- [tsparticles](https://www.npmjs.com/package/tsparticles)
+
 Notification
 - [notistack](https://notistack.com/getting-started)
 

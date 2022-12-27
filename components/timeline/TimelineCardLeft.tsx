@@ -35,7 +35,7 @@ const TimelineCardLeft = ({ experienceObject }: TimelineCardProps) => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.0 }}
         viewport={{ once: true }}
-        className="col-span-6 shadow-xl p-6 color-shadow color-bg"
+        className="col-span-6 shadow-xl p-6 color-shadow color-bg relative z-10"
       >
         <div className="pb-3 flex justify-between items-center">
           <div className="lg:ml-auto text-left lg:text-right">

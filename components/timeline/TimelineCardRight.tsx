@@ -60,7 +60,7 @@ const TimelineCardRight = ({ experienceObject }: TimelineCardProps) => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.0 }}
         viewport={{ once: true }}
-        className="col-span-6 shadow-xl p-6 color-shadow color-bg"
+        className="col-span-6 shadow-xl p-6 color-shadow color-bg relative z-10"
       >
         <div className="pb-3 flex justify-between items-center ">
           <div className="mr-4 lg:hidden">

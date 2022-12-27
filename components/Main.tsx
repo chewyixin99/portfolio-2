@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { HiOutlineMail, HiChevronDoubleUp } from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
 import TypewriterComponent from "typewriter-effect";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import BackToTop from "./BackToTop";
 import DownloadResume from "./DownloadResume";
+import Particle from "./Particle";
 
 const typewriterOptions = {
   strings: ["Welcome", "Nice to meet you", "Let's build something together"],
@@ -18,6 +17,7 @@ const typewriterOptions = {
 const Main = () => {
   return (
     <div className="w-full h-screen text-center">
+      <Particle />
       <div className="max-w-[var(--max-width-outer)] w-full h-full mx-auto p-2 flex justify-center items-center">
         {/* Download resume button */}
         <DownloadResume />

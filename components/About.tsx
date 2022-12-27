@@ -90,7 +90,7 @@ const About = () => {
             alt="individualPhoto"
             width={225}
             height={225}
-            className="rounded-xl image-hover"
+            className="rounded-xl image-hover z-10"
           />
         </motion.div>
       </div>
