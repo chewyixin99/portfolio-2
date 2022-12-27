@@ -552,6 +552,18 @@ const is212 = ({
             </div>
             <div className="project-page-image-container">
               <Image
+                src={"/assets/projects/spm/container-diagram.jpg"}
+                width={700}
+                height={700}
+                alt="container-diagram"
+                className="image-static"
+              />
+              <p className="project-page-image-caption">
+                Simple C4 container diagram
+              </p>
+            </div>
+            <div className="project-page-image-container">
+              <Image
                 src={"/assets/projects/spm/admin-dashboard.jpg"}
                 width={600}
                 height={600}
