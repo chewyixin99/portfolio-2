@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -11,7 +10,7 @@ const DownloadResume = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="z-[1500] flex justify-start fixed left-10 bottom-10"
+        className="z-[1500] flex justify-start fixed left-10 bottom-14"
       >
         <Link
           href={"/assets/resume.pdf"}

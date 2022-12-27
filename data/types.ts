@@ -30,3 +30,8 @@ export type ProjectType = {
   projectPath: string;
   imgProps: ImagePropsType;
 };
+
+export type ParticleOptions = {
+  enableLinks?: boolean;
+  densityArea?: number;
+};

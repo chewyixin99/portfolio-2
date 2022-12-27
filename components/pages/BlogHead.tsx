@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
+import Particle from "../Particle";
 
 type BlogHeadProps = {
   title: string;
@@ -29,6 +30,7 @@ const BlogHead = ({
 
   return (
     <div>
+      <Particle enableLinks={false} densityArea={1200} />
       {/* Title, subtitle, date, pageType */}
       <h2 className="py-3 title">{title}</h2>
       <h4 className="pb-3 subtitle">{subtitle}</h4>

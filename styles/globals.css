@@ -219,6 +219,8 @@ html{
     mx-auto
     rounded-lg
     shadow-md
+    relative
+    z-10
     shadow-[var(--color-shadow-light)] 
     dark:shadow-[var(--color-shadow-dark)]
   }

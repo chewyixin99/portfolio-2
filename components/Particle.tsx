@@ -2,8 +2,12 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { Container, Engine } from "tsparticles-engine";
+import { ParticleOptions } from "../data/types";
 
-const Particle = () => {
+const Particle = ({
+  densityArea = 800,
+  enableLinks = true,
+}: ParticleOptions) => {
   const particlesInit = useCallback(async (engine: Engine) => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -56,7 +60,7 @@ const Particle = () => {
           links: {
             color: "#bdbdbd",
             distance: 150,
-            enable: true,
+            enable: enableLinks,
             opacity: 0.5,
             width: 1,
           },
@@ -67,7 +71,7 @@ const Particle = () => {
             direction: "none",
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "bounce-horizontal",
             },
             random: false,
             speed: 2,
@@ -76,7 +80,7 @@ const Particle = () => {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: densityArea,
             },
             value: 50,
           },
