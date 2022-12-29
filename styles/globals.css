@@ -346,7 +346,6 @@ html{
     duration-300
     font-bold
     focus:font-bold
-    hover:font-bold
 
     text-[var(--color-text-secondary-light)]
     bg-[var(--color-bg-light)]

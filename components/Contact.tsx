@@ -168,7 +168,7 @@ const Contact = () => {
                 onClick={handleSubmit(onSubmit)}
                 endIcon={<IoMdSend />}
                 variant="contained"
-                className="submit-button"
+                className="!submit-button"
               >
                 {loading ? "Sending" : "Send message"}
               </LoadingButton>
