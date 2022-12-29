@@ -339,28 +339,25 @@ html{
     @apply
     p-2
     my-3
-    tracking-widest
+    tracking-wide
     capitalize
     border
 
     duration-300
     font-bold
     focus:font-bold
+    hover:font-bold
 
     text-[var(--color-text-secondary-light)]
-    border-[var(--color-text-secondary-light)]
     bg-[var(--color-bg-light)]
     focus:text-[var(--color-bg-light)]
-    focus:border-[var(--color-bg-light)]
     focus:bg-[var(--color-text-primary-light)]
     hover:text-[var(--color-bg-light)]
     hover:bg-[var(--color-text-primary-light)]
 
     dark:text-[var(--color-text-secondary-dark)]
-    dark:border-[var(--color-text-secondary-dark)]
     dark:bg-[var(--color-bg-darker)]
     focus:dark:text-[var(--color-bg-dark)]
-    focus:dark:border-[var(--color-bg-dark)]
     focus:dark:bg-[var(--color-text-primary-dark)]
     hover:dark:text-[var(--color-bg-dark)]
     hover:dark:bg-[var(--color-text-primary-dark)]
