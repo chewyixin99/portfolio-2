@@ -51,7 +51,7 @@ const is442 = ({
                   href={"https://x.smu.edu.sg/"}
                   target={"blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   SMU-X
                 </Link>{" "}
@@ -65,7 +65,7 @@ const is442 = ({
                   href="https://www.sportsschool.edu.sg/"
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Singapore Sports School (SSP)
                 </Link>{" "}
@@ -124,7 +124,7 @@ const is442 = ({
                   href="https://jwt.io/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   JSON Web Tokens (JWT)
                 </Link>{" "}
@@ -133,7 +133,7 @@ const is442 = ({
                   href="https://spring.io/projects/spring-security"
                   target={"_blank"}
                   rel="noopner noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Spring Security
                 </Link>{" "}
@@ -184,7 +184,7 @@ const is442 = ({
                   href="https://www.mysql.com/"
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   MySQL
                 </Link>{" "}
@@ -193,7 +193,7 @@ const is442 = ({
                   href="https://www.javatpoint.com/java-jdbc"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   JDBC
                 </Link>
@@ -220,7 +220,7 @@ const is442 = ({
                   href="https://www.geeksforgeeks.org/mvc-design-pattern/"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Model-View-Controller (MVC)
                 </Link>{" "}
@@ -297,7 +297,7 @@ const is442 = ({
                     href="https://vuejs.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     VueJS
                   </Link>{" "}
@@ -308,7 +308,7 @@ const is442 = ({
                     href="https://getbootstrap.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Bootstrap
                   </Link>{" "}
@@ -319,7 +319,7 @@ const is442 = ({
                     href="https://jwt.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     JSON Web Tokens
                   </Link>{" "}
@@ -330,7 +330,7 @@ const is442 = ({
                     href="https://axios-http.com/docs/intro"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Axios
                   </Link>{" "}
@@ -341,7 +341,7 @@ const is442 = ({
                     href="https://www.npmjs.com/package/xlsx"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     XLSX
                   </Link>{" "}
@@ -352,7 +352,7 @@ const is442 = ({
                     href="https://fullcalendar.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Full Calendar
                   </Link>{" "}
@@ -363,7 +363,7 @@ const is442 = ({
                     href="https://gridjs.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     GridJS
                   </Link>{" "}
@@ -374,7 +374,7 @@ const is442 = ({
                     href="https://www.chartjs.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     ChartJS
                   </Link>{" "}
@@ -385,7 +385,7 @@ const is442 = ({
                     href="https://quilljs.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     QuillJS
                   </Link>{" "}
@@ -409,7 +409,7 @@ const is442 = ({
                     href="https://www.java.com/en/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Java
                   </Link>{" "}
@@ -420,7 +420,7 @@ const is442 = ({
                     href="https://spring.io/projects/spring-boot"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Spring Boot
                   </Link>{" "}
@@ -431,7 +431,7 @@ const is442 = ({
                     href="https://www.mysql.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     MySQL
                   </Link>{" "}
@@ -442,7 +442,7 @@ const is442 = ({
                     href="https://springdoc.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Springdoc OpenAPI
                   </Link>{" "}
@@ -453,7 +453,7 @@ const is442 = ({
                     href="https://projectlombok.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Project Lombok
                   </Link>{" "}
@@ -464,7 +464,7 @@ const is442 = ({
                     href="https://javaee.github.io/javamail/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Java Mail
                   </Link>{" "}
@@ -475,7 +475,7 @@ const is442 = ({
                     href="https://spring.io/projects/spring-security"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Spring Security
                   </Link>{" "}

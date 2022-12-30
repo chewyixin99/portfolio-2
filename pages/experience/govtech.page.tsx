@@ -62,7 +62,7 @@ const govtech = ({
                   href="https://www.developer.tech.gov.sg/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Developer
                 </Link>{" "}
@@ -71,7 +71,7 @@ const govtech = ({
                   href="https://docs.developer.tech.gov.sg/"
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Documentation
                 </Link>{" "}
@@ -110,7 +110,7 @@ const govtech = ({
                   href="https://docs.developer.tech.gov.sg/"
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Documentation Portal
                 </Link>{" "}
@@ -125,7 +125,7 @@ const govtech = ({
                   href="https://docsify.js.org/#/"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Docsify (Documentation Site Generator)
                 </Link>
@@ -134,7 +134,7 @@ const govtech = ({
                   href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   history
                 </Link>{" "}
@@ -146,7 +146,7 @@ const govtech = ({
                   href="https://www.webapex.com.au/blog/does-google-index-hash-url/#:~:text=Google%20doesn't%20not%20index,different%20section%20of%20your%20page."
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   read here
                 </Link>
@@ -180,7 +180,7 @@ const govtech = ({
                   href="https://opentelemetry.io/"
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   OpenTelemetry (OTEL)
                 </Link>{" "}
@@ -189,7 +189,7 @@ const govtech = ({
                   href="https://www.elastic.co/"
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Elastic Observability
                 </Link>{" "}
@@ -208,7 +208,7 @@ const govtech = ({
                   href="https://opentelemetry.io/"
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   OpenTelemetry (OTEL)
                 </Link>
@@ -217,7 +217,7 @@ const govtech = ({
                   href="https://www.elastic.co/"
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Elastic Observability
                 </Link>
@@ -228,7 +228,7 @@ const govtech = ({
                 </span>{" "}
                 using{" "}
                 <Link
-                  className="color-text-accent hover:underline"
+                  className="link"
                   href="https://jestjs.io/"
                   rel="noopener noreferrer"
                   target={"_blank"}

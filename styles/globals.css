@@ -454,4 +454,18 @@ html{
     mt-[10px]
   }
 
+  .paragraph-title {
+    @apply
+    py-3 
+    color-text-accent 
+    font-bold 
+    text-lg
+  }
+
+  .link {
+    @apply
+    color-text-accent
+    hover:underline
+  }
+
 }

@@ -65,7 +65,7 @@ const smufbs = ({
                   href="https://core.telegram.org/bots/tutorial"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Botfather
                 </Link>{" "}
@@ -75,7 +75,7 @@ const smufbs = ({
                   href={"https://selenium-python.readthedocs.io/index.html"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Selenium Webdriver
                 </Link>
@@ -91,7 +91,7 @@ const smufbs = ({
                   href="https://tutorial.cytron.io/2021/09/01/how-to-create-a-telegram-bot-get-the-api-key-and-chat-id/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   guide
                 </Link>{" "}
@@ -184,7 +184,7 @@ const smufbs = ({
                   href="https://selenium-python.readthedocs.io/locating-elements.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   find_element_by_x
                 </Link>{" "}
@@ -197,7 +197,7 @@ const smufbs = ({
                   href="https://www.w3schools.com/html/html_iframe.asp"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   inline frames (iframes)
                 </Link>
@@ -207,7 +207,7 @@ const smufbs = ({
                   href="https://www.guru99.com/handling-iframes-selenium.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   here
                 </Link>{" "}
@@ -269,7 +269,7 @@ const smufbs = ({
                   href="https://www.selenium.dev/documentation/webdriver/waits/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   explicit and implicit waits
                 </Link>
@@ -278,7 +278,7 @@ const smufbs = ({
                   href="https://www.programiz.com/python-programming/time/sleep"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   time.sleep()
                 </Link>{" "}
@@ -287,7 +287,7 @@ const smufbs = ({
                   href="https://stackoverflow.com/questions/38800473/element-not-found-error-in-selenium-webdriver"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   here
                 </Link>
@@ -349,7 +349,7 @@ const smufbs = ({
                   href="https://github.com/chewyixin99/selenium-telebot-booking-system"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   here
                 </Link>

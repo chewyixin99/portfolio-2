@@ -55,7 +55,7 @@ const is212 = ({
                   href={"https://www.agilealliance.org/agile101/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Agile
                 </Link>{" "}
@@ -64,7 +64,7 @@ const is212 = ({
                   href={"https://www.scrum.org/resources/what-is-scrum"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Scrum
                 </Link>{" "}
@@ -81,7 +81,7 @@ const is212 = ({
                   href={"https://www.agilealliance.org/agile101/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Agile
                 </Link>
@@ -90,7 +90,7 @@ const is212 = ({
                   href={"https://www.scrum.org/resources/what-is-scrum"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Scrum
                 </Link>
@@ -99,7 +99,7 @@ const is212 = ({
                   href={"https://testdriven.io/test-driven-development/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   test-driven development (TDD)
                 </Link>
@@ -108,7 +108,7 @@ const is212 = ({
                   href={"https://about.gitlab.com/topics/ci-cd/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   Continuous Integration & Continuous Delivery (CI/CD)
                 </Link>
@@ -153,7 +153,7 @@ const is212 = ({
                     href={"https://c4model.com/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Context, Container, Component, Code (C4) model
                   </Link>
@@ -192,7 +192,7 @@ const is212 = ({
                     href={"https://github.com/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Github
                   </Link>
@@ -204,7 +204,7 @@ const is212 = ({
                     href={"https://www.atlassian.com/software/jira"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Jira
                   </Link>
@@ -241,7 +241,7 @@ const is212 = ({
                     }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     planning poker estimation technique
                   </Link>
@@ -254,7 +254,7 @@ const is212 = ({
                     href={"https://flask.palletsprojects.com/en/2.2.x/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Python and Flask
                   </Link>{" "}
@@ -263,7 +263,7 @@ const is212 = ({
                     href={"https://reactjs.org/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     ReactJS
                   </Link>{" "}
@@ -278,7 +278,7 @@ const is212 = ({
                       href={"https://notistack.com/"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="color-text-accent hover:underline"
+                      className="link"
                     >
                       Notistack
                     </Link>
@@ -289,7 +289,7 @@ const is212 = ({
                       href={"https://mui.com/"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="color-text-accent hover:underline"
+                      className="link"
                     >
                       Material UI
                     </Link>
@@ -300,7 +300,7 @@ const is212 = ({
                       href={"https://formik.org/"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="color-text-accent hover:underline"
+                      className="link"
                     >
                       Formik
                     </Link>
@@ -313,7 +313,7 @@ const is212 = ({
                     href="https://www.npmjs.com/package/husky"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     husky
                   </Link>{" "}
@@ -322,7 +322,7 @@ const is212 = ({
                     href="https://flake8.pycqa.org/en/latest/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     flake8
                   </Link>
@@ -338,7 +338,7 @@ const is212 = ({
                     href={"https://jestjs.io/"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Jest
                   </Link>
@@ -349,15 +349,13 @@ const is212 = ({
                     href={"https://docs.python.org/3/library/unittest.html"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     UnitTest
                   </Link>
                   : Python testing framework
                 </span>
-                <p className="py-3 color-text-accent font-bold text-lg">
-                  Sprint cycles
-                </p>
+                <p className="paragraph-title">Sprint cycles</p>
                 <p className="py-3">
                   Prior to the start of every sprint, the team would gather for
                   30mins to 1hour to conduct a{" "}
@@ -418,9 +416,7 @@ const is212 = ({
                     Burndown chart (sprint 3): velocity of 57 points
                   </p>
                 </div>
-                <p className="py-3 color-text-accent font-bold text-lg">
-                  Unit and Integration tests
-                </p>
+                <p className="paragraph-title">Unit and Integration tests</p>
                 <p className="py-3">
                   The content for unit tests were gone through pretty late in
                   the semester, therefore we implemented these tests between
@@ -445,7 +441,7 @@ const is212 = ({
                     href="https://www.valentinog.com/blog/jest/#:~:text=Our%20first%20friend%20is%20describe,for%20wrapping%20the%20actual%20test."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     describe
                   </Link>{" "}
@@ -484,16 +480,14 @@ const is212 = ({
                   that the new code is healthy, when in reality the tests were
                   not updated to match the change in code.
                 </p>
-                <p className="py-3 color-text-accent font-bold text-lg">
-                  CI/CD
-                </p>
+                <p className="paragraph-title">CI/CD</p>
                 <p className="py-3">
                   Using{" "}
                   <Link
                     href={"https://devcenter.heroku.com/articles/cleardb"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="color-text-accent hover:underline"
+                    className="link"
                   >
                     Heroku&rsquo;s ClearDB
                   </Link>

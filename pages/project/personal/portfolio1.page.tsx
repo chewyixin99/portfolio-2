@@ -89,7 +89,7 @@ const portfolio1 = ({
                   href="https://www.freecodecamp.org/"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   freeCodeCamp.org
                 </Link>
@@ -100,7 +100,7 @@ const portfolio1 = ({
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   here
                 </Link>
@@ -127,7 +127,7 @@ const portfolio1 = ({
                   href={"https://www.w3schools.com/"}
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   W3Schools
                 </Link>
@@ -136,7 +136,7 @@ const portfolio1 = ({
                   href={"https://developer.mozilla.org/en-US/"}
                   rel="noopener noreferrer"
                   target={"_blank"}
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   MDN web docs
                 </Link>
@@ -203,7 +203,7 @@ const portfolio1 = ({
                   href={"https://www.infinityfree.net/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="color-text-accent hover:underline"
+                  className="link"
                 >
                   InfinityFree
                 </Link>
