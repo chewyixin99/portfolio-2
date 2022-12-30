@@ -244,7 +244,7 @@ const Navbar = () => {
             className="py-40"
           >
             <p className="uppercase tracking-widest color-text-primary">
-              Let&lsquo;s connect
+              Let&rsquo;s connect
             </p>
             {/* Connect icons */}
             <div className="flex items-center justify-between my-4 w-full sm:w-[70%]">

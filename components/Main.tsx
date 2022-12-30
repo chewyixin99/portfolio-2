@@ -71,7 +71,7 @@ const Main = () => {
               <span className="color-text-accent underline">
                 Singapore Management University (SMU)
               </span>
-              &nbsp; under the Bachelor&lsquo;s of Science (BSc), Information
+              &nbsp; under the Bachelor&rsquo;s of Science (BSc), Information
               Systems, with a second major in Cybersecurity.
             </p>
           </motion.div>

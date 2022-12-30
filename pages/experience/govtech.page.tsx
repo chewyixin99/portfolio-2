@@ -48,10 +48,10 @@ const govtech = ({
                 The Government Technology Agency of Singapore (GovTech) is a
                 public sector tech company that{" "}
                 <span className="color-text-accent">
-                  spearheads Singapore&lsquo;s digital transformation and
+                  spearheads Singapore&rsquo;s digital transformation and
                   development
                 </span>{" "}
-                to build a Smart Nation for the country&lsquo;s citizens and
+                to build a Smart Nation for the country&rsquo;s citizens and
                 businesses.
               </p>
               <p className="py-3">
@@ -246,7 +246,7 @@ const govtech = ({
                 <span className="color-text-accent">
                   asking for help is normal
                 </span>
-                , and not deterministic of one&lsquo;s ability and proficiency
+                , and not deterministic of one&rsquo;s ability and proficiency
                 in programming.
               </p>
               <p className="py-3">

@@ -76,7 +76,7 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="subtitle py-3">
-            Like what you see? Let&lsquo;s connect!
+            Like what you see? Let&rsquo;s connect!
           </h2>
         </motion.div>
 

@@ -31,7 +31,7 @@ const is212 = ({
         <ProjectHead
           title={title}
           subtitle="Agile and Scrum methodologies in practice"
-          readMins="7"
+          readMins="10"
           dateString={dateString}
           skills={skills}
           githubUrl={githubUrl}
@@ -495,12 +495,12 @@ const is212 = ({
                     rel="noopener noreferrer"
                     className="color-text-accent hover:underline"
                   >
-                    Heroku&lsquo;s ClearDB
+                    Heroku&rsquo;s ClearDB
                   </Link>
                   , we were able to provide an environment that is always
                   updated with the latest build for testing among the
                   developers, as it is connected to the Github repository. This
-                  allows developers to work with a &lsquo;single source of
+                  allows developers to work with a &rsquo;single source of
                   truth&rsquo; (database-wise), so that we can be sure that our
                   changes will be working for the rest as well, instead of just
                   using localhost.
