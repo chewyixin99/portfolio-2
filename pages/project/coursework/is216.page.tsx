@@ -30,7 +30,7 @@ const is216 = ({
       <div className="project-page-inner-container">
         <ProjectHead
           title={title}
-          subtitle="Some subtitle for project"
+          subtitle="Frontend focused, mobile-friendly web application"
           readMins="5"
           dateString={dateString}
           skills={skills}
