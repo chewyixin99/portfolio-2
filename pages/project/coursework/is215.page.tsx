@@ -323,7 +323,25 @@ const is215 = ({
               <p className="py-3">
                 We also proposed an analytics solution so that the company can
                 adopt a more data-driven approach when making business
-                decisions.
+                decisions. Most of the work done here were by my teammates,{" "}
+                <Link
+                  href="https://github.com/lohkokwee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                >
+                  Kok Wee
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://github.com/hellobiondi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link"
+                >
+                  Biondi
+                </Link>
+                .
               </p>
               <div className="project-page-image-container">
                 <Image
