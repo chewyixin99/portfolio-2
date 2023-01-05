@@ -39,7 +39,7 @@ const is442 = ({
         />
         <div className="project-page-grid">
           <div className="project-page-body-col">
-            {/* Description paragraphs */}
+            {/* Introduction */}
             <div>
               <div className="project-page-section-title" id="introduction">
                 {"{* Introduction *}"}
@@ -77,6 +77,10 @@ const is442 = ({
                 staff / employees of SSP to visit attractions such as Art
                 Science Museum, Singapore Flyer, Gardens by the Bay etc.
               </p>
+            </div>
+            {/* Requirements */}
+            <div>
+              {" "}
               <div className="project-page-section-title" id="requirements">
                 {"{* Requirements *}"}
               </div>
@@ -227,6 +231,9 @@ const is442 = ({
                 design pattern, grouping related application logic together in a
                 controller.
               </p>
+            </div>
+            {/* Timeline */}
+            <div>
               <div className="project-page-section-title" id="timeline">
                 {"{* Timeline *}"}
               </div>
@@ -277,6 +284,9 @@ const is442 = ({
                   System overview of the application
                 </p>
               </div>
+            </div>
+            {/* Tech stack */}
+            <div>
               <div className="project-page-section-title" id="techstack">
                 {"{* Tech stack and libraries *}"}
               </div>
@@ -482,6 +492,9 @@ const is442 = ({
                   : Authentication and authorization service
                 </span>
               </p>
+            </div>
+            {/* Learnings */}
+            <div>
               <div className="project-page-section-title" id="learnings">
                 {"{* Learnings *}"}
               </div>
@@ -528,6 +541,9 @@ const is442 = ({
                 </span>{" "}
                 from this module / project.
               </p>
+            </div>
+            {/* Appendix */}
+            <div>
               <div className="project-page-section-title" id="appendix">
                 {"{* Appendix *}"}
               </div>

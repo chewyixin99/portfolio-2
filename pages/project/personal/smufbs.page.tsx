@@ -39,11 +39,11 @@ const smufbs = ({
         />
         <div className="project-page-grid">
           <div className="project-page-body-col">
-            {/* Description paragraphs */}
-            <div className="project-page-section-title" id="introduction">
-              {"{* Introduction *}"}
-            </div>
+            {/* Introduction */}
             <div>
+              <div className="project-page-section-title" id="introduction">
+                {"{* Introduction *}"}
+              </div>
               <p className="py-3">
                 This project was created during the after the first wave of the
                 Covid-19 period, and the school was starting to open up and
@@ -81,6 +81,9 @@ const smufbs = ({
                 </Link>
                 .
               </p>
+            </div>
+            {/* Process */}
+            <div>
               <div className="project-page-section-title" id="process">
                 {"{* Process *}"}
               </div>
@@ -305,6 +308,9 @@ const smufbs = ({
                   Handling exceptions code snippet
                 </p>
               </div>
+            </div>
+            {/* Conclusion */}
+            <div>
               <div className="project-page-section-title" id="conclusion">
                 {"{* Conclusion *}"}
               </div>
@@ -355,6 +361,9 @@ const smufbs = ({
                 </Link>
                 .
               </p>
+            </div>
+            {/* Appendix */}
+            <div>
               <div className="project-page-section-title" id="appendix">
                 {"{* Appendix *}"}
               </div>
