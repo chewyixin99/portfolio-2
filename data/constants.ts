@@ -288,9 +288,17 @@ export const projects: ProjectType[] = [
     title: "Snip Avenue Digital Transformation Plan",
     subtitle: "Coursework for IS215 DBTT",
     bodyText: `Attempt at digitally transforming a traditional business through digitalization and digitization.`,
-    githubUrl: "",
-    skills: ["Python", "Analytics", "Streamlit API"],
-    projectUrl: "",
+    githubUrl:
+      "https://github.com/lohkokwee/Snip-Avenue-Dashboard#table-of-contents",
+    skills: [
+      "Python",
+      "Analytics",
+      "Streamlit API",
+      "Figma",
+      "Digital Transformation Strategy",
+    ],
+    projectUrl:
+      "https://lohkokwee-snip-avenue-dashboard-app-9k6amo.streamlit.app/",
     projectPath: "/project/coursework/is215",
     imgProps: {
       src: "/assets/projects/dbtt/home.jpg",
