@@ -18,7 +18,7 @@ const Main = () => {
   return (
     <div className="w-full h-screen text-center">
       <Particle />
-      <div className="max-w-[var(--max-width-outer)] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1260px] w-full h-full mx-auto p-2 flex justify-center items-center">
         {/* Download resume button */}
         <DownloadResume />
         <div className="max-w-[var(--max-width-inner)]">
@@ -44,7 +44,7 @@ const Main = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h1 className="py-5">
+            <h1 className="py-5 font-normal">
               <span>Hi, I&lsquo;m </span>
               <span className="color-text-primary font-tags">Yi Xin</span>
             </h1>
@@ -56,7 +56,7 @@ const Main = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="subtitle pb-3">Aspiring software engineer</h3>
+            <h3 className="subtitle py-3">Aspiring software engineer</h3>
           </motion.div>
           {/* Description text */}
           <motion.div
@@ -68,9 +68,14 @@ const Main = () => {
             <p className="body-text m-auto">
               I&lsquo;m an aspiring software engineer, currently enrolled
               in&nbsp;
-              <span className="color-text-accent underline">
+              <Link
+                href="https://www.smu.edu.sg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
                 Singapore Management University (SMU)
-              </span>
+              </Link>
               &nbsp; under the Bachelor&rsquo;s of Science (BSc), Information
               Systems, with a second major in Cybersecurity.
             </p>

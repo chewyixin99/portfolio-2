@@ -37,54 +37,7 @@ const is211 = ({
           githubUrl={githubUrl}
           projectUrl={projectUrl}
         />
-        <div className="project-page-grid">
-          <div className="project-page-body-col">
-            {/* Introduction */}
-            <div>
-              <div className="project-page-section-title" id="introduction">
-                {"{* Introduction *}"}
-              </div>
-              <p className="py-3">
-                This project was done as part of the coursework for IS211 -
-                Interaction Design and Prototyping (IDP) in SMU.
-              </p>
-              <p className="py-3">
-                The main focus was on interaction design using an iterative
-                process, through{" "}
-                <span className="project-description-list-item">
-                  <span className="color-text-accent">Observation</span>:
-                  Determining user needs through watching
-                </span>
-                <span className="project-description-list-item">
-                  <span className="color-text-accent">Prototyping</span>:
-                  Creating prototypes that users can interact with, from low to
-                  high-fidelity prototypes
-                </span>
-                <span className="project-description-list-item">
-                  <span className="color-text-accent">Evaluation</span>:
-                  Evaluating how well our design meets the user&rsquo;s needs
-                </span>
-              </p>
-            </div>
-            {/* Next */}
-            <div>
-              <div className="project-page-section-title" id="introduction">
-                {"{* Introduction *}"}
-              </div>
-            </div>
-          </div>
-          <div className="project-page-sidebar-col">
-            <StickySidebar
-              links={{
-                "#introduction": "Intro",
-                "#requirements": "Requirements",
-                "#process": "Process",
-                "#learnings": "Learnings",
-                "#appendix": "Appendix",
-              }}
-            />
-          </div>
-        </div>
+        <p className="py-3">Write up in progress. Please check back again in a bit!</p>
       </div>
     </div>
   );

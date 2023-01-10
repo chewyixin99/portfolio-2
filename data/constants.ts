@@ -291,24 +291,24 @@ export const projects: ProjectType[] = [
     },
   },
   // IDP
-  // {
-  //   type: "coursework",
-  //   dateString: "Aug 2021 - Dec 2021",
-  //   title: "Group Project Enrollment Prototype",
-  //   subtitle: "Coursework for IS211 IDP",
-  //   bodyText: `End-to-end process of designing a solution and adhering to UI/UX principles, from surveying user preference to creating a Hi-Fi wireframe.`,
-  //   githubUrl: "",
-  //   skills: ["Figma", "UI/UX Design", "Usability Testing", "Prototyping"],
-  //   projectUrl: "",
-  //   projectPath: "/project/coursework/is211",
-  //   imgProps: {
-  //     src: "/assets/projects/idp/home.jpg",
-  //     imageClassName: "",
-  //     alt: "idp",
-  //     width: 500,
-  //     height: 500,
-  //   },
-  // },
+  {
+    type: "coursework",
+    dateString: "Aug 2021 - Dec 2021",
+    title: "Group Project Enrollment Prototype",
+    subtitle: "Coursework for IS211 IDP",
+    bodyText: `End-to-end process of designing a solution and adhering to UI/UX principles, from surveying user preference to creating a Hi-Fi wireframe.`,
+    githubUrl: "",
+    skills: ["Figma", "UI/UX Design", "Usability Testing", "Prototyping"],
+    projectUrl: "",
+    projectPath: "/project/coursework/is211",
+    imgProps: {
+      src: "/assets/projects/idp/home.jpg",
+      imageClassName: "",
+      alt: "idp",
+      width: 500,
+      height: 500,
+    },
+  },
   // Selenium booking bot
   {
     type: "personal",

@@ -55,8 +55,8 @@ const Projects = () => {
             return type === "personal" ? (
               <motion.div
                 key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="lg:col-span-2 xl:col-span-1"
@@ -89,8 +89,8 @@ const Projects = () => {
             return type === "coursework" ? (
               <motion.div
                 key={index}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
                 className="lg:col-span-2 xl:col-span-1"
