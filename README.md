@@ -57,8 +57,8 @@ Notification
 - [notistack](https://notistack.com/getting-started)
 
 TagCloud / TagSphere (for skill cloud) credits
-- [github/cong-min](/https://github.com/cong-min/TagCloud)
-- [reddit/chul-ian13](/https://www.reddit.com/r/reactjs/comments/lfqe5o/comment/gzcyzgk/)
+- [github/cong-min](https://github.com/cong-min/TagCloud)
+- [reddit/chul-ian13](https://www.reddit.com/r/reactjs/comments/lfqe5o/comment/gzcyzgk/)
 - [github/jjsanmartino03](https://github.com/jjsanmartino03/react-tag-sphere/blob/main/src/index.tsx)
 
 Form validation
